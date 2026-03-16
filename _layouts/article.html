@@ -4,10 +4,10 @@
 {% include head.html %}
 </head>
 <body>
-<header class="site-header wrap"><div class="nav"><a class="brand" href="{{ page.home_url }}">{{ page.brand_name }}</a><nav>{{ page.nav_html }}</nav></div></header>
+<header class="site-header wrap"><div class="nav"><a class="brand" href="{% if page.lang == 'zh-CN' %}/china-tea/zh/index.html{% else %}/china-tea/en/index.html{% endif %}">{% if page.lang == 'zh-CN' %}中国茶志{% else %}China Tea Library{% endif %}</a><nav>{% if page.lang == 'zh-CN' %}<a href="/china-tea/zh/tea/index.html">茶叶</a><a href="/china-tea/zh/teaware/index.html">茶具</a><a href="/china-tea/zh/history/index.html">茶文化历史</a><a href="/china-tea/zh/drinks/index.html">现制茶饮</a><a href="/china-tea/zh/science/index.html">茶饮科技</a><a href="/china-tea/zh/about.html">About</a>{% if page.lang_switch_url %}<a class="lang" href="{{ page.lang_switch_url }}">English</a>{% endif %}{% else %}<a href="/china-tea/en/tea/index.html">Tea</a><a href="/china-tea/en/teaware/index.html">Teaware</a><a href="/china-tea/en/history/index.html">History</a><a href="/china-tea/en/drinks/index.html">Fresh Tea Drinks</a><a href="/china-tea/en/science/index.html">Tea Science</a><a href="/china-tea/en/about.html">About</a>{% if page.lang_switch_url %}<a class="lang" href="{{ page.lang_switch_url }}">中文</a>{% endif %}{% endif %}</nav></div></header>
 <main class="page article-rich"><article>
 {{ content }}
 </article></main>
-<footer class="site-footer wrap"><a href="{{ page.about_url }}">About</a><a href="{{ page.privacy_url }}">Privacy</a><a href="{{ page.contact_url }}">Contact</a><a href="{{ page.terms_url }}">Terms</a></footer>
+<footer class="site-footer wrap"><a href="{% if page.lang == 'zh-CN' %}/china-tea/zh/about.html{% else %}/china-tea/en/about.html{% endif %}">About</a><a href="{% if page.lang == 'zh-CN' %}/china-tea/zh/privacy.html{% else %}/china-tea/en/privacy.html{% endif %}">Privacy</a><a href="{% if page.lang == 'zh-CN' %}/china-tea/zh/contact.html{% else %}/china-tea/en/contact.html{% endif %}">Contact</a><a href="{% if page.lang == 'zh-CN' %}/china-tea/zh/terms.html{% else %}/china-tea/en/terms.html{% endif %}">Terms</a></footer>
 </body>
 </html>
