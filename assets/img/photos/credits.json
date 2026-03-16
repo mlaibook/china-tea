@@ -70,5 +70,32 @@
     "artist": "<a href=\"//commons.wikimedia.org/wiki/User:GALO_UCKUAO_Hunfongza\" title=\"User:GALO UCKUAO Hunfongza\">GALO UCKUAO Hunfongza</a>",
     "license": "CC BY-SA 4.0",
     "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "local": "tea-pet.jpg",
+    "title": "Tea pet.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Tea_pet.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Tea_pet.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Ad%C3%A1moz\" title=\"User:Adámoz\">Adámoz</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "local": "jianzhan.jpg",
+    "title": "Hare's fur Tea bowl Song Dynasty Musée Mariemont 08112015 1.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/4/47/Hare%27s_fur_Tea_bowl_Song_Dynasty_Mus%C3%A9e_Mariemont_08112015_1.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Hare%27s_fur_Tea_bowl_Song_Dynasty_Mus%C3%A9e_Mariemont_08112015_1.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Vassil\" title=\"User:Vassil\">Vassil</a>",
+    "license": "CC0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "local": "jingdezhen-porcelain.jpg",
+    "title": "ACM-Mounted incense burner-03522.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/e5/ACM-Mounted_incense_burner-03522.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:ACM-Mounted_incense_burner-03522.jpg",
+    "artist": "",
+    "license": "CC0",
+    "credit": "<a href=\"//commons.wikimedia.org/wiki/User:Wuselig\" title=\"User:Wuselig\">Wuselig</a>"
   }
 ]
