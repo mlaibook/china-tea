@@ -43,5 +43,32 @@
     "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jessie_csz&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jessie csz (page does not exist)\">Jessie csz</a>",
     "license": "CC BY-SA 4.0",
     "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "local": "milk-tea.jpg",
+    "title": "Bubble Tea.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bubble_Tea.png",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Bubble_Tea.png",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Howief\" class=\"mw-redirect\" title=\"User:Howief\">Howief</a>",
+    "license": "CC BY-SA 3.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "local": "puer-cake.jpg",
+    "title": "2015-Pu-erh-tee.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/d/d5/2015-Pu-erh-tee.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:2015-Pu-erh-tee.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Ivtorov\" title=\"User:Ivtorov\">Ivtorov</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+  },
+  {
+    "local": "oolong-tea.jpg",
+    "title": "HK 灣仔 Wan Chai 茂蘿街 11 Mallory Street 灣仔 Comix Home Base Chinese Tea exhibition July 2020 SS2 07.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/5/5b/HK_%E7%81%A3%E4%BB%94_Wan_Chai_%E8%8C%82%E8%98%BF%E8%A1%97_11_Mallory_Street_%E7%81%A3%E4%BB%94_Comix_Home_Base_Chinese_Tea_exhibition_July_2020_SS2_07.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:HK_%E7%81%A3%E4%BB%94_Wan_Chai_%E8%8C%82%E8%98%BF%E8%A1%97_11_Mallory_Street_%E7%81%A3%E4%BB%94_Comix_Home_Base_Chinese_Tea_exhibition_July_2020_SS2_07.jpg",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:GALO_UCKUAO_Hunfongza\" title=\"User:GALO UCKUAO Hunfongza\">GALO UCKUAO Hunfongza</a>",
+    "license": "CC BY-SA 4.0",
+    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
   }
 ]
