@@ -1,8 +1,3 @@
 title: China Tea Library
 markdown: kramdown
-permalink: pretty
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
+permalink: none
