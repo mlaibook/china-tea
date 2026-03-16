@@ -1,8 +1,6 @@
 title: China Tea Library
 markdown: kramdown
 permalink: pretty
-include:
-  - .nojekyll
 defaults:
   - scope:
       path: ""
