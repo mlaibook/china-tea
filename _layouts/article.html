@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+{% include head.html %}
+</head>
+<body>
+<header class="site-header wrap"><div class="nav"><a class="brand" href="{{ page.home_url }}">{{ page.brand_name }}</a><nav>{{ page.nav_html }}</nav></div></header>
+<main class="page article-rich"><article>
+{{ content }}
+</article></main>
+<footer class="site-footer wrap"><a href="{{ page.about_url }}">About</a><a href="{{ page.privacy_url }}">Privacy</a><a href="{{ page.contact_url }}">Contact</a><a href="{{ page.terms_url }}">Terms</a></footer>
+</body>
+</html>
