@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7ecd8"/>
+      <stop offset="55%" stop-color="#d8b889"/>
+      <stop offset="100%" stop-color="#5b7047"/>
+    </linearGradient>
+    <radialGradient id="steam" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <ellipse cx="1130" cy="640" rx="320" ry="70" fill="#7b4d2f" fill-opacity="0.2"/>
+  <path d="M840 580c0-95 78-172 174-172h153c96 0 174 77 174 172v33c0 97-78 176-174 176h-153c-96 0-174-79-174-176z" fill="#7a4b2c"/>
+  <path d="M1320 571c60 2 108 53 108 115 0 63-50 114-111 115h-15v-60h8c32 0 58-26 58-58 0-30-22-54-51-57z" fill="#7a4b2c"/>
+  <ellipse cx="1085" cy="566" rx="190" ry="46" fill="#f8f3ea"/>
+  <ellipse cx="1085" cy="566" rx="160" ry="30" fill="#9b5a25"/>
+  <ellipse cx="1085" cy="560" rx="145" ry="21" fill="#b5743d"/>
+  <path d="M1020 489c-23-85 53-120 30-206 58 47 47 112 68 145 15-78 80-98 75-182 73 75 23 165 40 203 31-44 88-46 122-106 10 75-46 112-53 146z" fill="url(#steam)"/>
+  <g fill="#355e3b" fill-opacity="0.9">
+    <path d="M174 681c96-130 129-274 268-394 59 128 10 300-126 405-40 31-92 39-142-11z"/>
+    <path d="M266 715c53-111 173-204 320-254-53 148-149 241-286 301-34 15-57-3-34-47z" fill="#426c43"/>
+    <path d="M476 739c37-84 121-141 234-169-39 109-110 169-203 208-28 11-46-5-31-39z" fill="#587b48"/>
+  </g>
+  <text x="120" y="180" font-size="84" font-family="Georgia, serif" fill="#1f1b16">China Tea Journal</text>
+  <text x="125" y="246" font-size="34" font-family="Arial, sans-serif" fill="#4f4338">Leaf • Vessel • History • Fresh Tea Drinks</text>
+</svg>

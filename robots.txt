@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mlaibook.github.io/china-tea/sitemap.xml
