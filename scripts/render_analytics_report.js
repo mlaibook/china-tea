@@ -80,18 +80,6 @@ function rows(items, columns) {
   if (!items.length) return `<tr><td colspan="${columns}">暂无数据</td></tr>`;
   return items.map(item => `<tr>${item.map(cell => `<td>${cell}</td>`).join('')}</tr>`).join('');
 }
-function zhSectionLabel(section) {
-  const map = {
-    en: '英文首页/目录',
-    zh: '中文首页/目录',
-    tea: '茶叶',
-    teaware: '茶具',
-    history: '茶文化历史',
-    drinks: '现制茶饮',
-    science: '科学/健康'
-  };
-  return map[section] || section || '未分类';
-}
 
 function render(data) {
   const s7 = data.summary?.last7Days || {};
@@ -161,7 +149,7 @@ function render(data) {
         <h2>近 30 天热门栏目</h2>
         <table class="analytics-table">
           <thead><tr><th>栏目</th><th>浏览量</th><th>活跃用户</th></tr></thead>
-          <tbody>${rows(sections.map(p => [escapeHtml(zhSectionLabel(p.section)), formatInt(p.views), formatInt(p.activeUsers)]), 3)}</tbody>
+          <tbody>${rows(sections.map(p => [escapeHtml(p.label || p.section || ''), formatInt(p.views), formatInt(p.activeUsers)]), 3)}</tbody>
         </table>
       </section>
 

@@ -93,22 +93,54 @@ async function runReport(propertyId, token, days, dimensions, metrics, limit=10)
   return JSON.parse(res.body);
 }
 function metricVal(row, idx) {
-  return Number(row.metricValues?.[idx]?.value || 0);
+  return Number(row?.metricValues?.[idx]?.value || 0);
 }
 function dimVal(row, idx) {
-  return row.dimensionValues?.[idx]?.value || '';
+  return row?.dimensionValues?.[idx]?.value || '';
 }
-function sectionFromPath(p) {
-  const parts = String(p || '').split('/').filter(Boolean);
-  if (parts.length >= 2 && (parts[0] === 'en' || parts[0] === 'zh')) return parts[1];
-  if (parts.length >= 1) return parts[0];
-  return 'home';
+function normalizePath(input) {
+  let p = String(input || '').trim();
+  if (!p) return '/';
+  p = p.replace(/^https?:\/\/[^/]+/i, '');
+  if (!p.startsWith('/')) p = '/' + p;
+  p = p.replace(/^\/china-tea(?=\/|$)/, '');
+  p = p.replace(/\/+/g, '/');
+  if (p !== '/' && p.endsWith('/')) p = p.slice(0, -1);
+  return p || '/';
+}
+function detectLang(parts) {
+  if (parts[0] === 'en' || parts[0] === 'zh') return parts[0];
+  return '';
+}
+function classifySection(rawPath) {
+  const p = normalizePath(rawPath);
+  if (p === '/' || p === '/index.html') return { key: 'home', label: '首页' };
+  const parts = p.split('/').filter(Boolean);
+  const lang = detectLang(parts);
+  const start = lang ? 1 : 0;
+  const first = parts[start] || '';
+  if (!first || first === 'index.html') {
+    return { key: lang ? `${lang}-home` : 'home', label: lang === 'zh' ? '中文首页' : lang === 'en' ? '英文首页' : '首页' };
+  }
+  const map = {
+    tea: '茶叶',
+    teaware: '茶具',
+    history: '茶文化历史',
+    drinks: '现制茶饮',
+    science: '科学/健康',
+    about: '关于页',
+    privacy: '隐私页',
+    contact: '联系页',
+    terms: '条款页',
+    'analytics.html': '数据报表'
+  };
+  return { key: first, label: map[first] || first };
 }
 function sample(propertyId) {
   return {
     generatedAt: new Date().toISOString(),
     source: 'sample',
-    note: 'Live GA4 fetch skipped because credentials or property id are not configured.',
+    note: '当前机器尚未完成 GA4 本地凭据配置，所以这里展示的是占位静态报表。',
     propertyId: propertyId || '',
     measurementId: process.env.GA4_MEASUREMENT_ID || 'G-4VCYC4P23R',
     summary: {
@@ -119,9 +151,9 @@ function sample(propertyId) {
     topPages30d: [],
     topSections30d: [],
     insights: [
-      'Set GA4_PROPERTY_ID to the numeric property id, not the G- measurement id.',
-      'Set GOOGLE_APPLICATION_CREDENTIALS to a service-account JSON file with Analytics Data API access.',
-      'Grant the service account read access to the target GA4 property before enabling cron automation.'
+      '尚未读取到 live GA4 数据。',
+      '需要配置 GA4_PROPERTY_ID 与 GOOGLE_APPLICATION_CREDENTIALS。',
+      '配置完成后，本地 OpenClaw cron 会自动拉取 GA 数据并更新静态 analytics 页面。'
     ]
   };
 }
@@ -139,27 +171,31 @@ function sample(propertyId) {
   const token = await getAccessToken(creds);
   const summary7 = await runReport(propertyId, token, 7, [], ['activeUsers','sessions','screenPageViews','averageSessionDuration','engagementRate'], 1);
   const summary30 = await runReport(propertyId, token, 30, [], ['activeUsers','sessions','screenPageViews','averageSessionDuration','engagementRate'], 1);
-  const top7raw = await runReport(propertyId, token, 7, ['pagePath'], ['screenPageViews','activeUsers'], 10);
-  const top30raw = await runReport(propertyId, token, 30, ['pagePath'], ['screenPageViews','activeUsers'], 10);
+  const top7raw = await runReport(propertyId, token, 7, ['pagePath'], ['screenPageViews','activeUsers'], 25);
+  const top30raw = await runReport(propertyId, token, 30, ['pagePath'], ['screenPageViews','activeUsers'], 25);
 
-  const top7 = (top7raw.rows || []).map(r => ({ path: dimVal(r,0), views: metricVal(r,0), activeUsers: metricVal(r,1) }));
-  const top30 = (top30raw.rows || []).map(r => ({ path: dimVal(r,0), views: metricVal(r,0), activeUsers: metricVal(r,1) }));
+  const top7 = (top7raw.rows || []).map(r => ({ path: normalizePath(dimVal(r,0)), views: metricVal(r,0), activeUsers: metricVal(r,1) }));
+  const top30 = (top30raw.rows || []).map(r => ({ path: normalizePath(dimVal(r,0)), views: metricVal(r,0), activeUsers: metricVal(r,1) }));
+
   const sectionMap = new Map();
   for (const row of top30) {
-    const key = sectionFromPath(row.path);
-    const cur = sectionMap.get(key) || { section: key, views: 0, activeUsers: 0 };
+    const sec = classifySection(row.path);
+    const cur = sectionMap.get(sec.key) || { section: sec.key, label: sec.label, views: 0, activeUsers: 0 };
     cur.views += row.views;
     cur.activeUsers += row.activeUsers;
-    sectionMap.set(key, cur);
+    sectionMap.set(sec.key, cur);
   }
-  const topSections30d = [...sectionMap.values()].sort((a,b) => b.views - a.views).slice(0,10);
+  const topSections30d = [...sectionMap.values()]
+    .sort((a,b) => b.views - a.views)
+    .slice(0,10)
+    .map(({section,label,views,activeUsers}) => ({ section, label, views, activeUsers }));
 
   const s7r = summary7.rows?.[0];
   const s30r = summary30.rows?.[0];
   const data = {
     generatedAt: new Date().toISOString(),
     source: 'ga4-data-api',
-    note: 'Live GA4 report generated from the Analytics Data API.',
+    note: '已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。',
     propertyId,
     measurementId: process.env.GA4_MEASUREMENT_ID || 'G-4VCYC4P23R',
     summary: {
@@ -176,9 +212,9 @@ function sample(propertyId) {
     topPages30d: top30,
     topSections30d,
     insights: [
-      top7[0] ? `Top page over the last 7 days: ${top7[0].path} (${top7[0].views} views).` : 'No top-page data returned for the last 7 days.',
-      topSections30d[0] ? `Strongest section over the last 30 days: ${topSections30d[0].section}.` : 'No section trend data returned for the last 30 days.',
-      'Use this report to refresh homepage hot links, section highlights, and editorial priorities.'
+      top7[0] ? `近 7 天热门页面：${top7[0].path}（${top7[0].views} 次浏览）。` : '近 7 天暂无热门页面数据。',
+      topSections30d[0] ? `近 30 天最强栏目：${topSections30d[0].label}。` : '近 30 天暂无栏目趋势数据。',
+      '这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。'
     ]
   };
   fs.writeFileSync(outFile, JSON.stringify(data, null, 2), 'utf8');
@@ -187,7 +223,12 @@ function sample(propertyId) {
   const propertyId = process.env.GA4_PROPERTY_ID || parseDotEnv(envPath).GA4_PROPERTY_ID || '';
   const data = sample(propertyId);
   data.source = 'sample-fallback';
-  data.note = `Live GA4 fetch failed; fallback report generated. ${err.message}`;
+  data.note = `GA4 实时拉取失败，当前展示降级静态报表。${err.message}`;
+  data.insights = [
+    'GA4 拉取失败，已自动降级为静态占位数据。',
+    '请检查 property id、service account 权限与本地凭据路径。',
+    '本地 cron 仍会保留页面更新链路。'
+  ];
   fs.writeFileSync(outFile, JSON.stringify(data, null, 2), 'utf8');
   console.error(err.stack || err.message);
   process.exitCode = 1;
