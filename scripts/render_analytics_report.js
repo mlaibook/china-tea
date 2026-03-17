@@ -41,7 +41,7 @@ function buildSampleData() {
   return {
     generatedAt: now,
     source: 'sample',
-    note: 'GA credentials not configured yet. This placeholder report keeps the page wired and ready.',
+    note: '当前机器尚未完成 GA4 本地凭据配置，所以这里展示的是占位静态报表。',
     propertyId: process.env.GA4_PROPERTY_ID || '',
     measurementId: process.env.GA4_MEASUREMENT_ID || 'G-4VCYC4P23R',
     summary: {
@@ -52,16 +52,16 @@ function buildSampleData() {
     topPages30d: [],
     topSections30d: [],
     insights: [
-      'GA4 data API not configured yet; page is ready for live report ingestion.',
-      'Add GA4_PROPERTY_ID and GOOGLE_APPLICATION_CREDENTIALS before enabling live pulls.',
-      'Once credentials are present, this report can rank hot article URLs and section demand automatically.'
+      '尚未读取到 live GA4 数据。',
+      '需要配置 GA4_PROPERTY_ID 与 GOOGLE_APPLICATION_CREDENTIALS。',
+      '配置完成后，本地 OpenClaw cron 会自动拉取 GA 数据并更新静态 analytics 页面。'
     ]
   };
 }
 
 function formatInt(v) {
   const num = Number(v || 0);
-  return Number.isFinite(num) ? num.toLocaleString('en-US') : '0';
+  return Number.isFinite(num) ? num.toLocaleString('zh-CN') : '0';
 }
 function formatPct(v) {
   const num = Number(v || 0);
@@ -71,14 +71,26 @@ function formatSeconds(v) {
   const n = Math.round(Number(v || 0));
   const m = Math.floor(n / 60);
   const s = n % 60;
-  return `${m}m ${s}s`;
+  return `${m}分 ${s}秒`;
 }
 function card(title, value, sub='') {
   return `<div class="analytics-card"><div class="analytics-kicker">${escapeHtml(title)}</div><div class="analytics-value">${escapeHtml(value)}</div>${sub ? `<div class="analytics-sub">${escapeHtml(sub)}</div>` : ''}</div>`;
 }
 function rows(items, columns) {
-  if (!items.length) return `<tr><td colspan="${columns}">No data yet.</td></tr>`;
+  if (!items.length) return `<tr><td colspan="${columns}">暂无数据</td></tr>`;
   return items.map(item => `<tr>${item.map(cell => `<td>${cell}</td>`).join('')}</tr>`).join('');
+}
+function zhSectionLabel(section) {
+  const map = {
+    en: '英文首页/目录',
+    zh: '中文首页/目录',
+    tea: '茶叶',
+    teaware: '茶具',
+    history: '茶文化历史',
+    drinks: '现制茶饮',
+    science: '科学/健康'
+  };
+  return map[section] || section || '未分类';
 }
 
 function render(data) {
@@ -91,85 +103,82 @@ function render(data) {
   const generatedAt = data.generatedAt || new Date().toISOString();
   const source = data.source || 'unknown';
   const note = data.note || '';
-  const measurementId = data.measurementId || 'G-4VCYC4P23R';
-  const propertyId = data.propertyId || '';
 
   return `<!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>China Tea Analytics Report</title>
-  <meta name="description" content="Daily analytics report for the China Tea Library content site." />
+  <title>网站数据报表 | 茶库</title>
+  <meta name="description" content="茶库站点的静态 Analytics 数据报表页面。" />
   <meta name="robots" content="noindex,follow" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header wrap">
     <div class="nav">
-      <a class="brand" href="en/index.html">China Tea Library</a>
+      <a class="brand" href="zh/index.html">茶库数据页</a>
       <nav>
-        <a href="en/index.html">English</a>
-        <a href="zh/index.html">中文</a>
-        <a href="analytics.html">Analytics</a>
+        <a href="zh/index.html">网站首页</a>
+        <a href="analytics.html">数据报表</a>
       </nav>
     </div>
   </header>
   <main class="page analytics-page">
     <article>
-      <p class="eyebrow">Analytics</p>
-      <h1>Daily GA4 content report</h1>
-      <p class="lede">This page stores the site’s internal analytics snapshot for editorial decisions, homepage tuning, and future automation.</p>
-      <p class="meta">Generated: <time datetime="${escapeHtml(generatedAt)}">${escapeHtml(generatedAt)}</time> · Source: ${escapeHtml(source)} · Measurement ID: ${escapeHtml(measurementId)}${propertyId ? ` · Property ID: ${escapeHtml(propertyId)}` : ''}</p>
+      <p class="eyebrow">数据报表</p>
+      <h1>网站静态 Analytics 页面</h1>
+      <p class="lede">这个页面只用于呈现已经拉取并生成好的静态数据，不在前端实时请求 Google Analytics。</p>
+      <p class="meta">生成时间：<time datetime="${escapeHtml(generatedAt)}">${escapeHtml(generatedAt)}</time> · 数据来源：${escapeHtml(source)}</p>
       ${note ? `<p class="note">${escapeHtml(note)}</p>` : ''}
 
       <section class="analytics-grid">
-        ${card('7d active users', formatInt(s7.activeUsers), 'Recent audience size')}
-        ${card('7d sessions', formatInt(s7.sessions), 'Visits in last 7 days')}
-        ${card('7d views', formatInt(s7.views), 'Page views in last 7 days')}
-        ${card('7d avg session', formatSeconds(s7.avgSessionDurationSeconds), 'Average engaged visit length')}
-        ${card('30d active users', formatInt(s30.activeUsers), 'Broader monthly audience')}
-        ${card('30d engagement', formatPct(s30.engagementRate), 'Engagement rate')}
+        ${card('近 7 天活跃用户', formatInt(s7.activeUsers), '最近 7 天访问用户数')}
+        ${card('近 7 天会话数', formatInt(s7.sessions), '最近 7 天访问会话')}
+        ${card('近 7 天浏览量', formatInt(s7.views), '最近 7 天页面浏览')}
+        ${card('近 7 天平均会话时长', formatSeconds(s7.avgSessionDurationSeconds), '平均访问停留时间')}
+        ${card('近 30 天活跃用户', formatInt(s30.activeUsers), '最近 30 天访问用户数')}
+        ${card('近 30 天互动率', formatPct(s30.engagementRate), '最近 30 天 engagement rate')}
       </section>
 
       <section class="feature-card analytics-section">
-        <h2>Top pages · last 7 days</h2>
+        <h2>近 7 天热门页面</h2>
         <table class="analytics-table">
-          <thead><tr><th>Path</th><th>Views</th><th>Active users</th></tr></thead>
+          <thead><tr><th>页面路径</th><th>浏览量</th><th>活跃用户</th></tr></thead>
           <tbody>${rows(top7.map(p => [escapeHtml(p.path || ''), formatInt(p.views), formatInt(p.activeUsers)]), 3)}</tbody>
         </table>
       </section>
 
       <section class="feature-card analytics-section">
-        <h2>Top pages · last 30 days</h2>
+        <h2>近 30 天热门页面</h2>
         <table class="analytics-table">
-          <thead><tr><th>Path</th><th>Views</th><th>Active users</th></tr></thead>
+          <thead><tr><th>页面路径</th><th>浏览量</th><th>活跃用户</th></tr></thead>
           <tbody>${rows(top30.map(p => [escapeHtml(p.path || ''), formatInt(p.views), formatInt(p.activeUsers)]), 3)}</tbody>
         </table>
       </section>
 
       <section class="feature-card analytics-section">
-        <h2>Top sections · last 30 days</h2>
+        <h2>近 30 天热门栏目</h2>
         <table class="analytics-table">
-          <thead><tr><th>Section</th><th>Views</th><th>Active users</th></tr></thead>
-          <tbody>${rows(sections.map(p => [escapeHtml(p.section || ''), formatInt(p.views), formatInt(p.activeUsers)]), 3)}</tbody>
+          <thead><tr><th>栏目</th><th>浏览量</th><th>活跃用户</th></tr></thead>
+          <tbody>${rows(sections.map(p => [escapeHtml(zhSectionLabel(p.section)), formatInt(p.views), formatInt(p.activeUsers)]), 3)}</tbody>
         </table>
       </section>
 
       <section class="feature-card analytics-section">
-        <h2>Editorial notes</h2>
+        <h2>运营备注</h2>
         <ul class="analytics-notes">
-          ${(insights.length ? insights : ['No editorial notes yet.']).map(item => `<li>${escapeHtml(item)}</li>`).join('')}
+          ${(insights.length ? insights : ['暂无备注。']).map(item => `<li>${escapeHtml(item)}</li>`).join('')}
         </ul>
       </section>
     </article>
   </main>
   <footer class="site-footer wrap">
-    <a href="en/about.html">About</a>
-    <a href="en/privacy.html">Privacy</a>
-    <a href="en/contact.html">Contact</a>
-    <a href="en/terms.html">Terms</a>
-    <a href="analytics.html">Analytics</a>
+    <a href="zh/about.html">关于</a>
+    <a href="zh/privacy.html">隐私</a>
+    <a href="zh/contact.html">联系</a>
+    <a href="zh/terms.html">条款</a>
+    <a href="analytics.html">数据报表</a>
   </footer>
 </body>
 </html>`;
