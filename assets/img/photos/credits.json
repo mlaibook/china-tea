@@ -484,5 +484,32 @@
     "artist": "Existing workspace asset",
     "license": "Unknown / currently invalid asset",
     "credit": "Mime validation during 2026-03-17 maintenance showed this file is HTML rather than an image; removed from active page use pending later asset repair"
+  },
+  {
+    "local": "green-tea-kanko-v1.jpg",
+    "title": "Green tea - 緑茶 - Flickr - Kanko.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/a/af/Green_tea_-_%E7%B7%91%E8%8C%B6_-_Flickr_-_Kanko.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Green_tea_-_%E7%B7%91%E8%8C%B6_-_Flickr_-_Kanko.jpg",
+    "artist": "Kanko / Wikimedia Commons contributor",
+    "license": "CC BY 2.0",
+    "credit": "Imported for Liu’an Guapian feature refresh; mime verified as image/jpeg"
+  },
+  {
+    "local": "green-tea-leaves-v1.jpg",
+    "title": "Leaves of green tea.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Leaves_of_green_tea.jpg/1280px-Leaves_of_green_tea.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Leaves_of_green_tea.jpg",
+    "artist": "Wikimedia Commons contributor",
+    "license": "See source page",
+    "credit": "Imported for Liu’an Guapian feature refresh; mime verified as image/jpeg"
+  },
+  {
+    "local": "green-tea-glass-v1.jpg",
+    "title": "A glass of green tea.JPG",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/A_glass_of_green_tea.JPG/1280px-A_glass_of_green_tea.JPG",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:A_glass_of_green_tea.JPG",
+    "artist": "Wikimedia Commons contributor",
+    "license": "See source page",
+    "credit": "Imported for Liu’an Guapian feature refresh; mime verified as image/jpeg"
   }
 ]
