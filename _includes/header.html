@@ -1,1 +1,26 @@
-<header class="site-header wrap"><div class="nav"><a class="brand" href="{{ page.home_url | default: '/' }}">{{ page.brand_name | default: site.title }}</a><nav>{{ content_nav }}</nav></div></header>
+{% assign lang_prefix = page.lang | default: 'en' %}
+{% if lang_prefix == 'zh-CN' %}{% assign lang_prefix = 'zh' %}{% endif %}
+<header class="site-header wrap">
+  <div class="nav">
+    <a class="brand" href="../index.html">{% if page.lang == 'zh-CN' %}中国茶志{% else %}China Tea Library{% endif %}</a>
+    <nav>
+      {% if page.lang == 'zh-CN' %}
+      <a href="../tea/index.html">茶叶</a>
+      <a href="../teaware/index.html">茶具</a>
+      <a href="../history/index.html">茶文化历史</a>
+      <a href="../drinks/index.html">现制茶饮</a>
+      <a href="../science/index.html">茶饮科技</a>
+      <a href="../about.html">About</a>
+      {% if page.lang_switch_url %}<a class="lang" href="{{ page.lang_switch_url }}">English</a>{% endif %}
+      {% else %}
+      <a href="../tea/index.html">Tea</a>
+      <a href="../teaware/index.html">Teaware</a>
+      <a href="../history/index.html">History</a>
+      <a href="../drinks/index.html">Fresh Tea Drinks</a>
+      <a href="../science/index.html">Tea Science</a>
+      <a href="../about.html">About</a>
+      {% if page.lang_switch_url %}<a class="lang" href="{{ page.lang_switch_url }}">中文</a>{% endif %}
+      {% endif %}
+    </nav>
+  </div>
+</header>

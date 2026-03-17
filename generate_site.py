@@ -9,7 +9,7 @@ def photo_figure(local, alt, caption):
     cred = ''
     if meta:
         cred = f' <span class="credit">Photo: <a href="{meta.get("descriptionUrl","#")}">{meta.get("artist","Unknown")}</a> · {meta.get("license","")}</span>'
-    return f'<figure class="photo"><img src="/china-tea/assets/img/photos/{local}" alt="{alt}" /><figcaption>{caption}{cred}</figcaption></figure>'
+    return f'<figure class="photo"><img src="assets/img/photos/{local}" alt="{alt}" /><figcaption>{caption}{cred}</figcaption></figure>'
 
 def page(title, desc, lang, prefix, brand, navs, switch, switch_label, body, image='/china-tea/assets/img/photos/longjing-plantation.jpg'):
     return f'''<!doctype html>
@@ -25,28 +25,28 @@ def page(title, desc, lang, prefix, brand, navs, switch, switch_label, body, ima
   <meta property="og:type" content="article" />
   <meta property="og:image" content="{BASE}{image.replace('/china-tea','')}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="/china-tea/assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header wrap">
     <div class="nav">
-      <a class="brand" href="/china-tea/{prefix}index.html">{brand}</a>
+      <a class="brand" href="{prefix}index.html">{brand}</a>
       <nav>
-        <a href="/china-tea/{prefix}tea/index.html">{navs[0]}</a>
-        <a href="/china-tea/{prefix}teaware/index.html">{navs[1]}</a>
-        <a href="/china-tea/{prefix}history/index.html">{navs[2]}</a>
-        <a href="/china-tea/{prefix}drinks/index.html">{navs[3]}</a>
-        <a href="/china-tea/{prefix}about.html">About</a>
+        <a href="{prefix}tea/index.html">{navs[0]}</a>
+        <a href="{prefix}teaware/index.html">{navs[1]}</a>
+        <a href="{prefix}history/index.html">{navs[2]}</a>
+        <a href="{prefix}drinks/index.html">{navs[3]}</a>
+        <a href="{prefix}about.html">About</a>
         <a class="lang" href="{switch}">{switch_label}</a>
       </nav>
     </div>
   </header>
   {body}
   <footer class="site-footer wrap">
-    <a href="/china-tea/{prefix}about.html">About</a>
-    <a href="/china-tea/{prefix}privacy.html">Privacy</a>
-    <a href="/china-tea/{prefix}contact.html">Contact</a>
-    <a href="/china-tea/{prefix}terms.html">Terms</a>
+    <a href="{prefix}about.html">About</a>
+    <a href="{prefix}privacy.html">Privacy</a>
+    <a href="{prefix}contact.html">Contact</a>
+    <a href="{prefix}terms.html">Terms</a>
   </footer>
 </body>
 </html>'''
@@ -69,12 +69,12 @@ for lang in ['en','zh']:
     brand = '中国茶志' if is_zh else 'China Tea Journal'
     switch_label = 'English' if is_zh else '中文'
     switch_home = '/china-tea/en/index.html' if is_zh else '/china-tea/zh/index.html'
-    home_body = f'''<main class="wrap"><section class="hero story-hero"><div class="hero-copy"><p class="eyebrow">{'中文版' if is_zh else 'English Edition'}</p><h1>{'中国茶：从产地、工艺到日常生活' if is_zh else 'Chinese tea from terroir and craft to everyday life'}</h1><p class="lede">{'这是一个用中英文讲中国茶的文化网站。我们优先从中文语境出发，再面向国际读者重写，让茶不只是“一个商品分类”，而是一套真实生活方式。' if is_zh else 'This bilingual site introduces Chinese tea through Chinese-source cultural context, then rewrites it for international readers so tea appears not merely as a product category but as a lived system of craft, place, and hospitality.'}</p></div>{photo_figure('longjing-plantation.jpg', 'Tea plantation in Longjing, Hangzhou', 'Longjing tea fields in Hangzhou.')}</section><section class="post-grid"><a class="post" href="/china-tea/{lang}/tea/index.html"><span class="tag">{'茶叶' if is_zh else 'Tea'}</span><h3>{'先从绿茶与龙井开始' if is_zh else 'Start with green tea and Longjing'}</h3><p>{'龙井专题已经升级为长文图文页，包含工艺、冲泡、历史与杭州旅行线索。' if is_zh else 'The Longjing feature has been expanded into a long-form illustrated article with craft, brewing, history, and Hangzhou travel context.'}</p></a></section></main>'''
+    home_body = f'''<main class="wrap"><section class="hero story-hero"><div class="hero-copy"><p class="eyebrow">{'中文版' if is_zh else 'English Edition'}</p><h1>{'中国茶：从产地、工艺到日常生活' if is_zh else 'Chinese tea from terroir and craft to everyday life'}</h1><p class="lede">{'这是一个用中英文讲中国茶的文化网站。我们优先从中文语境出发，再面向国际读者重写，让茶不只是“一个商品分类”，而是一套真实生活方式。' if is_zh else 'This bilingual site introduces Chinese tea through Chinese-source cultural context, then rewrites it for international readers so tea appears not merely as a product category but as a lived system of craft, place, and hospitality.'}</p></div>{photo_figure('longjing-plantation.jpg', 'Tea plantation in Longjing, Hangzhou', 'Longjing tea fields in Hangzhou.')}</section><section class="post-grid"><a class="post" href="{lang}/tea/index.html"><span class="tag">{'茶叶' if is_zh else 'Tea'}</span><h3>{'先从绿茶与龙井开始' if is_zh else 'Start with green tea and Longjing'}</h3><p>{'龙井专题已经升级为长文图文页，包含工艺、冲泡、历史与杭州旅行线索。' if is_zh else 'The Longjing feature has been expanded into a long-form illustrated article with craft, brewing, history, and Hangzhou travel context.'}</p></a></section></main>'''
     write(f'{lang}/index.html', page(f'{brand} — Home', 'Bilingual Chinese tea culture website.', 'zh-CN' if is_zh else 'en', prefix, brand, navs, switch_home, switch_label, home_body))
 
 # Tea section hubs
-write('en/tea/index.html', page('Tea Leaves — China Tea Journal', 'A section on Chinese tea leaves, beginning with an in-depth Longjing feature.', 'en', 'en/', 'China Tea Journal', nav_en, '/china-tea/zh/tea/index.html', '中文', f'''<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Tea Leaves</h1><p class="lede">This section begins with a detailed Longjing feature because Longjing is one of the best gateways into Chinese green tea. From there, the site will expand toward Bi Luo Chun, Huangshan Maofeng, Liu’an Guapian, and other regionally distinct teas.</p></section><div class="content-stream">{photo_figure('longjing-dried.jpg','Dry Longjing tea leaves','Dry Longjing leaves reveal the flat shape produced by pan-firing and pressing.')}{photo_figure('longjing-steeped.jpg','Longjing tea after steeping','After steeping, Longjing opens into a bright, clean liquor and tender leaf base.')}<section class="feature-card"><h2>Featured article</h2><p>Read the full Longjing feature for leaf shape, processing, brewing temperature, cold brew possibility, flavor profile, and Hangzhou context.</p><p><a class="btn" href="/china-tea/en/tea/longjing.html">Read the Longjing feature</a></p></section></div></main>''', image='/china-tea/assets/img/photos/longjing-dried.jpg')))
-write('zh/tea/index.html', page('茶叶 — 中国茶志', '从龙井开始，逐步扩展到更多中国代表性茶叶。', 'zh-CN', 'zh/', '中国茶志', nav_zh, '/china-tea/en/tea/index.html', 'English', f'''<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶叶</h1><p class="lede">这个栏目先从龙井切入，因为龙井几乎是理解中国绿茶最好的入口之一。接下来会继续扩展到碧螺春、黄山毛峰、六安瓜片、信阳毛尖等代表性茶叶。</p></section><div class="content-stream">{photo_figure('longjing-dried.jpg','龙井干茶','龙井干茶的扁平外形，与其炒制和压扁工艺高度相关。')}{photo_figure('longjing-steeped.jpg','冲泡后的龙井','冲泡后的龙井，汤色清亮，叶底嫩匀，能看出春茶的鲜活感。')}<section class="feature-card"><h2>本栏重点文章</h2><p>先阅读龙井专题：里面已经补充了工艺、冲泡、水温、香气、历史和杭州旅行相关内容。</p><p><a class="btn" href="/china-tea/zh/tea/longjing.html">阅读龙井专题</a></p></section></div></main>''', image='/china-tea/assets/img/photos/longjing-dried.jpg')))
+write('en/tea/index.html', page('Tea Leaves — China Tea Journal', 'A section on Chinese tea leaves, beginning with an in-depth Longjing feature.', 'en', 'en/', 'China Tea Journal', nav_en, '/china-tea/zh/tea/index.html', '中文', f'''<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Tea Leaves</h1><p class="lede">This section begins with a detailed Longjing feature because Longjing is one of the best gateways into Chinese green tea. From there, the site will expand toward Bi Luo Chun, Huangshan Maofeng, Liu’an Guapian, and other regionally distinct teas.</p></section><div class="content-stream">{photo_figure('longjing-dried.jpg','Dry Longjing tea leaves','Dry Longjing leaves reveal the flat shape produced by pan-firing and pressing.')}{photo_figure('longjing-steeped.jpg','Longjing tea after steeping','After steeping, Longjing opens into a bright, clean liquor and tender leaf base.')}<section class="feature-card"><h2>Featured article</h2><p>Read the full Longjing feature for leaf shape, processing, brewing temperature, cold brew possibility, flavor profile, and Hangzhou context.</p><p><a class="btn" href="en/tea/longjing.html">Read the Longjing feature</a></p></section></div></main>''', image='/china-tea/assets/img/photos/longjing-dried.jpg')))
+write('zh/tea/index.html', page('茶叶 — 中国茶志', '从龙井开始，逐步扩展到更多中国代表性茶叶。', 'zh-CN', 'zh/', '中国茶志', nav_zh, '/china-tea/en/tea/index.html', 'English', f'''<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶叶</h1><p class="lede">这个栏目先从龙井切入，因为龙井几乎是理解中国绿茶最好的入口之一。接下来会继续扩展到碧螺春、黄山毛峰、六安瓜片、信阳毛尖等代表性茶叶。</p></section><div class="content-stream">{photo_figure('longjing-dried.jpg','龙井干茶','龙井干茶的扁平外形，与其炒制和压扁工艺高度相关。')}{photo_figure('longjing-steeped.jpg','冲泡后的龙井','冲泡后的龙井，汤色清亮，叶底嫩匀，能看出春茶的鲜活感。')}<section class="feature-card"><h2>本栏重点文章</h2><p>先阅读龙井专题：里面已经补充了工艺、冲泡、水温、香气、历史和杭州旅行相关内容。</p><p><a class="btn" href="zh/tea/longjing.html">阅读龙井专题</a></p></section></div></main>''', image='/china-tea/assets/img/photos/longjing-dried.jpg')))
 
 # Longjing article
 zh_body = f'''<main class="page article-rich"><article><p class="eyebrow">绿茶专题</p><h1>龙井：从一杯绿茶看见杭州的春天、工艺与地方生活</h1><p class="meta">2026-03-16 · Long-form feature</p>
