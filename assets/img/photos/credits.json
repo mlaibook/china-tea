@@ -124,5 +124,41 @@
     "artist": "OpenClaw local editorial art",
     "license": "CC0",
     "credit": "Generated locally for this site"
+  },
+  {
+    "local": "tea-drink-square-v2.jpg",
+    "title": "Modern takeaway tea drink photo",
+    "source": "https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/1558857563-b371033873b8",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review"
+  },
+  {
+    "local": "bubble-tea-glass-v2.jpg",
+    "title": "Bubble tea in clear cup photo",
+    "source": "https://images.unsplash.com/photo-1525385133512-2f3bdd039054?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/1525385133512-2f3bdd039054",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review"
+  },
+  {
+    "local": "tea-service-closeup-v2.jpg",
+    "title": "Close-up brewed tea service photo",
+    "source": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/1495474472287-4d71bcdd2085",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review"
+  },
+  {
+    "local": "tea-cup-service-2-v2.jpg",
+    "title": "Multiple tea cups service photo",
+    "source": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/1470337458703-46ad1756a187",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review"
   }
 ]
