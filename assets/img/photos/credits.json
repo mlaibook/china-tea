@@ -97,5 +97,32 @@
     "artist": "",
     "license": "CC0",
     "credit": "<a href=\"//commons.wikimedia.org/wiki/User:Wuselig\" title=\"User:Wuselig\">Wuselig</a>"
+  },
+  {
+    "local": "ingredient-transparency-art-1.svg",
+    "title": "Ingredient transparency editorial illustration 1",
+    "source": "local",
+    "descriptionUrl": "",
+    "artist": "OpenClaw local editorial art",
+    "license": "CC0",
+    "credit": "Generated locally for this site"
+  },
+  {
+    "local": "ingredient-transparency-art-2.svg",
+    "title": "Ingredient transparency editorial illustration 2",
+    "source": "local",
+    "descriptionUrl": "",
+    "artist": "OpenClaw local editorial art",
+    "license": "CC0",
+    "credit": "Generated locally for this site"
+  },
+  {
+    "local": "ingredient-transparency-art-3.svg",
+    "title": "Ingredient transparency editorial illustration 3",
+    "source": "local",
+    "descriptionUrl": "",
+    "artist": "OpenClaw local editorial art",
+    "license": "CC0",
+    "credit": "Generated locally for this site"
   }
 ]
