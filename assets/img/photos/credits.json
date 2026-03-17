@@ -223,5 +223,41 @@
     "artist": "FoodTalks / 每日人物 source graphic",
     "license": "Unknown / to regularize later",
     "credit": "Imported for internal editorial review; used for article-specific illustration"
+  },
+  {
+    "local": "jasmine-dried-v1.jpg",
+    "title": "Dried jasmine tea.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Dried_jasmine_tea.jpg/1280px-Dried_jasmine_tea.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Dried_jasmine_tea.jpg",
+    "artist": "Wikimedia Commons contributor",
+    "license": "See source page",
+    "credit": "Imported for jasmine tea feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "jasmine-curls-v1.jpg",
+    "title": "China Royal Jasmine Curls tea.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/China_Royal_Jasmine_Curls_tea.jpg/1280px-China_Royal_Jasmine_Curls_tea.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:China_Royal_Jasmine_Curls_tea.jpg",
+    "artist": "Wikimedia Commons contributor",
+    "license": "See source page",
+    "credit": "Imported for jasmine tea feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "jasmine-dragon-pearls-v1.jpg",
+    "title": "Fujian Zhangzhou jasmine dragon pearls.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fujian_Zhangzhou_jasmine_dragon_pearls.jpg/1280px-Fujian_Zhangzhou_jasmine_dragon_pearls.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Fujian_Zhangzhou_jasmine_dragon_pearls.jpg",
+    "artist": "Wikimedia Commons contributor",
+    "license": "See source page",
+    "credit": "Imported for jasmine tea feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "jasmine-handrolled-v1.jpg",
+    "title": "Hand-rolled green tea scented with jasmine.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Hand-rolled_green_tea_scented_with_jasmine.jpg/1280px-Hand-rolled_green_tea_scented_with_jasmine.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Hand-rolled_green_tea_scented_with_jasmine.jpg",
+    "artist": "Wikimedia Commons contributor",
+    "license": "See source page",
+    "credit": "Imported for jasmine tea feature; mime verified as image/jpeg"
   }
 ]
