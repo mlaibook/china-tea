@@ -4,3 +4,11 @@
 {% if page.description %}<meta name="description" content="{{ page.description | escape }}" />{% endif %}
 <link rel="stylesheet" href="{{ page.asset_prefix | default: '' }}assets/css/style.css" />
 {% include google-tag.html %}
+
+{% assign canonical_url = site.url | default: "https://www.tealib.net" | append: page.url %}
+<link rel="canonical" href="{{ canonical_url | replace: "index.html", "" }}" />
+{% if page.lang_switch_url %}
+{% assign alt_lang = "en" %}{% if page.lang == "en" %}{% assign alt_lang = "zh-CN" %}{% endif %}
+<link rel="alternate" hreflang="{{ alt_lang }}" href="{{ site.url | default: "https://www.tealib.net" }}{{ page.lang_switch_url | replace: "../", "/" | replace: "../../", "/" | replace: "index.html", "" }}" />
+{% endif %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url | default: "https://www.tealib.net" }}/" />
