@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">干泡法中的建水位置与动线示意</title>
+  <desc id="desc">茶席上主泡器、公道杯、建水与盖置的相对位置，以及废水与出汤的工作动线。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f1e7"/>
+      <stop offset="100%" stop-color="#e8dcc8"/>
+    </linearGradient>
+    <linearGradient id="pot" x1="0" x2="1">
+      <stop offset="0%" stop-color="#b7865b"/>
+      <stop offset="100%" stop-color="#8e5d34"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#9fd0d8"/>
+      <stop offset="100%" stop-color="#5fa3b2"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 z" fill="#9c5c2b"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1440" height="840" rx="40" fill="#fdf9f2" stroke="#d7c7b4" stroke-width="4"/>
+  <text x="120" y="150" font-size="44" font-family="Inter, Arial, sans-serif" fill="#2d261f" font-weight="700">建水在干泡法茶席中的真实作用</text>
+  <text x="120" y="195" font-size="24" font-family="Inter, Arial, sans-serif" fill="#6f675e">不是“接废水的小桶”而已，而是让桌面、动线与审美同时成立的工作器。</text>
+
+  <rect x="180" y="280" width="420" height="360" rx="30" fill="#fff" stroke="#d7c7b4" stroke-width="3"/>
+  <text x="220" y="340" font-size="32" font-family="Inter, Arial, sans-serif" fill="#2d261f" font-weight="700">主泡区</text>
+  <ellipse cx="360" cy="460" rx="120" ry="82" fill="url(#pot)" stroke="#7f532d" stroke-width="5"/>
+  <ellipse cx="360" cy="430" rx="105" ry="28" fill="#d7b08d" opacity="0.9"/>
+  <path d="M480 430 C545 408 560 520 488 520" fill="none" stroke="#7f532d" stroke-width="18" stroke-linecap="round"/>
+  <text x="280" y="585" font-size="26" font-family="Inter, Arial, sans-serif" fill="#6f675e">盖碗 / 壶 / 小茶盘</text>
+
+  <rect x="660" y="300" width="280" height="180" rx="28" fill="#fff" stroke="#d7c7b4" stroke-width="3"/>
+  <path d="M730 360 h120 a18 18 0 0 1 18 18 v28 a18 18 0 0 1 -18 18 h-120 a18 18 0 0 1 -18 -18 v-28 a18 18 0 0 1 18 -18z" fill="#e9f0f1" stroke="#5fa3b2" stroke-width="4"/>
+  <path d="M850 390 h30" stroke="#5fa3b2" stroke-width="8" stroke-linecap="round"/>
+  <text x="708" y="450" font-size="28" font-family="Inter, Arial, sans-serif" fill="#2d261f" font-weight="700">公道杯</text>
+
+  <rect x="1000" y="260" width="360" height="420" rx="30" fill="#fff" stroke="#d7c7b4" stroke-width="3"/>
+  <ellipse cx="1180" cy="470" rx="125" ry="110" fill="#7a6250"/>
+  <ellipse cx="1180" cy="438" rx="96" ry="34" fill="#4f3f33"/>
+  <ellipse cx="1180" cy="462" rx="85" ry="24" fill="url(#water)" opacity="0.95"/>
+  <text x="1115" y="620" font-size="36" font-family="Inter, Arial, sans-serif" fill="#2d261f" font-weight="700">建水</text>
+  <text x="1080" y="655" font-size="24" font-family="Inter, Arial, sans-serif" fill="#6f675e">集中收纳温杯水、洗杯水、弃汤与茶渣</text>
+
+  <rect x="720" y="560" width="170" height="120" rx="24" fill="#fff" stroke="#d7c7b4" stroke-width="3"/>
+  <circle cx="805" cy="620" r="36" fill="#d9d1c3" stroke="#9f8c76" stroke-width="4"/>
+  <text x="748" y="710" font-size="26" font-family="Inter, Arial, sans-serif" fill="#2d261f" font-weight="700">盖置</text>
+
+  <path d="M480 430 C590 400 650 388 708 388" fill="none" stroke="#9c5c2b" stroke-width="8" stroke-dasharray="14 10" marker-end="url(#arrow)"/>
+  <text x="540" y="365" font-size="24" font-family="Inter, Arial, sans-serif" fill="#9c5c2b">出汤动线</text>
+
+  <path d="M860 430 C960 442 1010 446 1080 454" fill="none" stroke="#9c5c2b" stroke-width="8" stroke-dasharray="14 10" marker-end="url(#arrow)"/>
+  <text x="900" y="410" font-size="24" font-family="Inter, Arial, sans-serif" fill="#9c5c2b">温杯水 / 弃汤回收</text>
+
+  <path d="M420 520 C560 620 720 650 768 630" fill="none" stroke="#355e3b" stroke-width="8" stroke-dasharray="12 10" marker-end="url(#arrow)"/>
+  <text x="460" y="650" font-size="24" font-family="Inter, Arial, sans-serif" fill="#355e3b">揭盖时临时落点</text>
+
+  <rect x="180" y="720" width="1180" height="120" rx="24" fill="#efe6d9"/>
+  <text x="220" y="770" font-size="28" font-family="Inter, Arial, sans-serif" fill="#2d261f" font-weight="700">三个核心判断</text>
+  <text x="220" y="810" font-size="24" font-family="Inter, Arial, sans-serif" fill="#6f675e">1. 口径要能顺手接水，不必追求越大越好　2. 深度与重心决定泼溅风险　3. 建水颜色和材质会影响整张茶席的“干净感”</text>
+</svg>
