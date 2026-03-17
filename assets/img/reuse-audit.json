@@ -216,5 +216,29 @@
     "pages": [
       "zh/drinks/low-sugar-tea-drinks.html"
     ]
+  },
+  {
+    "file": "assets/img/photos/song-jian-bowl-freer-v1.jpg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Drinking_bowl%2C_Jian_ware_with_oil_spot_glaze%2C_China%2C_Fujian_Province%2C_Jian_kilns%2C_Northern_or_Southern_Song_dynasty%2C_probably_1100s_AD%2C_stoneware%2C_iron-colored_glaze_-_Freer_Gallery_of_Art_-_DSC05049.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Drinking_bowl,_Jian_ware_with_oil_spot_glaze,_China,_Fujian_Province,_Jian_kilns,_Northern_or_Southern_Song_dynasty,_probably_1100s_AD,_stoneware,_iron-colored_glaze_-_Freer_Gallery_of_Art_-_DSC05049.jpg",
+    "mime": "image/jpeg",
+    "usedIn": [
+      "zh/history/tea-baixi.html",
+      "en/history/tea-baixi.html",
+      "zh/history/index.html",
+      "en/history/index.html"
+    ],
+    "note": "Song Jian ware bowl used as lead/history visual for tea baixi article; validated with file mime-type image/jpeg."
+  },
+  {
+    "file": "assets/img/photos/matcha-scoop-v1.jpg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Matcha_Scoop.jpg/1280px-Matcha_Scoop.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Matcha_Scoop.jpg",
+    "mime": "image/jpeg",
+    "usedIn": [
+      "zh/history/tea-baixi.html",
+      "en/history/tea-baixi.html"
+    ],
+    "note": "Powdered-tea tool detail used to support diancha / powdered tea explanation; validated with file mime-type image/jpeg."
   }
 ]
