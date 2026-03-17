@@ -349,5 +349,41 @@
     "artist": "Unsplash source",
     "license": "Unknown / to regularize later",
     "credit": "Used in Phoenix Dancong feature for gongfu brewing context; mime verified as image/jpeg"
+  },
+  {
+    "local": "tea-service-closeup-v2.jpg",
+    "title": "Close-up brewed tea service photo",
+    "source": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/1495474472287-4d71bcdd2085",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Reused for gongdao cup feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "tea-service-tray-v2.jpg",
+    "title": "Tea service arranged on tray",
+    "source": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/1495474472287-4d71bcdd2085",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Reused for gongdao cup feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "tea-cup-service-v2.jpg",
+    "title": "Shared tea service scene",
+    "source": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/1470337458703-46ad1756a187",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Reused for gongdao cup feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "tea-cup-service-2-v2.jpg",
+    "title": "Multiple tea cups service photo",
+    "source": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/1470337458703-46ad1756a187",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Reused for gongdao cup feature; mime verified as image/jpeg"
   }
 ]
