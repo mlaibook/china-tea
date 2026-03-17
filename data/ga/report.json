@@ -1,31 +1,154 @@
 {
-  "generatedAt": "2026-03-17T04:09:48.720Z",
-  "source": "sample",
-  "note": "Live GA4 fetch skipped because credentials or property id are not configured.",
-  "propertyId": "",
+  "generatedAt": "2026-03-17T04:11:30.155Z",
+  "source": "ga4-data-api",
+  "note": "Live GA4 report generated from the Analytics Data API.",
+  "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 0,
-      "sessions": 0,
-      "views": 0,
-      "avgSessionDurationSeconds": 0,
+      "activeUsers": 15,
+      "sessions": 17,
+      "views": 91,
+      "avgSessionDurationSeconds": 1756.1587045294118,
       "engagementRate": 0
     },
     "last30Days": {
-      "activeUsers": 0,
-      "sessions": 0,
-      "views": 0,
-      "avgSessionDurationSeconds": 0,
+      "activeUsers": 15,
+      "sessions": 17,
+      "views": 91,
+      "avgSessionDurationSeconds": 1756.1587045294118,
       "engagementRate": 0
     }
   },
-  "topPages7d": [],
-  "topPages30d": [],
-  "topSections30d": [],
+  "topPages7d": [
+    {
+      "path": "/en/index.html",
+      "views": 12,
+      "activeUsers": 11
+    },
+    {
+      "path": "/",
+      "views": 11,
+      "activeUsers": 11
+    },
+    {
+      "path": "/china-tea/en/index.html",
+      "views": 9,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/zh/index.html",
+      "views": 8,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/",
+      "views": 5,
+      "activeUsers": 2
+    },
+    {
+      "path": "/china-tea/zh/tea/index.html",
+      "views": 5,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/en/about.html",
+      "views": 4,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/en/tea/index.html",
+      "views": 4,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/teaware/index.html",
+      "views": 4,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/index.html",
+      "views": 3,
+      "activeUsers": 1
+    }
+  ],
+  "topPages30d": [
+    {
+      "path": "/en/index.html",
+      "views": 12,
+      "activeUsers": 11
+    },
+    {
+      "path": "/",
+      "views": 11,
+      "activeUsers": 11
+    },
+    {
+      "path": "/china-tea/en/index.html",
+      "views": 9,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/zh/index.html",
+      "views": 8,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/",
+      "views": 5,
+      "activeUsers": 2
+    },
+    {
+      "path": "/china-tea/zh/tea/index.html",
+      "views": 5,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/en/about.html",
+      "views": 4,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/en/tea/index.html",
+      "views": 4,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/teaware/index.html",
+      "views": 4,
+      "activeUsers": 1
+    },
+    {
+      "path": "/china-tea/index.html",
+      "views": 3,
+      "activeUsers": 1
+    }
+  ],
+  "topSections30d": [
+    {
+      "section": "china-tea",
+      "views": 38,
+      "activeUsers": 8
+    },
+    {
+      "section": "index.html",
+      "views": 12,
+      "activeUsers": 11
+    },
+    {
+      "section": "home",
+      "views": 11,
+      "activeUsers": 11
+    },
+    {
+      "section": "teaware",
+      "views": 4,
+      "activeUsers": 1
+    }
+  ],
   "insights": [
-    "Set GA4_PROPERTY_ID to the numeric property id, not the G- measurement id.",
-    "Set GOOGLE_APPLICATION_CREDENTIALS to a service-account JSON file with Analytics Data API access.",
-    "Grant the service account read access to the target GA4 property before enabling cron automation."
+    "Top page over the last 7 days: /en/index.html (12 views).",
+    "Strongest section over the last 30 days: china-tea.",
+    "Use this report to refresh homepage hot links, section highlights, and editorial priorities."
   ]
 }
