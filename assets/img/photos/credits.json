@@ -268,5 +268,41 @@
     "artist": "Wikimedia Commons contributor",
     "license": "See source page",
     "credit": "Imported for jasmine tea feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "light-milk-tea-cups-v1.jpg",
+    "title": "Light milk tea cups lineup",
+    "source": "https://wx1.sinaimg.cn/mw1024/0066malqly4hz9yeibefzj30j90crjsm.jpg",
+    "descriptionUrl": "https://www.weibo.com/ttarticle/p/show?id=2309405142058884268972",
+    "artist": "霸王茶姬官微图源（经文章聚合页转引）",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review; mime verified as image/jpeg"
+  },
+  {
+    "local": "light-milk-tea-store-v1.jpg",
+    "title": "Tea brand storefront and queue visual",
+    "source": "https://wx1.sinaimg.cn/mw1024/0066malqly4hz9yel2rigj30j90eejsf.jpg",
+    "descriptionUrl": "https://www.weibo.com/ttarticle/p/show?id=2309405142058884268972",
+    "artist": "茶颜悦色官微图源（经文章聚合页转引）",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review; mime verified as image/jpeg"
+  },
+  {
+    "local": "light-milk-tea-chagee-v1.jpg",
+    "title": "Chagee light milk tea brand visual",
+    "source": "https://wx1.sinaimg.cn/mw1024/0066malqly4hz9yenocd1j30j90csjsi.jpg",
+    "descriptionUrl": "https://www.weibo.com/ttarticle/p/show?id=2309405142058884268972",
+    "artist": "霸王茶姬官微图源（经文章聚合页转引）",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review; mime verified as image/jpeg"
+  },
+  {
+    "local": "light-milk-tea-jasmine-v1.jpg",
+    "title": "Jasmine-forward light milk tea brand visual",
+    "source": "https://wx1.sinaimg.cn/mw1024/0066malqly4hz9yeq8yffj30j90cst9s.jpg",
+    "descriptionUrl": "https://www.weibo.com/ttarticle/p/show?id=2309405142058884268972",
+    "artist": "茉莉奶白官微图源（经文章聚合页转引）",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review; mime verified as image/jpeg"
   }
 ]
