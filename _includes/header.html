@@ -1,24 +1,25 @@
-{% assign lang_prefix = page.lang | default: 'en' %}
-{% if lang_prefix == 'zh-CN' %}{% assign lang_prefix = 'zh' %}{% endif %}
+{% assign lang_dir = 'en/' %}
+{% if page.lang == 'zh-CN' %}{% assign lang_dir = 'zh/' %}{% endif %}
+{% assign base_prefix = page.asset_prefix | default: '' %}
 <header class="site-header wrap">
   <div class="nav">
-    <a class="brand" href="{{ page.asset_prefix | default: '' }}index.html">{% if page.lang == 'zh-CN' %}中国茶志{% else %}China Tea Library{% endif %}</a>
+    <a class="brand" href="{{ base_prefix }}{{ lang_dir }}index.html">{% if page.lang == 'zh-CN' %}中国茶志{% else %}China Tea Library{% endif %}</a>
     <nav>
       {% if page.lang == 'zh-CN' %}
-      <a href="{{ page.asset_prefix | default: '' }}tea/index.html">茶叶</a>
-      <a href="{{ page.asset_prefix | default: '' }}teaware/index.html">茶具</a>
-      <a href="{{ page.asset_prefix | default: '' }}history/index.html">茶文化历史</a>
-      <a href="{{ page.asset_prefix | default: '' }}drinks/index.html">现制茶饮</a>
-      <a href="{{ page.asset_prefix | default: '' }}science/index.html">茶饮科技</a>
-      <a href="{{ page.asset_prefix | default: '' }}about.html">About</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}tea/index.html">茶叶</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}teaware/index.html">茶具</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}history/index.html">茶文化历史</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}drinks/index.html">现制茶饮</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}science/index.html">茶饮科技</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}about.html">About</a>
       {% if page.lang_switch_url %}<a class="lang" href="{{ page.lang_switch_url }}">English</a>{% endif %}
       {% else %}
-      <a href="{{ page.asset_prefix | default: '' }}tea/index.html">Tea</a>
-      <a href="{{ page.asset_prefix | default: '' }}teaware/index.html">Teaware</a>
-      <a href="{{ page.asset_prefix | default: '' }}history/index.html">History</a>
-      <a href="{{ page.asset_prefix | default: '' }}drinks/index.html">Fresh Tea Drinks</a>
-      <a href="{{ page.asset_prefix | default: '' }}science/index.html">Tea Science</a>
-      <a href="{{ page.asset_prefix | default: '' }}about.html">About</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}tea/index.html">Tea</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}teaware/index.html">Teaware</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}history/index.html">History</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}drinks/index.html">Fresh Tea Drinks</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}science/index.html">Tea Science</a>
+      <a href="{{ base_prefix }}{{ lang_dir }}about.html">About</a>
       {% if page.lang_switch_url %}<a class="lang" href="{{ page.lang_switch_url }}">中文</a>{% endif %}
       {% endif %}
     </nav>

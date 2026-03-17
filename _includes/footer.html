@@ -1,6 +1,9 @@
+{% assign lang_dir = 'en/' %}
+{% if page.lang == 'zh-CN' %}{% assign lang_dir = 'zh/' %}{% endif %}
+{% assign base_prefix = page.asset_prefix | default: '' %}
 <footer class="site-footer wrap">
-  <a href="{{ page.asset_prefix | default: '' }}about.html">About</a>
-  <a href="{{ page.asset_prefix | default: '' }}privacy.html">Privacy</a>
-  <a href="{{ page.asset_prefix | default: '' }}contact.html">Contact</a>
-  <a href="{{ page.asset_prefix | default: '' }}terms.html">Terms</a>
+  <a href="{{ base_prefix }}{{ lang_dir }}about.html">About</a>
+  <a href="{{ base_prefix }}{{ lang_dir }}privacy.html">Privacy</a>
+  <a href="{{ base_prefix }}{{ lang_dir }}contact.html">Contact</a>
+  <a href="{{ base_prefix }}{{ lang_dir }}terms.html">Terms</a>
 </footer>
