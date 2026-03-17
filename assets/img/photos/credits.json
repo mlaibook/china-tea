@@ -385,5 +385,41 @@
     "artist": "Unsplash source",
     "license": "Unknown / to regularize later",
     "credit": "Reused for gongdao cup feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "ingredient-iced-tea-v2.jpg",
+    "title": "Iced tea editorial photo",
+    "source": "existing local asset",
+    "descriptionUrl": "",
+    "artist": "Existing workspace asset",
+    "license": "Unknown / previously imported",
+    "credit": "Reused for bottled tea comeback feature; mime previously verified as image/jpeg"
+  },
+  {
+    "local": "ingredient-shop-counter-v2.jpg",
+    "title": "Drink counter editorial photo",
+    "source": "existing local asset",
+    "descriptionUrl": "",
+    "artist": "Existing workspace asset",
+    "license": "Unknown / previously imported",
+    "credit": "Reused for bottled tea comeback feature; mime previously verified as image/jpeg"
+  },
+  {
+    "local": "ingredient-clear-cup-v2.jpg",
+    "title": "Clear cup tea editorial photo",
+    "source": "existing local asset",
+    "descriptionUrl": "",
+    "artist": "Existing workspace asset",
+    "license": "Unknown / previously imported",
+    "credit": "Reused for bottled tea comeback feature; mime previously verified as image/jpeg"
+  },
+  {
+    "local": "ingredient-tea-pour-v2.jpg",
+    "title": "Tea pour editorial photo",
+    "source": "existing local asset",
+    "descriptionUrl": "",
+    "artist": "Existing workspace asset",
+    "license": "Unknown / previously imported",
+    "credit": "Reused for bottled tea comeback feature; mime previously verified as image/jpeg"
   }
 ]
