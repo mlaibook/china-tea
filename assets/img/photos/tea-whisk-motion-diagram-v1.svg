@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">茶筅击拂动作示意图</title>
+  <desc id="desc">以黑釉盏、白色汤花和竹制茶筅线稿表现宋式点茶中击拂茶汤的动作逻辑。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6efe3"/>
+      <stop offset="100%" stop-color="#efe2ca"/>
+    </linearGradient>
+    <radialGradient id="bowl" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#38322d"/>
+      <stop offset="70%" stop-color="#161413"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <ellipse cx="700" cy="565" rx="395" ry="210" fill="#2a2420" opacity="0.15"/>
+  <ellipse cx="700" cy="520" rx="365" ry="185" fill="url(#bowl)" stroke="#5a5048" stroke-width="10"/>
+  <ellipse cx="700" cy="520" rx="270" ry="120" fill="#f6f1e6"/>
+  <path d="M520 515c55-65 118-90 180-94 80-5 168 30 246 110" fill="none" stroke="#d6c09a" stroke-width="22" stroke-linecap="round" opacity="0.9"/>
+  <path d="M540 560c70-52 150-74 226-67 79 7 145 38 198 84" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.95"/>
+  <path d="M880 145c-58 102-111 198-158 286" fill="none" stroke="#9c7a42" stroke-width="24" stroke-linecap="round"/>
+  <g stroke="#cba567" stroke-width="7" stroke-linecap="round">
+    <path d="M725 438c20 40 28 81 24 126"/>
+    <path d="M743 432c26 42 39 83 38 132"/>
+    <path d="M761 427c30 43 49 87 54 137"/>
+    <path d="M779 423c35 45 57 90 69 141"/>
+    <path d="M797 419c39 47 66 95 84 145"/>
+    <path d="M709 444c11 39 12 80 2 120"/>
+    <path d="M693 447c4 39-2 77-18 116"/>
+    <path d="M677 450c-3 38-16 75-36 112"/>
+    <path d="M661 455c-10 37-30 72-54 106"/>
+    <path d="M645 462c-17 35-41 68-71 97"/>
+  </g>
+  <path d="M470 265c95-56 201-81 311-74 144 9 272 76 370 192" fill="none" stroke="#b89a73" stroke-width="10" stroke-dasharray="14 18" opacity="0.75"/>
+  <text x="112" y="136" font-size="46" fill="#4a4036" font-family="Georgia, 'Noto Serif SC', serif">击拂不是简单搅拌</text>
+  <text x="112" y="198" font-size="28" fill="#6b5d50" font-family="'Noto Sans SC', sans-serif">它是让茶末、热水与空气形成细密汤花的控制动作。</text>
+  <text x="112" y="242" font-size="28" fill="#6b5d50" font-family="'Noto Sans SC', sans-serif">宋代点茶审美因此特别依赖茶筅、盏色和手上节奏。</text>
+</svg>
