@@ -169,5 +169,41 @@
     "artist": "Wikimedia Commons source",
     "license": "Unknown / verify later",
     "credit": "Imported from Wikimedia for internal editorial review"
+  },
+  {
+    "local": "kale-drinks-collage-v1.png",
+    "title": "Kale drinks collage",
+    "source": "https://static.foodtalks.cn/image/post/2a87f0b5e2f4a0983821ff4108feb55fe0c1.png",
+    "descriptionUrl": "https://www.foodtalks.cn/news/57081",
+    "artist": "FoodTalks / 每日人物 source graphic",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review; used for article-specific illustration"
+  },
+  {
+    "local": "kale-cost-chart-v1.png",
+    "title": "Kale drink cost comparison chart",
+    "source": "https://static.foodtalks.cn/image/post/e118108e576a3bbd523507bc3afbcc9a3a12.png",
+    "descriptionUrl": "https://www.foodtalks.cn/news/57081",
+    "artist": "FoodTalks / 每日人物 source graphic",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review; used for article-specific illustration"
+  },
+  {
+    "local": "kale-calorie-chart-v1.png",
+    "title": "Kale drink calorie comparison chart",
+    "source": "https://static.foodtalks.cn/image/post/b273fdfd8b8a458f91d731d7dfe45cc4b6ee.png",
+    "descriptionUrl": "https://www.foodtalks.cn/news/57081",
+    "artist": "FoodTalks / 每日人物 source graphic",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review; used for article-specific illustration"
+  },
+  {
+    "local": "kale-marketing-visual-v1.png",
+    "title": "Kale drink marketing visual",
+    "source": "https://static.foodtalks.cn/image/post/930c9e41ff8e0453bdef6f57d745ca64d7db.png",
+    "descriptionUrl": "https://www.foodtalks.cn/news/57081",
+    "artist": "FoodTalks / 每日人物 source graphic",
+    "license": "Unknown / to regularize later",
+    "credit": "Imported for internal editorial review; used for article-specific illustration"
   }
 ]
