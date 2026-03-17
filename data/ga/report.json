@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-03-17T04:03:16.224Z",
+  "source": "sample",
+  "note": "Live GA4 fetch skipped because credentials or property id are not configured.",
+  "propertyId": "",
+  "measurementId": "G-4VCYC4P23R",
+  "summary": {
+    "last7Days": {
+      "activeUsers": 0,
+      "sessions": 0,
+      "views": 0,
+      "avgSessionDurationSeconds": 0,
+      "engagementRate": 0
+    },
+    "last30Days": {
+      "activeUsers": 0,
+      "sessions": 0,
+      "views": 0,
+      "avgSessionDurationSeconds": 0,
+      "engagementRate": 0
+    }
+  },
+  "topPages7d": [],
+  "topPages30d": [],
+  "topSections30d": [],
+  "insights": [
+    "Set GA4_PROPERTY_ID to the numeric property id, not the G- measurement id.",
+    "Set GOOGLE_APPLICATION_CREDENTIALS to a service-account JSON file with Analytics Data API access.",
+    "Grant the service account read access to the target GA4 property before enabling cron automation."
+  ]
+}
