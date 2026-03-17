@@ -160,5 +160,14 @@
     "artist": "Unsplash source",
     "license": "Unknown / to regularize later",
     "credit": "Imported for internal editorial review"
+  },
+  {
+    "local": "wikimedia-bubble-tea-counter-v2.jpg",
+    "title": "Bubble Tea-shop at night.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bubble_Tea-shop_at_night.jpg/330px-Bubble_Tea-shop_at_night.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Bubble_Tea-shop_at_night.jpg",
+    "artist": "Wikimedia Commons source",
+    "license": "Unknown / verify later",
+    "credit": "Imported from Wikimedia for internal editorial review"
   }
 ]
