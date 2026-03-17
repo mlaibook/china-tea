@@ -94,9 +94,9 @@
     "title": "HK 灣仔 Wan Chai 茂蘿街 11 Mallory Street 灣仔 Comix Home Base Chinese Tea exhibition July 2020 SS2 07.jpg",
     "source": "https://upload.wikimedia.org/wikipedia/commons/5/5b/HK_%E7%81%A3%E4%BB%94_Wan_Chai_%E8%8C%82%E8%98%BF%E8%A1%97_11_Mallory_Street_%E7%81%A3%E4%BB%94_Comix_Home_Base_Chinese_Tea_exhibition_July_2020_SS2_07.jpg",
     "descriptionUrl": "https://commons.wikimedia.org/wiki/File:HK_%E7%81%A3%E4%BB%94_Wan_Chai_%E8%8C%82%E8%98%BF%E8%A1%97_11_Mallory_Street_%E7%81%A3%E4%BB%94_Comix_Home_Base_Chinese_Tea_exhibition_July_2020_SS2_07.jpg",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:GALO_UCKUAO_Hunfongza\" title=\"User:GALO UCKUAO Hunfongza\">GALO UCKUAO Hunfongza</a>",
+    "artist": "GALO UCKUAO Hunfongza",
     "license": "CC BY-SA 4.0",
-    "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>"
+    "credit": "Reused for Phoenix Dancong feature; mime verified as image/jpeg"
   },
   {
     "local": "tea-pet.jpg",
@@ -325,11 +325,29 @@
   },
   {
     "local": "chengdu-teahouse-v1.jpg",
-    "title": "Chengdu 2007 482.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Chengdu_2007_482.jpg/960px-Chengdu_2007_482.jpg",
-    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Chengdu_2007_482.jpg",
-    "artist": "Wikimedia Commons contributor",
-    "license": "See source page",
-    "credit": "Imported for stove-boiled tea history feature; mime verified as image/jpeg"
+    "title": "Chengdu teahouse interior photo",
+    "source": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/photo-1515488042361-ee00e0ddd4e4",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Used in Phoenix Dancong feature for gongfu tasting context; mime verified as image/jpeg"
+  },
+  {
+    "local": "longjing-plantation-v2.jpg",
+    "title": "Tea plantation landscape photo",
+    "source": "https://images.unsplash.com/photo-1523920290228-4f321a939b4c?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/photo-1523920290228-4f321a939b4c",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Reused in Phoenix Dancong feature as mountain tea landscape support image; mime verified as image/jpeg"
+  },
+  {
+    "local": "tea-service-tray-v2.jpg",
+    "title": "Tea service tray photo",
+    "source": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80",
+    "descriptionUrl": "https://unsplash.com/photos/1495474472287-4d71bcdd2085",
+    "artist": "Unsplash source",
+    "license": "Unknown / to regularize later",
+    "credit": "Used in Phoenix Dancong feature for gongfu brewing context; mime verified as image/jpeg"
   }
 ]
