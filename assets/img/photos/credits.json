@@ -304,5 +304,32 @@
     "artist": "茉莉奶白官微图源（经文章聚合页转引）",
     "license": "Unknown / to regularize later",
     "credit": "Imported for internal editorial review; mime verified as image/jpeg"
+  },
+  {
+    "local": "song-wenhui-tu-v1.jpg",
+    "title": "文會圖.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%E6%96%87%E6%9C%83%E5%9C%96.jpg/960px-%E6%96%87%E6%9C%83%E5%9C%96.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:%E6%96%87%E6%9C%83%E5%9C%96.jpg",
+    "artist": "Wikimedia Commons contributor",
+    "license": "See source page",
+    "credit": "Imported for stove-boiled tea history feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "lu-yu-statue-v1.jpg",
+    "title": "Lu Yu.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/8/81/Lu_Yu.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Lu_Yu.jpg",
+    "artist": "Wikimedia Commons contributor",
+    "license": "See source page",
+    "credit": "Imported for stove-boiled tea history feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "chengdu-teahouse-v1.jpg",
+    "title": "Chengdu 2007 482.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Chengdu_2007_482.jpg/960px-Chengdu_2007_482.jpg",
+    "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Chengdu_2007_482.jpg",
+    "artist": "Wikimedia Commons contributor",
+    "license": "See source page",
+    "credit": "Imported for stove-boiled tea history feature; mime verified as image/jpeg"
   }
 ]
