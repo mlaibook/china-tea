@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-17T04:11:30.155Z",
+  "generatedAt": "2026-03-17T04:14:38.485Z",
   "source": "ga4-data-api",
-  "note": "Live GA4 report generated from the Analytics Data API.",
+  "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
@@ -32,32 +32,32 @@
       "activeUsers": 11
     },
     {
-      "path": "/china-tea/en/index.html",
+      "path": "/en/index.html",
       "views": 9,
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/zh/index.html",
+      "path": "/zh/index.html",
       "views": 8,
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/",
+      "path": "/",
       "views": 5,
       "activeUsers": 2
     },
     {
-      "path": "/china-tea/zh/tea/index.html",
+      "path": "/zh/tea/index.html",
       "views": 5,
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/en/about.html",
+      "path": "/en/about.html",
       "views": 4,
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/en/tea/index.html",
+      "path": "/en/tea/index.html",
       "views": 4,
       "activeUsers": 1
     },
@@ -67,8 +67,83 @@
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/index.html",
+      "path": "/index.html",
       "views": 3,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/index.html",
+      "views": 3,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/teaware/index.html",
+      "views": 3,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/tea/index.html",
+      "views": 3,
+      "activeUsers": 2
+    },
+    {
+      "path": "/en/history/index.html",
+      "views": 2,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/index.html",
+      "views": 2,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks/chagee-rise",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks/modern-tea-brands.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/history/matcha",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/science/index.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/tea/longjing.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/teaware/index.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/chagee-rise.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/modern-tea-brands.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/history/index.html",
+      "views": 1,
       "activeUsers": 1
     }
   ],
@@ -84,32 +159,32 @@
       "activeUsers": 11
     },
     {
-      "path": "/china-tea/en/index.html",
+      "path": "/en/index.html",
       "views": 9,
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/zh/index.html",
+      "path": "/zh/index.html",
       "views": 8,
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/",
+      "path": "/",
       "views": 5,
       "activeUsers": 2
     },
     {
-      "path": "/china-tea/zh/tea/index.html",
+      "path": "/zh/tea/index.html",
       "views": 5,
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/en/about.html",
+      "path": "/en/about.html",
       "views": 4,
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/en/tea/index.html",
+      "path": "/en/tea/index.html",
       "views": 4,
       "activeUsers": 1
     },
@@ -119,36 +194,145 @@
       "activeUsers": 1
     },
     {
-      "path": "/china-tea/index.html",
+      "path": "/index.html",
       "views": 3,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/index.html",
+      "views": 3,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/teaware/index.html",
+      "views": 3,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/tea/index.html",
+      "views": 3,
+      "activeUsers": 2
+    },
+    {
+      "path": "/en/history/index.html",
+      "views": 2,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/index.html",
+      "views": 2,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks/chagee-rise",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks/modern-tea-brands.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/history/matcha",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/science/index.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/tea/longjing.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/teaware/index.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/chagee-rise.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/modern-tea-brands.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/history/index.html",
+      "views": 1,
       "activeUsers": 1
     }
   ],
   "topSections30d": [
     {
-      "section": "china-tea",
-      "views": 38,
-      "activeUsers": 8
-    },
-    {
-      "section": "index.html",
-      "views": 12,
-      "activeUsers": 11
+      "section": "en-home",
+      "label": "英文首页",
+      "views": 21,
+      "activeUsers": 12
     },
     {
       "section": "home",
-      "views": 11,
-      "activeUsers": 11
+      "label": "首页",
+      "views": 19,
+      "activeUsers": 14
+    },
+    {
+      "section": "tea",
+      "label": "茶叶",
+      "views": 13,
+      "activeUsers": 5
+    },
+    {
+      "section": "drinks",
+      "label": "现制茶饮",
+      "views": 10,
+      "activeUsers": 7
+    },
+    {
+      "section": "zh-home",
+      "label": "中文首页",
+      "views": 8,
+      "activeUsers": 1
     },
     {
       "section": "teaware",
+      "label": "茶具",
+      "views": 8,
+      "activeUsers": 3
+    },
+    {
+      "section": "about.html",
+      "label": "about.html",
       "views": 4,
+      "activeUsers": 1
+    },
+    {
+      "section": "history",
+      "label": "茶文化历史",
+      "views": 4,
+      "activeUsers": 3
+    },
+    {
+      "section": "science",
+      "label": "科学/健康",
+      "views": 1,
       "activeUsers": 1
     }
   ],
   "insights": [
-    "Top page over the last 7 days: /en/index.html (12 views).",
-    "Strongest section over the last 30 days: china-tea.",
-    "Use this report to refresh homepage hot links, section highlights, and editorial priorities."
+    "近 7 天热门页面：/en/index.html（12 次浏览）。",
+    "近 30 天最强栏目：英文首页。",
+    "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
 }
