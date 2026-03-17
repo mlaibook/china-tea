@@ -34,7 +34,7 @@ Set local environment/config like this:
 
 - `GA4_PROPERTY_ID` — numeric GA4 property id
 - `GA4_MEASUREMENT_ID` — optional, current site measurement id like `G-XXXXXXXXXX`
-- `GOOGLE_APPLICATION_CREDENTIALS` — path to a local service-account JSON file
+- `GOOGLE_APPLICATION_CREDENTIALS` — path to a local GA read-only credential file stored outside git
 
 You can also place these in a local `.env.analytics` file in the repo root for the scripts to read.
 

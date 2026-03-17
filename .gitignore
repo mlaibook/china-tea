@@ -1,2 +1,9 @@
-
 .env.analytics
+.env
+.env.*
+secrets/
+*.pem
+*.p12
+*.key
+*service-account*.json
+*credential*.json

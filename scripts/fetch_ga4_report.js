@@ -30,7 +30,7 @@ function base64url(input) {
 function readCredentials() {
   const env = parseDotEnv(envPath);
   for (const [k,v] of Object.entries(env)) if (!(k in process.env)) process.env[k] = v;
-  const file = process.env.GOOGLE_APPLICATION_CREDENTIALS || process.env.GA4_CREDENTIALS_JSON;
+  const file = process.env.GOOGLE_APPLICATION_CREDENTIALS || process.env.GA4_LOCAL_GA_CREDENTIALS;
   if (!file || !fs.existsSync(file)) return null;
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
