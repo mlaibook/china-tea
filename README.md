@@ -23,17 +23,21 @@ This repo now includes a static `analytics.html` page for internal reporting.
 - `scripts/fetch_ga4_report.js` — fetches GA4 data via the Google Analytics Data API
 - `scripts/render_analytics_report.js` — renders `analytics.html` from `data/ga/report.json`
 - `scripts/update_analytics_report.sh` — fetch + render wrapper
+- `scripts/openclaw_refresh_analytics.sh` — local OpenClaw cron entrypoint; refreshes, commits, and pushes if data changed
 - `data/ga/report.json` — cached analytics snapshot used by the page
-- `.github/workflows/daily-analytics.yml` — daily refresh job
 
-### Required secrets for live GA4 data
+### Local GA4 configuration for OpenClaw cron
 
-Add these GitHub Actions secrets in the repo settings:
+This repo is now designed for local GA4 fetching through OpenClaw cron rather than GitHub Actions.
+
+Set local environment/config like this:
 
 - `GA4_PROPERTY_ID` — numeric GA4 property id
 - `GA4_MEASUREMENT_ID` — optional, current site measurement id like `G-XXXXXXXXXX`
-- `GA4_SERVICE_ACCOUNT_JSON` — full service account JSON with `analytics.readonly` access
+- `GOOGLE_APPLICATION_CREDENTIALS` — path to a local service-account JSON file
+
+You can also place these in a local `.env.analytics` file in the repo root for the scripts to read.
 
 Also make sure the service account email has at least read access to the target GA4 property.
 
-If credentials are missing, the workflow still renders a placeholder report so the page and cron wiring stay intact.
+If credentials are missing, the scripts still render a placeholder report so the static analytics page and local cron pipeline stay intact.
