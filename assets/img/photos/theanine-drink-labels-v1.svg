@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">功能性茶饮标签信息图</title>
+  <desc id="desc">展示功能性茶饮里常见的放松、专注、低糖和原叶现萃标签，以及研究判断顺序。</desc>
+  <style>
+    .bg{fill:#f9fbfd}.title{font:700 54px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#17324f}.p{font:400 25px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#35506c}.h{font:700 28px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#17324f}.s{font:400 21px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#53708c}.card{fill:#fff;stroke:#d9e6f2;stroke-width:2}.chip1{fill:#dff4e7}.chip2{fill:#fff0cc}.chip3{fill:#e5efff}.chip4{fill:#f7e4ff}
+    </style>
+  <rect class="bg" width="1600" height="900"/>
+  <text x="90" y="95" class="title">功能性茶饮热词很多，真正判断顺序应该更慢</text>
+  <text x="90" y="145" class="p">中文互联网常把“放松”“专注”“低糖”“真茶底”并列成一张好标签清单，但研究不会把它们直接相加成健康结论。</text>
+  <rect x="90" y="210" width="320" height="220" rx="28" class="chip1"/><text x="125" y="285" class="h">放松感</text><text x="125" y="335" class="p">茶氨酸、减压、平稳</text><text x="125" y="380" class="s">问：是概念，还是有效剂量？</text>
+  <rect x="450" y="210" width="320" height="220" rx="28" class="chip2"/><text x="485" y="285" class="h">专注感</text><text x="485" y="335" class="p">咖啡因、清醒、效率</text><text x="485" y="380" class="s">问：会不会同时更焦躁？</text>
+  <rect x="810" y="210" width="320" height="220" rx="28" class="chip3"/><text x="845" y="285" class="h">低糖</text><text x="845" y="335" class="p">少糖、0糖、控卡</text><text x="845" y="380" class="s">问：整杯结构是不是仍然偏重？</text>
+  <rect x="1170" y="210" width="320" height="220" rx="28" class="chip4"/><text x="1205" y="285" class="h">真茶底</text><text x="1205" y="335" class="p">原叶现萃、短配料表</text><text x="1205" y="380" class="s">问：茶只是符号，还是真主角？</text>
+  <rect x="90" y="500" width="1400" height="270" rx="24" class="card"/>
+  <text x="130" y="575" class="h">更接近研究的判断顺序</text>
+  <text x="130" y="635" class="p">① 先看这杯饮料到底想解决什么问题：提神、减压、替代高糖，还是纯营销叠词。</text>
+  <text x="130" y="685" class="p">② 再看关键变量：茶底、咖啡因、茶氨酸、糖、奶基底、杯量、使用场景。</text>
+  <text x="130" y="735" class="p">③ 最后才看能不能形成一句谨慎结论，而不是先被标签带着跑。</text>
+</svg>

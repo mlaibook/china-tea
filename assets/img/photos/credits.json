@@ -1,5 +1,32 @@
 [
   {
+    "local": "theanine-caffeine-mechanism-v1.svg",
+    "title": "茶氨酸与咖啡因协同机制示意图",
+    "source": "local",
+    "descriptionUrl": "",
+    "artist": "OpenClaw local editorial art",
+    "license": "CC0",
+    "credit": "Created locally for tea science feature on L-theanine, caffeine, and functional tea-drink claims; mime verified as image/svg+xml"
+  },
+  {
+    "local": "theanine-drink-labels-v1.svg",
+    "title": "功能性茶饮标签判断顺序信息图",
+    "source": "local",
+    "descriptionUrl": "",
+    "artist": "OpenClaw local editorial art",
+    "license": "CC0",
+    "credit": "Created locally for tea science feature on functional tea-drink labels and research framing; mime verified as image/svg+xml"
+  },
+  {
+    "local": "theanine-dose-boundary-v1.svg",
+    "title": "茶氨酸讨论中的剂量与边界信息图",
+    "source": "local",
+    "descriptionUrl": "",
+    "artist": "OpenClaw local editorial art",
+    "license": "CC0",
+    "credit": "Created locally for tea science feature on dose boundaries, study conditions, and consumer interpretation; mime verified as image/svg+xml"
+  },
+  {
     "local": "jianshui-dry-brewing-flow-v1.svg",
     "title": "Dry brewing jianshui workflow diagram",
     "source": "local",

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">茶氨酸与咖啡因协同机制示意图</title>
+  <desc id="desc">展示茶氨酸、咖啡因、主观体验与现代茶饮营销之间关系的中文信息图。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5fbf7"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <linearGradient id="tea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#84d39b"/>
+      <stop offset="100%" stop-color="#4d9c66"/>
+    </linearGradient>
+    <linearGradient id="caff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd780"/>
+      <stop offset="100%" stop-color="#f2a93b"/>
+    </linearGradient>
+    <linearGradient id="mind" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#98c8ff"/>
+      <stop offset="100%" stop-color="#5789d6"/>
+    </linearGradient>
+    <style>
+      .h1{font:700 56px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#183153}
+      .h2{font:700 28px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#183153}
+      .p{font:400 24px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#28425f}
+      .small{font:400 20px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#45607d}
+      .label{font:700 22px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#16314f}
+      .box{fill:#fff;stroke:#d7e3ef;stroke-width:2}
+      .arrow{stroke:#6d87a3;stroke-width:6;fill:none;marker-end:url(#m)}
+    </style>
+    <marker id="m" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#6d87a3"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <text x="90" y="95" class="h1">茶氨酸为什么常被说成“放松但不困”？</text>
+  <text x="90" y="140" class="p">一个更接近研究语境的理解：它不是把人按进睡眠，而是可能在特定剂量与搭配下，改变紧张感、注意状态与主观平稳感。</text>
+
+  <rect x="90" y="210" rx="28" ry="28" width="360" height="270" fill="url(#tea)" opacity="0.95"/>
+  <text x="130" y="275" class="h2">茶氨酸</text>
+  <text x="130" y="325" class="p">• 茶叶中的游离氨基酸之一</text>
+  <text x="130" y="365" class="p">• 常被讨论为压力感、放松感</text>
+  <text x="130" y="405" class="p">• 不等于“镇静剂”</text>
+  <text x="130" y="445" class="small">研究里更常看：主观紧张、任务表现、压力语境</text>
+
+  <rect x="620" y="210" rx="28" ry="28" width="360" height="270" fill="url(#caff)" opacity="0.98"/>
+  <text x="660" y="275" class="h2">咖啡因</text>
+  <text x="660" y="325" class="p">• 提升警觉与清醒感</text>
+  <text x="660" y="365" class="p">• 剂量、耐受、空腹状态很关键</text>
+  <text x="660" y="405" class="p">• 也可能带来心慌、紧张、抖感</text>
+  <text x="660" y="445" class="small">不是人人都“提神=舒服”</text>
+
+  <rect x="1150" y="210" rx="28" ry="28" width="360" height="270" fill="url(#mind)" opacity="0.96"/>
+  <text x="1190" y="275" class="h2">主观体验</text>
+  <text x="1190" y="325" class="p">• 更平稳</text>
+  <text x="1190" y="365" class="p">• 更容易专注</text>
+  <text x="1190" y="405" class="p">• 焦躁感没那么强</text>
+  <text x="1190" y="445" class="small">但这不是对所有人都稳定成立的结论</text>
+
+  <path d="M450 345 C520 345, 560 345, 620 345" class="arrow"/>
+  <path d="M980 345 C1050 345, 1080 345, 1150 345" class="arrow"/>
+  <path d="M450 395 C650 520, 1010 540, 1150 395" class="arrow" opacity="0.5"/>
+
+  <rect x="90" y="560" rx="24" ry="24" width="1420" height="310" class="box"/>
+  <text x="125" y="625" class="h2">研究里最容易被营销偷换的三件事</text>
+  <text x="125" y="685" class="label">1. “放松” ≠ “喝了就困”</text>
+  <text x="125" y="720" class="p">很多研究讨论的是压力反应、主观镇定感或任务状态，而不是把人直接推向睡眠。</text>
+  <text x="125" y="775" class="label">2. “更稳” ≠ 所有人都同样更稳</text>
+  <text x="125" y="810" class="p">个体差异、产品配方、茶底、咖啡因剂量、是否空腹饮用，都会改写体验。</text>
+  <text x="820" y="685" class="label">3. “含茶氨酸” ≠ 足够有功能感</text>
+  <text x="820" y="720" class="p">品牌常把概念前置，但一杯饮料是否真有研究可解释的体感，还要看实际含量与整体结构。</text>
+  <text x="820" y="810" class="small">中国茶志 · Tea Science</text>
+</svg>

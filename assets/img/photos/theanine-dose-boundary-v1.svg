@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">茶氨酸讨论中的剂量与边界信息图</title>
+  <desc id="desc">说明论文剂量、商业茶饮实际含量和消费者主观感受之间不能直接画等号。</desc>
+  <style>
+    .bg{fill:#f6faf8}.title{font:700 54px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#17324f}.p{font:400 25px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#35506c}.h{font:700 30px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#17324f}.s{font:400 21px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#53708c}.box{fill:#fff;stroke:#d8e5df;stroke-width:2}
+  </style>
+  <rect class="bg" width="1600" height="900"/>
+  <text x="90" y="95" class="title">为什么“论文里有茶氨酸”不能直接推成“这杯一定有感觉”</text>
+  <text x="90" y="145" class="p">茶氨酸话题最容易被简化的地方，是把研究中的剂量、实验条件与商业茶饮标签直接划上等号。</text>
+  <rect x="90" y="220" width="420" height="520" rx="26" class="box"/>
+  <text x="125" y="290" class="h">研究语境</text>
+  <text x="125" y="345" class="p">• 会控制剂量</text>
+  <text x="125" y="395" class="p">• 会区分是否与咖啡因同用</text>
+  <text x="125" y="445" class="p">• 会设定任务或压力场景</text>
+  <text x="125" y="495" class="p">• 会观察主观量表和表现指标</text>
+  <text x="125" y="555" class="s">所以研究结论通常是“在特定条件下可能出现某种差异”</text>
+  <rect x="590" y="220" width="420" height="520" rx="26" class="box"/>
+  <text x="625" y="290" class="h">商业茶饮语境</text>
+  <text x="625" y="345" class="p">• 常突出“含茶氨酸”概念</text>
+  <text x="625" y="395" class="p">• 但未必公开足量信息</text>
+  <text x="625" y="445" class="p">• 配方里还有糖、奶、香气、冰量</text>
+  <text x="625" y="495" class="p">• 消费场景更像通勤、加班、逛街</text>
+  <text x="625" y="555" class="s">所以标签价值不等于研究可解释的体感价值</text>
+  <rect x="1090" y="220" width="420" height="520" rx="26" class="box"/>
+  <text x="1125" y="290" class="h">消费者判断</text>
+  <text x="1125" y="345" class="p">• 先别把“放松”听成“睡眠”</text>
+  <text x="1125" y="395" class="p">• 先别把“含有”听成“足量”</text>
+  <text x="1125" y="445" class="p">• 先别把“更稳”听成“适合所有人”</text>
+  <text x="1125" y="495" class="p">• 最后看自己是否真想高频依赖它</text>
+  <text x="1125" y="555" class="s">成熟判断比被热词安慰更重要</text>
+</svg>
