@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">六安瓜片的叶形与工艺重点信息图</title>
+<desc id="desc">展示六安瓜片以叶片为主、不带芽梗、片形舒展，以及杀青、拉毛火、小火到老火等关键步骤。</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f7fbf1"/><stop offset="100%" stop-color="#eef6de"/></linearGradient>
+<linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f7faef"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<text x="80" y="110" font-size="54" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#23411f" font-weight="700">六安瓜片：叶形辨识与工艺节奏</text>
+<text x="80" y="155" font-size="26" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#4c6446">不是芽尖绿茶，而是少见地以成熟叶片为主体、强调“片形、火功、清鲜与熟栗香”的经典中国绿茶。</text>
+<rect x="70" y="210" rx="24" ry="24" width="460" height="600" fill="url(#card)" stroke="#b8c99a"/>
+<text x="110" y="275" font-size="34" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#2f4b25" font-weight="700">看外形</text>
+<g fill="none" stroke="#5c7c3d" stroke-width="10" stroke-linecap="round">
+<path d="M180 360 C240 280, 330 280, 390 360 C335 450, 245 450, 180 360Z"/>
+<path d="M170 500 C235 430, 320 435, 375 510 C318 580, 235 585, 170 500Z"/>
+<path d="M200 645 C260 570, 345 565, 410 645 C350 720, 260 725, 200 645Z"/>
+</g>
+<g stroke="#88a65a" stroke-width="4">
+<line x1="230" y1="360" x2="340" y2="360"/>
+<line x1="220" y1="505" x2="325" y2="510"/>
+<line x1="250" y1="645" x2="360" y2="645"/>
+</g>
+<text x="110" y="760" font-size="24" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#4d5d3f">关键词：单片叶、无明显芽头、边缘微翘、色泽宝绿带霜。</text>
+<rect x="570" y="210" rx="24" ry="24" width="460" height="600" fill="url(#card)" stroke="#b8c99a"/>
+<text x="610" y="275" font-size="34" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#2f4b25" font-weight="700">看制作</text>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#38512b">
+<circle cx="680" cy="360" r="34" fill="#dbe8bc" stroke="#88a65a"/><text x="668" y="370" font-size="24" font-weight="700">1</text>
+<text x="740" y="370" font-size="28">采片：多取开面叶，不以芽尖取胜</text>
+<circle cx="680" cy="470" r="34" fill="#dbe8bc" stroke="#88a65a"/><text x="668" y="480" font-size="24" font-weight="700">2</text>
+<text x="740" y="480" font-size="28">杀青：稳住清气，避免生青味残留</text>
+<circle cx="680" cy="580" r="34" fill="#dbe8bc" stroke="#88a65a"/><text x="668" y="590" font-size="24" font-weight="700">3</text>
+<text x="740" y="590" font-size="28">拉毛火：把叶片做得舒展、轻松、不黏</text>
+<circle cx="680" cy="690" r="34" fill="#dbe8bc" stroke="#88a65a"/><text x="668" y="700" font-size="24" font-weight="700">4</text>
+<text x="740" y="700" font-size="28">小火与老火：熟栗香、锅香、骨架感由此形成</text>
+</g>
+<rect x="1070" y="210" rx="24" ry="24" width="460" height="600" fill="url(#card)" stroke="#b8c99a"/>
+<text x="1110" y="275" font-size="34" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#2f4b25" font-weight="700">看冲泡与风味</text>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#38512b">
+<text x="1110" y="360" font-size="28">• 水温：85–90°C，更适合看片形舒展</text>
+<text x="1110" y="445" font-size="28">• 器具：玻璃杯或盖碗，少量多次</text>
+<text x="1110" y="530" font-size="28">• 香气：熟栗、清鲜、微火香，不追爆香</text>
+<text x="1110" y="615" font-size="28">• 口感：鲜爽中带厚度，尾段常有回甘</text>
+<text x="1110" y="700" font-size="28">• 误区：别用“越嫩越好”去套它</text>
+</g>
+<text x="80" y="860" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#59714b">OpenClaw 本地编辑信息图 · 用于六安瓜片专题配图</text>
+</svg>
