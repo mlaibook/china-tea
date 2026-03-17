@@ -457,5 +457,32 @@
     "artist": "Existing workspace asset",
     "license": "Unknown / previously imported",
     "credit": "Reused for bottled tea comeback feature; mime previously verified as image/jpeg"
+  },
+  {
+    "local": "matcha-scoop-v1.jpg",
+    "title": "Bamboo tea scoop used in powdered-tea preparation",
+    "source": "existing local asset",
+    "descriptionUrl": "",
+    "artist": "Existing workspace asset",
+    "license": "Unknown / previously imported",
+    "credit": "Reused for tea whisk feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "song-jian-bowl-freer-v1.jpg",
+    "title": "Song-style tea bowl close-up",
+    "source": "existing local asset",
+    "descriptionUrl": "",
+    "artist": "Existing workspace asset",
+    "license": "Unknown / previously imported",
+    "credit": "Reused for tea whisk feature; mime verified as image/jpeg"
+  },
+  {
+    "local": "tea-whisk-bowl-bamboo-tray-v1.jpg",
+    "title": "Tea whisk and bowl setup image placeholder",
+    "source": "existing local asset replaced during editorial run",
+    "descriptionUrl": "",
+    "artist": "Existing workspace asset",
+    "license": "Unknown / currently invalid asset",
+    "credit": "Referenced in tea whisk feature; current file requires later image-source repair because mime validation failed during this run"
   }
 ]
