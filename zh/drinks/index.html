@@ -8,11 +8,10 @@ description: "新式茶饮不是传统的反面，而是中国茶在城市消费
 ---
 {% assign drinks_all = site.zh_drinks | sort: 'date' | reverse %}
 {% assign drinks_featured = drinks_all | where: 'featured', true %}
-<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>现制茶饮</h1><p class="lede">这里集中追踪中国新茶饮的品牌扩张、产品语言、健康叙事与中文互联网里的高传播话题。现在这个栏目已经改成 collection 驱动：文章会自动按日期倒序更新，置顶也可以通过 metadata 控制。</p></section>
+<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>现制茶饮</h1><p class="lede">这里集中追踪中国新茶饮的品牌扩张、产品语言、健康叙事与中文互联网里的高传播话题：从连锁品牌的快速扩张，到轻乳茶、低糖、鲜果茶、配料表透明，再到消费者如何在日常里重新理解“喝茶”这件事。</p></section>
 <section class="section-index-blocks">
   <section class="feature-card feature-panel">
     <h2>最新 / 热点文章</h2>
-    <p>上面这组保留图文入口，适合先看最新更新与代表性话题；下面的全部文章则改成更紧凑的一行式列表，方便快速浏览。</p>
     <div class="feature-links">
       {% for post in drinks_all limit:2 %}
       <a class="feature-link" href="{{ post.url }}">
