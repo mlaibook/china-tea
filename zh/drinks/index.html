@@ -6,66 +6,57 @@ asset_prefix: "../../"
 title: 现制茶饮 — 中国茶志
 description: "新式茶饮不是传统的反面，而是中国茶在城市消费环境中的当代表达。它延续了中国人对于拼配、调味、社交与便捷取饮的长期偏好。"
 ---
-<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>现制茶饮</h1><p class="lede">现制茶饮不是传统茶的对立面，而是当代城市生活对茶的一次重新组织。</p></section>
-<section class="section-index-blocks">
-  <section class="feature-card feature-panel">
-    <h2>置顶文章</h2>
-    <p>按发布时间排序的最新内容，适合先看最近更新。</p>
-    <div class="feature-links">
-      <a class="feature-link" href="../../zh/drinks/bottled-tea-comeback.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/ingredient-iced-tea-v2.jpg" alt="无糖瓶装茶为什么又成了中国饮料货架上的硬通货" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最新文章</span>
-    <h3>无糖瓶装茶为什么又成了中国饮料货架上的硬通货：东方树叶、三得利、果子熟了与“代糖退潮后的真实茶感”竞争</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../zh/drinks/new-tea.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/longjing-dried-v2.jpg" alt="为什么新式茶饮也在中国茶文化的连续谱里" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最热文章</span>
-    <h3>为什么新式茶饮也在中国茶文化的连续谱里</h3>
-  </div>
-</a>
+{% assign drinks_all = site.zh_drinks | sort: 'date' | reverse %}
+{% assign drinks_featured = site.zh_drinks | where: 'featured', true | sort: 'date' | reverse %}
+<main class="wrap">
+  <section class="hero story-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">现制茶饮</p>
+      <h1>把中国茶放回城市日常：从品牌扩张到配方叙事，再到中文互联网里的饮品热点</h1>
+      <p class="lede">这个栏目现在已经改成 collection 驱动：文章会按照 front matter 里的日期自动排序，置顶文章也会按 metadata 自动汇总。这样既能保留原有发布 URL，又能让栏目页持续自动更新，不再依赖手工维护链接清单。</p>
+      <div class="toc"><span class="pill">按日期自动更新</span><span class="pill">置顶精选</span><span class="pill">现制茶饮</span><span class="pill">品牌</span><span class="pill">配方趋势</span><span class="pill">消费文化</span></div>
+    </div>
+    <figure class="photo">
+      <img src="../../assets/img/photos/milk-tea.jpg" alt="现代城市中的现制茶饮" />
+      <figcaption>新茶饮不是传统的反面，而是中国茶继续进入高频都市生活的一种方式。</figcaption>
+    </figure>
+  </section>
+
+  <section class="feature-card hot-strip">
+    <div class="hot-head">
+      <h2>置顶精选</h2>
+      <span class="hot-badge">Featured</span>
+    </div>
+    <p>这一组由 front matter 里的 <code>featured: true</code> 控制，再按日期倒序排序。以后要置顶或撤下某篇文章，只需要改文章 metadata，不用重写栏目页。</p>
+    <div class="post-grid">
+      {% for post in drinks_featured limit:4 %}
+      <a class="post" href="{{ post.url }}">
+        <span class="tag">精选</span>
+        <h3>{{ post.index_title | default: post.title }}</h3>
+        <p>{{ post.index_description | default: post.description }}</p>
+      </a>
+      {% endfor %}
     </div>
   </section>
-  <section class="feature-card archive-panel">
-    <h2>全部文章</h2>
-    <p>按时间倒序浏览本栏目全部文章。</p>
-    <div class="archive-list"><a class="archive-item" href="../../zh/drinks/bottled-tea-comeback.html">
-  <span class="archive-item-title">无糖瓶装茶为什么又成了中国饮料货架上的硬通货：东方树叶、三得利、果子熟了与“代糖退潮后的真实茶感”竞争</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a><a class="archive-item" href="../../zh/drinks/light-milk-tea-return.html">
-  <span class="archive-item-title">轻乳茶为什么从一杯爆款变成一条赛道：茶颜、茶姬、爷爷不泡茶与“闻香识品牌”时代的新茶饮重排</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a><a class="archive-item" href="../../zh/drinks/kale-drinks.html">
-  <span class="archive-item-title">羽衣甘蓝为什么会从“绿化带蔬菜”变成茶饮顶流：小绿水、纤体瓶与健康焦虑生意学</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a><a class="archive-item" href="../../zh/drinks/ingredient-list-transparency.html">
-  <span class="archive-item-title">为什么“配料表透明、真茶底、少添加”成了茶饮新热点：2026 年现制茶饮信任感之争</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a><a class="archive-item" href="../../zh/drinks/low-sugar-tea-drinks.html">
-  <span class="archive-item-title">低糖茶饮为什么这么火：当代消费者到底在买“更健康”，还是在买“健康感”？</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a><a class="archive-item" href="../../zh/drinks/chagee-rise.html">
-  <span class="archive-item-title">霸王茶姬的崛起发展之路：从区域品牌到全国连锁，再到东方茶饮叙事的放大器</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../zh/drinks/modern-tea-brands.html">
-  <span class="archive-item-title">现制茶饮为什么会爆火：喜茶、霸王茶姬、茶百道与“星巴克化”的城市日常</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../zh/drinks/new-tea.html">
-  <span class="archive-item-title">为什么新式茶饮也在中国茶文化的连续谱里</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a>
+
+  <section class="feature-card">
+    <div class="hot-head">
+      <h2>最新发布</h2>
+      <span class="hot-badge">Newest</span>
+    </div>
+    <p>下面按时间整理这个栏目里的文章更新：有些更偏品牌与行业，有些更偏配方与健康表达，也有一些专门讨论中文互联网里最容易扩散的饮品话题。</p>
+    <div class="post-grid">
+      {% for post in drinks_all %}
+      <a class="post" href="{{ post.url }}">
+        <span class="tag">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <h3>{{ post.index_title | default: post.title }}</h3>
+        <p>{{ post.index_description | default: post.description }}</p>
+      </a>
+      {% endfor %}
     </div>
   </section>
-</section>
-<article class="card">
-  <a href="fruit-tea-return.html">
-    <p class="eyebrow">饮品消费深读</p>
-    <h2>鲜果茶为什么又回到新茶饮主战场</h2>
-    <p>从杨枝甘露、葡萄茶、柠檬茶到椰子水系产品，拆解鲜果茶如何在轻乳茶与低糖叙事之外，重新成为最适合夏季传播与门店上新的主战场。</p>
-  </a>
-</article>
+</main>
+      {% endfor %}
+    </div>
+  </section>
 </main>

@@ -3,3 +3,11 @@ markdown: kramdown
 permalink: none
 
 url: https://www.tealib.net
+
+collections:
+  zh_drinks:
+    output: true
+    permalink: /zh/drinks/:name.html
+  en_drinks:
+    output: true
+    permalink: /en/drinks/:name.html
