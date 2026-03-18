@@ -22,5 +22,29 @@
     "source": "https://commons.wikimedia.org/wiki/File:Huxinting_Teahouse_2016.jpg",
     "direct": "https://commons.wikimedia.org/wiki/Special:FilePath/Huxinting%20Teahouse%202016.jpg",
     "note": "Shanghai Huxinting Teahouse image used to illustrate the teahouse as part of urban public and scenic life."
+  },
+  {
+    "file": "assets/img/photos/tea-cup-service-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-cup-service-v2.jpg",
+    "note": "Reused in the Chinese and English tea tasting cup feature as a clean pale-cup visual supporting discussion of liquor color, cup wall traces, and tasting-style observation."
+  },
+  {
+    "file": "assets/img/photos/tea-cup-service-2-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-cup-service-2-v2.jpg",
+    "note": "Reused in the tea tasting cup feature to support discussion of comparability, multi-cup observation, and standardized vessel logic."
+  },
+  {
+    "file": "assets/img/photos/tea-service-closeup-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-service-closeup-v2.jpg",
+    "note": "Reused in the tea tasting cup feature to illustrate pale porcelain surfaces and close-range observation of liquor and aroma traces."
+  },
+  {
+    "file": "assets/img/photos/tea-service-tray-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-service-tray-v2.jpg",
+    "note": "Reused in the tea tasting cup feature to support discussion of recordable comparison, order, and tasting workflow."
   }
 ]
