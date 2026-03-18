@@ -37,14 +37,7 @@ description: "从茶叶、茶具、茶文化历史到现制茶饮，系统介绍
   <section class="feature-card archive-panel">
     <h2>最新发布</h2>
     <p>从全部栏目中提取最近更新的文章。</p>
-    <div class="archive-list">
-      {% for post in latest_posts %}
-      <a class="archive-item" href="{{ post.url }}">
-        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
-        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
-      </a>
-      {% endfor %}
-    </div>
+    {% include homepage_latest_list.html posts=latest_posts %}
   </section>
 
   <section class="feature-card feature-panel">

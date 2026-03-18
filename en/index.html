@@ -37,14 +37,7 @@ description: "Chinese tea culture, from leaves and teaware to history and contem
   <section class="feature-card archive-panel">
     <h2>Latest stories</h2>
     <p>The four most recent articles across all sections.</p>
-    <div class="archive-list">
-      {% for post in latest_posts %}
-      <a class="archive-item" href="{{ post.url }}">
-        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
-        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
-      </a>
-      {% endfor %}
-    </div>
+    {% include homepage_latest_list.html posts=latest_posts %}
   </section>
 
   <section class="feature-card feature-panel">
