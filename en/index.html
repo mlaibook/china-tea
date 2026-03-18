@@ -6,4 +6,57 @@ asset_prefix: "../"
 title: China Tea Library — English Edition
 description: "Chinese tea culture, from leaves and teaware to history and contemporary tea drinks."
 ---
-<main class="wrap"><section class="hero story-hero"><div class="hero-copy"><p class="eyebrow">English Edition</p><h1>A homepage that shows both what is new and what is most worth reading first</h1><p class="lede">This refresh keeps the front page split into two clear tracks. The latest block leans on the site’s actual recent file updates and then gets hand-balanced across sections; the “most popular” block is presented honestly as an editorial selection, not fake analytics, with emphasis on strong entry points for new readers.</p><div class="toc"><span class="pill">Latest stories</span><span class="pill">Editors’ picks</span><span class="pill">Tea leaves</span><span class="pill">Teaware</span><span class="pill">History</span><span class="pill">Modern tea drinks</span><span class="pill">Research guides</span></div></div><figure class="photo"><img src="../assets/img/photos/longjing-plantation-v2.jpg" alt="Tea plantation in Longjing, Hangzhou" /><figcaption>Chinese tea is not a fixed archive but a living mix of leaves, vessels, history, and urban everyday culture.</figcaption></figure></section><section class="feature-card hot-strip"><div class="hot-head"><h2>Most worth reading now</h2><span class="hot-badge">Editors’ Picks</span></div><p>This block is curated by editorial judgment: high-interest, high-density, representative pieces that quickly show first-time visitors what the site can do best.</p><div class="post-grid"><a class="post" href="../en/drinks/modern-tea-brands.html"><span class="tag">Picked</span><h3>Why modern tea brands exploded</h3><p>Still the clearest fast entry into contemporary Chinese tea culture here: brand scale, store logic, urban habit formation, and why tea became so visible again in city life.</p></a><a class="post" href="../en/tea/longjing.html"><span class="tag">Picked</span><h3>Longjing and the spring logic of Chinese green tea</h3><p>One of the best classic starting points on the site. Read this first and many other tea pages become easier to place inside the wider Chinese tea map.</p></a><a class="post" href="../en/history/matcha.html"><span class="tag">Picked</span><h3>Matcha in Chinese history</h3><p>A familiar subject for international readers, but with enough depth to open into Song whisked tea, East Asian transmission, and the modern revival of older forms.</p></a><a class="post" href="../en/teaware/gaiwan.html"><span class="tag">Picked</span><h3>What a gaiwan really is</h3><p>This is one of the strongest teaware entry points on the site, turning the vessel back into the center of the story: structure, technique, history, and tea-table logic.</p></a></div></section><section class="feature-card"><div class="hot-head"><h2>Latest stories</h2><span class="hot-badge">New</span></div><p>This row now reflects the freshest site updates more directly, while still avoiding a front page dominated by only one section. Research-led pieces, teaware, and brand observation are mixed together on purpose.</p><div class="post-grid"><a class="post" href="../en/science/tea-drink-health-signals.html"><span class="tag">Latest</span><h3>Do low sugar, real-leaf brewing, and short ingredient lists automatically mean healthier tea drinks?</h3><p>A strong lead story for the latest block because it speaks directly to one of the hottest current tea-drink health narratives while keeping the argument grounded in actual research logic.</p></a><a class="post" href="../en/science/tea-gut-microbiome.html"><span class="tag">Latest</span><h3>Tea polyphenols, catechins, and the gut microbiome</h3><p>One of the site’s densest new research guides, useful both on its own and as a framing piece for readers moving deeper into health, function, and evidence questions around tea.</p></a><a class="post" href="../en/teaware/chasen.html"><span class="tag">Latest</span><h3>Why the tea whisk has become popular again</h3><p>I kept a newly refreshed teaware piece in the latest strip so the homepage does not read only as beverage trend coverage. Song-style revival, bamboo craft, and practical mistakes all meet here.</p></a><a class="post" href="../en/science/chagee-rise.html"><span class="tag">Latest</span><h3>The rise of Chagee</h3><p>This is the most natural brand-focused recent pick for the homepage right now: it captures chain competition, category ambition, and how “Oriental tea” storytelling scales nationally.</p></a></div></section><section class="feature-card"><h2>How to start browsing</h2><p>If you want foundations, begin with Longjing, pu-erh, oolong, and gaiwan. If you want the site at its most current, move into Chagee, light milk tea, low-sugar tea drinks, ingredient transparency, L-theanine, and caffeine debates. If you want older forms returning in the present, matcha, whisk culture, jianzhan, and stove-boiled tea make a strong route.</p></section><section class="photo-wall"><figure class="photo"><img src="../assets/img/photos/longjing-steeped-v2.jpg" alt="Steeped Longjing tea" /><figcaption>Classic tea knowledge is still one of the surest ways into the wider Chinese tea world.</figcaption></figure><figure class="photo"><img src="../assets/img/photos/jianzhan.jpg" alt="Jianzhan bowl" /><figcaption>Teaware is not decorative background; it changes how tea, technique, and history are understood.</figcaption></figure><figure class="photo"><img src="../assets/img/photos/milk-tea.jpg" alt="Modern tea drink" /><figcaption>Modern tea drinks are not the opposite of tradition, but one of the forms through which tea keeps expanding in daily life.</figcaption></figure></section><section class="post-grid"><a class="post" href="../en/tea/index.html"><span class="tag">Section</span><h3>Tea leaves</h3><p>Longjing, pu-erh, oolong, dancong, jasmine tea, black tea, and other core entry points into Chinese tea knowledge.</p></a><a class="post" href="../en/teaware/index.html"><span class="tag">Section</span><h3>Teaware</h3><p>Gaiwan, gongdao cup, tea whisk, jianshui, jianzhan, Jingdezhen, and the object logic behind Chinese tea tables.</p></a><a class="post" href="../en/history/index.html"><span class="tag">Section</span><h3>History</h3><p>Matcha, whisking, tea dao, stove-boiled tea, and other historical forms that keep returning in contemporary tea culture.</p></a><a class="post" href="../en/drinks/index.html"><span class="tag">Section</span><h3>Modern tea drinks</h3><p>Brands, category shifts, ingredient language, and the fast-moving urban side of Chinese tea right now.</p></a></section></main>
+{% assign tea_posts = site.en_tea | sort: 'date' | reverse %}
+{% assign teaware_posts = site.en_teaware | sort: 'date' | reverse %}
+{% assign history_posts = site.en_history | sort: 'date' | reverse %}
+{% assign drinks_posts = site.en_drinks | sort: 'date' | reverse %}
+{% assign science_posts = site.en_science | sort: 'date' | reverse %}
+{% assign all_posts = tea_posts | concat: teaware_posts | concat: history_posts | concat: drinks_posts | concat: science_posts | sort: 'date' | reverse %}
+{% assign latest_posts = all_posts | slice: 0, 4 %}
+{% assign featured_posts = all_posts | where: 'featured', true | slice: 0, 6 %}
+<main class="wrap">
+  <section class="hero story-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">English Edition</p>
+      <h1>Chinese tea is more than tea leaves</h1>
+      <p class="lede">This site follows Chinese tea through leaves, teaware, history, modern tea drinks, and the changing ways tea still lives in everyday life.</p>
+      <div class="toc">
+        <span class="pill">Tea leaves</span>
+        <span class="pill">Teaware</span>
+        <span class="pill">History</span>
+        <span class="pill">Modern tea drinks</span>
+        <span class="pill">Research guides</span>
+      </div>
+    </div>
+    <figure class="photo">
+      <img src="../assets/img/photos/longjing-plantation-v2.jpg" alt="Tea plantation in Longjing, Hangzhou" />
+      <figcaption>From mountains and vessels to city drinking habits, Chinese tea keeps changing without losing continuity.</figcaption>
+    </figure>
+  </section>
+
+  <section class="feature-card archive-panel">
+    <h2>Latest stories</h2>
+    <p>The four most recent articles across all sections.</p>
+    <div class="archive-list">
+      {% for post in latest_posts %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="feature-card feature-panel">
+    <h2>Editors’ picks</h2>
+    {% include section_highlights.html posts=featured_posts featured_posts=featured_posts latest_label="Picked" featured_label="Picked" fallback_image="../assets/img/photos/milk-tea.jpg" %}
+  </section>
+
+  <section class="post-grid">
+    <a class="post" href="../en/tea/index.html"><span class="tag">Section</span><h3>Tea leaves</h3><p>Longjing, pu-erh, oolong, dancong, jasmine tea, and other core entry points into Chinese tea knowledge.</p></a>
+    <a class="post" href="../en/teaware/index.html"><span class="tag">Section</span><h3>Teaware</h3><p>Gaiwan, gongdao cup, jianzhan, Jingdezhen, and the object logic behind Chinese tea tables.</p></a>
+    <a class="post" href="../en/history/index.html"><span class="tag">Section</span><h3>History</h3><p>Matcha, whisking, tea aesthetics, and historical forms that keep returning in contemporary tea culture.</p></a>
+    <a class="post" href="../en/drinks/index.html"><span class="tag">Section</span><h3>Modern tea drinks</h3><p>Brands, formulas, store logic, and the fast-moving urban side of Chinese tea right now.</p></a>
+    <a class="post" href="../en/science/index.html"><span class="tag">Section</span><h3>Research guides</h3><p>Evidence-led reading on tea, tea drinks, health claims, and the science that shapes public discussion.</p></a>
+  </section>
+</main>

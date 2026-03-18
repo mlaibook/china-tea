@@ -1,5 +1,5 @@
 {% assign section_posts = include.posts %}
-{% assign highlight_posts = section_posts | slice: 0, 2 | concat: include.featured_posts | uniq %}
+{% assign highlight_posts = section_posts | slice: 0, 2 | concat: include.featured_posts | uniq | slice: 0, 4 %}
 {% assign fallback_image = include.fallback_image | default: '../../assets/img/photos/milk-tea.jpg' %}
 {% assign latest_label = include.latest_label | default: 'Latest' %}
 {% assign featured_label = include.featured_label | default: 'Featured' %}
