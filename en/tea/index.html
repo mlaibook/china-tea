@@ -15,7 +15,7 @@ description: "From classic tea types and mountain regions to processing logic an
     <div class="feature-links">
       {% for post in posts_all limit:2 %}
       <a class="feature-link" href="{{ post.url }}">
-        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <figure class="feature-link-media"><img src="{{ post.thumbnail_image | default: post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.thumbnail_alt | default: post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
         <div class="feature-link-body">
           <span class="feature-chip">Latest</span>
           <h3>{{ post.index_title | default: post.title }}</h3>
@@ -25,7 +25,7 @@ description: "From classic tea types and mountain regions to processing logic an
       {% endfor %}
       {% for post in posts_featured limit:2 %}
       <a class="feature-link" href="{{ post.url }}">
-        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <figure class="feature-link-media"><img src="{{ post.thumbnail_image | default: post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.thumbnail_alt | default: post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
         <div class="feature-link-body">
           <span class="feature-chip">Featured</span>
           <h3>{{ post.index_title | default: post.title }}</h3>
