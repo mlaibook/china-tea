@@ -12,14 +12,19 @@ description: "Chinese tea culture, from leaves and teaware to history and contem
 {% assign drinks_posts = site.en_drinks | sort: 'date' | reverse %}
 {% assign science_posts = site.en_science | sort: 'date' | reverse %}
 {% assign all_posts = tea_posts | concat: teaware_posts | concat: history_posts | concat: drinks_posts | concat: science_posts | sort: 'date' | reverse %}
-{% assign latest_posts = all_posts | slice: 0, 4 %}
-{% assign featured_posts = all_posts | where: 'featured', true | slice: 0, 6 %}
+{% assign latest_posts = all_posts | slice: 0, 5 %}
+{% assign hot_urls = "/en/drinks/light-milk-tea-return.html|/en/drinks/chagee-rise.html|/en/history/teahouse-revival-history.html|/en/tea/wuyi-rock-tea-rougui-shuixian.html|/en/science/tea-drink-caffeine-sleep-window.html|/en/teaware/tea-tasting-cup.html" | split: "|" %}
+{% assign featured_posts = "" | split: "" %}
+{% for hot_url in hot_urls %}
+  {% assign matched = all_posts | where: 'url', hot_url %}
+  {% assign featured_posts = featured_posts | concat: matched %}
+{% endfor %}
 <main class="wrap">
   <section class="hero story-hero">
     <div class="hero-copy">
       <p class="eyebrow">English Edition</p>
       <h1>Chinese tea is more than tea leaves</h1>
-      <p class="lede">This site follows Chinese tea through leaves, teaware, history, modern tea drinks, and the changing ways tea still lives in everyday life.</p>
+      <p class="lede">From mountain tea and teaware to teahouse history, modern tea chains, and research-led explainers, this homepage keeps both the newest reading and the strongest entry points in view.</p>
       <div class="toc">
         <span class="pill">Tea leaves</span>
         <span class="pill">Teaware</span>
@@ -30,26 +35,27 @@ description: "Chinese tea culture, from leaves and teaware to history and contem
     </div>
     <figure class="photo">
       <img src="../assets/img/photos/longjing-plantation-v2.jpg" alt="Tea plantation in Longjing, Hangzhou" />
-      <figcaption>From mountains and vessels to city drinking habits, Chinese tea keeps changing without losing continuity.</figcaption>
+      <figcaption>You can enter Chinese tea through a leaf, a vessel, a teahouse, or a modern takeaway cup and still arrive at the same larger story.</figcaption>
     </figure>
   </section>
 
   <section class="feature-card archive-panel">
     <h2>Latest stories</h2>
-    <p>The four most recent articles across all sections.</p>
+    <p>The newest long-form pieces across the site, spanning teaware, rock tea, teahouse history, tea-drink trends, and current research debates.</p>
     {% include homepage_latest_list.html posts=latest_posts %}
   </section>
 
   <section class="feature-card feature-panel">
-    <h2>Editors’ picks</h2>
-    {% include homepage_featured_grid.html posts=featured_posts chip_label="Picked" fallback_image="../assets/img/photos/milk-tea.jpg" %}
+    <h2>Best places to start</h2>
+    <p>Until real analytics are wired in, this block is curated editorially: high-interest subjects, strong explanatory value, representative scope, and articles that give first-time visitors a clear feel for the site.</p>
+    {% include homepage_featured_grid.html posts=featured_posts chip_label="Recommended" fallback_image="../assets/img/photos/milk-tea.jpg" %}
   </section>
 
   <section class="post-grid">
     <a class="post" href="../en/tea/index.html"><span class="tag">Section</span><h3>Tea leaves</h3><p>Longjing, pu-erh, oolong, dancong, jasmine tea, and other core entry points into Chinese tea knowledge.</p></a>
-    <a class="post" href="../en/teaware/index.html"><span class="tag">Section</span><h3>Teaware</h3><p>Gaiwan, gongdao cup, jianzhan, Jingdezhen, and the object logic behind Chinese tea tables.</p></a>
-    <a class="post" href="../en/history/index.html"><span class="tag">Section</span><h3>History</h3><p>Matcha, whisking, tea aesthetics, and historical forms that keep returning in contemporary tea culture.</p></a>
+    <a class="post" href="../en/teaware/index.html"><span class="tag">Section</span><h3>Teaware</h3><p>Gaiwan, gongdao cup, jianzhan, Jingdezhen, and the tasting cup that makes tea judgment more legible.</p></a>
+    <a class="post" href="../en/history/index.html"><span class="tag">Section</span><h3>History</h3><p>Matcha, whisking, tea aesthetics, teahouses, and historical forms that keep returning in contemporary tea culture.</p></a>
     <a class="post" href="../en/drinks/index.html"><span class="tag">Section</span><h3>Modern tea drinks</h3><p>Brands, formulas, store logic, and the fast-moving urban side of Chinese tea right now.</p></a>
-    <a class="post" href="../en/science/index.html"><span class="tag">Section</span><h3>Research guides</h3><p>Evidence-led reading on tea, tea drinks, health claims, and the science that shapes public discussion.</p></a>
+    <a class="post" href="../en/science/index.html"><span class="tag">Section</span><h3>Research guides</h3><p>Evidence-led reading on caffeine, sweeteners, gut microbiome claims, hydration talk, and the science shaping tea discussion.</p></a>
   </section>
 </main>

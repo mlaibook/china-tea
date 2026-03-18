@@ -12,14 +12,19 @@ description: "从茶叶、茶具、茶文化历史到现制茶饮，系统介绍
 {% assign drinks_posts = site.zh_drinks | sort: 'date' | reverse %}
 {% assign science_posts = site.zh_science | sort: 'date' | reverse %}
 {% assign all_posts = tea_posts | concat: teaware_posts | concat: history_posts | concat: drinks_posts | concat: science_posts | sort: 'date' | reverse %}
-{% assign latest_posts = all_posts | slice: 0, 4 %}
-{% assign featured_posts = all_posts | where: 'featured', true | slice: 0, 6 %}
+{% assign latest_posts = all_posts | slice: 0, 5 %}
+{% assign hot_urls = "/zh/drinks/light-milk-tea-return.html|/zh/drinks/chagee-rise.html|/zh/history/teahouse-revival-history.html|/zh/tea/wuyi-rock-tea-rougui-shuixian.html|/zh/science/tea-drink-caffeine-sleep-window.html|/zh/teaware/tea-tasting-cup.html" | split: "|" %}
+{% assign featured_posts = "" | split: "" %}
+{% for hot_url in hot_urls %}
+  {% assign matched = all_posts | where: 'url', hot_url %}
+  {% assign featured_posts = featured_posts | concat: matched %}
+{% endfor %}
 <main class="wrap">
   <section class="hero story-hero">
     <div class="hero-copy">
       <p class="eyebrow">中文版本</p>
       <h1>中国茶，不止是茶叶</h1>
-      <p class="lede">这里从茶叶、茶具、历史到现制茶饮，持续整理中国茶在当下仍然活着的风味、器物、知识与城市经验。</p>
+      <p class="lede">从山场、器物、历史到现制茶饮与研究争议，这里持续整理中国茶在今天最值得追踪的新文章，也给第一次进站的读者留出一条好入口。</p>
       <div class="toc">
         <span class="pill">茶叶</span>
         <span class="pill">茶具</span>
@@ -30,26 +35,27 @@ description: "从茶叶、茶具、茶文化历史到现制茶饮，系统介绍
     </div>
     <figure class="photo">
       <img src="../assets/img/photos/longjing-plantation-v2.jpg" alt="杭州龙井茶园" />
-      <figcaption>从山场、器物到城市饮用，中国茶始终在变化，也始终在延续。</figcaption>
+      <figcaption>既能从一片茶叶开始，也能从一只杯子、一家茶馆或一杯城市茶饮重新进入中国茶。</figcaption>
     </figure>
   </section>
 
   <section class="feature-card archive-panel">
     <h2>最新发布</h2>
-    <p>从全部栏目中提取最近更新的文章。</p>
+    <p>优先看这一轮刚上线的深稿，覆盖茶具、岩茶、茶馆史、茶饮话题与研究热点。</p>
     {% include homepage_latest_list.html posts=latest_posts %}
   </section>
 
   <section class="feature-card feature-panel">
-    <h2>编辑精选文章</h2>
-    {% include homepage_featured_grid.html posts=featured_posts chip_label="精选" fallback_image="../assets/img/photos/milk-tea.jpg" %}
+    <h2>最值得先看的文章</h2>
+    <p>没有接入真实流量统计时，这里按编辑精选整理：优先主题吸引力强、信息密度高、代表性足、适合新访客迅速进入站点的文章。</p>
+    {% include homepage_featured_grid.html posts=featured_posts chip_label="推荐" fallback_image="../assets/img/photos/milk-tea.jpg" %}
   </section>
 
   <section class="post-grid">
     <a class="post" href="../zh/tea/index.html"><span class="tag">栏目</span><h3>茶叶</h3><p>从龙井、普洱、乌龙到凤凰单丛、茉莉花茶，建立理解中国茶的基础坐标。</p></a>
-    <a class="post" href="../zh/teaware/index.html"><span class="tag">栏目</span><h3>茶具</h3><p>盖碗、公道杯、建盏、景德镇与茶筅，都是中国茶桌秩序与审美的一部分。</p></a>
-    <a class="post" href="../zh/history/index.html"><span class="tag">栏目</span><h3>茶文化历史</h3><p>抹茶、点茶、茶百戏、茶道与万里茶道，把今天的流行重新放回更长的历史里。</p></a>
+    <a class="post" href="../zh/teaware/index.html"><span class="tag">栏目</span><h3>茶具</h3><p>盖碗、公道杯、建盏、景德镇与审评杯，把喝茶这件事里的手感、秩序与判断讲清楚。</p></a>
+    <a class="post" href="../zh/history/index.html"><span class="tag">栏目</span><h3>茶文化历史</h3><p>抹茶、点茶、茶百戏、茶道、茶馆与万里茶道，把今天的流行重新放回更长的历史里。</p></a>
     <a class="post" href="../zh/drinks/index.html"><span class="tag">栏目</span><h3>现制茶饮</h3><p>品牌、配方、门店与消费语境，追踪中国城市茶饮如何持续变化。</p></a>
-    <a class="post" href="../zh/science/index.html"><span class="tag">栏目</span><h3>研究导读</h3><p>围绕茶叶、茶饮与健康研究里的高讨论主题，整理更可靠的证据与判断框架。</p></a>
+    <a class="post" href="../zh/science/index.html"><span class="tag">栏目</span><h3>研究导读</h3><p>围绕咖啡因、代糖、肠道菌群、补水感等高讨论主题，整理更可靠的证据与判断框架。</p></a>
   </section>
 </main>
