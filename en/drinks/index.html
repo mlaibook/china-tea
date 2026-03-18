@@ -7,7 +7,7 @@ title: Fresh Tea Drinks — China Tea Library
 description: "Contemporary tea drinks inherit older Chinese habits of scenting, blending, fruit pairing, and seasonal refreshment. The modern tea shop is not outside tea culture; it is one of its current urban stages."
 ---
 {% assign drinks_all = site.en_drinks | sort: 'date' | reverse %}
-{% assign drinks_featured = site.en_drinks | where: 'featured', true | sort: 'date' | reverse %}
+{% assign drinks_featured = drinks_all | where: 'featured', true %}
 <main class="wrap">
   <section class="hero story-hero">
     <div class="hero-copy">

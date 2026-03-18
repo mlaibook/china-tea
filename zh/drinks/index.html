@@ -7,7 +7,7 @@ title: 现制茶饮 — 中国茶志
 description: "新式茶饮不是传统的反面，而是中国茶在城市消费环境中的当代表达。它延续了中国人对于拼配、调味、社交与便捷取饮的长期偏好。"
 ---
 {% assign drinks_all = site.zh_drinks | sort: 'date' | reverse %}
-{% assign drinks_featured = site.zh_drinks | where: 'featured', true | sort: 'date' | reverse %}
+{% assign drinks_featured = drinks_all | where: 'featured', true %}
 <main class="wrap">
   <section class="hero story-hero">
     <div class="hero-copy">
