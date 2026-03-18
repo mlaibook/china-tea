@@ -3,97 +3,48 @@ lang_switch_url: "../../en/tea/index.html"
 layout: page
 lang: zh-CN
 asset_prefix: "../../"
-title: 茶叶 — 中国茶志
-description: "从龙井开始，逐步扩展到更多中国代表性茶叶。"
+title: "茶叶 - China Tea Library"
+description: "从经典茶类、产地工艺到品牌化入口，这里集中整理中国茶叶的关键阅读路径。"
 ---
-<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶叶</h1><p class="lede">这个栏目先从龙井切入，因为龙井几乎是理解中国绿茶最好的入口之一。现在已补入六安瓜片专题，用来说明中国绿茶并不只讲嫩芽，也讲叶片、火功与山场；也加入白茶长文，把福鼎、政和、白毫银针、白牡丹、寿眉与年份争议放回同一张知识地图里。接下来会继续扩展到碧螺春、黄山毛峰、信阳毛尖等代表性茶叶。</p></section>
+{% assign posts_all = site.zh_tea | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶叶</h1><p class="lede">从经典茶类、产地工艺到品牌化入口，这里集中整理中国茶叶的关键阅读路径。</p></section>
 <section class="section-index-blocks">
   <section class="feature-card feature-panel">
-    <h2>置顶文章</h2>
-    <p>按发布时间排序的最新内容，适合先看最近更新。</p>
+    <h2>最新 / 热点文章</h2>
     <div class="feature-links">
-      <a class="feature-link" href="../../zh/tea/white-tea.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/green-tea-leaves-v1.jpg" alt="白茶为什么最容易被误读成越老越好：从福鼎、政和到白毫银针、白牡丹、寿眉，讲清一类最会把时间写进叶子的茶" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最新文章</span>
-    <h3>白茶为什么最容易被误读成“越老越好”：从福鼎、政和到白毫银针、白牡丹、寿眉，讲清一类最会把时间写进叶子的茶</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../zh/tea/fenghuang-dancong.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/oolong-tea.jpg" alt="凤凰单丛为什么值得从鸭屎香讲起：从潮州山场、香型谱系到工夫泡法，理解一类最会说香的乌龙茶" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最新文章</span>
-    <h3>凤凰单丛为什么值得从鸭屎香讲起：从潮州山场、香型谱系到工夫泡法，理解一类最会说“香”的乌龙茶</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../zh/tea/bama-tea.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/wikimedia-tea-shop-v2.jpg" alt="临街茶叶店与橱窗陈列，更贴近八马茶业这篇文章讨论的品牌门店与零售场景" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最新文章</span>
-    <h3>八马茶业为什么能成为很多人认识中国茶的品牌入口：从铁观音、岩茶、白茶到被品牌化的茶类认知</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../zh/tea/jasmine.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/jasmine-dried-v1.jpg" alt="茉莉花茶：从福州窨制到横州鲜花，理解一杯中国花茶为什么既讲工艺也讲产地" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最新文章</span>
-    <h3>茉莉花茶：从福州窨制到横州鲜花，理解一杯中国花茶为什么既讲工艺也讲产地</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../zh/tea/longjing.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/longjing-plantation-v2.jpg" alt="龙井：从一杯绿茶看见杭州的春天、工艺与地方生活" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最热文章</span>
-    <h3>龙井：从一杯绿茶看见杭州的春天、工艺与地方生活</h3>
-  </div>
-</a>
+      {% for post in posts_all limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">最新文章</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+      {% for post in posts_featured limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">热点 / 置顶</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
     </div>
   </section>
   <section class="feature-card archive-panel">
     <h2>全部文章</h2>
-    <p>按时间倒序浏览本栏目全部文章。</p>
+    <p>按时间降序浏览本栏目全部文章。</p>
     <div class="archive-list">
-      <a class="archive-item" href="../../zh/tea/white-tea.html">
-  <span class="archive-item-title">白茶为什么最容易被误读成“越老越好”：从福鼎、政和到白毫银针、白牡丹、寿眉，讲清一类最会把时间写进叶子的茶</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-18">2026-03-18</time> · 更新：<time datetime="2026-03-18">2026-03-18</time></span>
-</a>
-      <a class="archive-item" href="../../zh/tea/luan-guapian.html">
-  <span class="archive-item-title">六安瓜片为什么值得在春茶季单独讲透：从大别山产区、去芽取片、火功层次到冲泡辨识的完整理解</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-18">2026-03-18</time></span>
-</a>
-      <a class="archive-item" href="../../zh/tea/fenghuang-dancong.html">
-  <span class="archive-item-title">凤凰单丛为什么值得从鸭屎香讲起：从潮州山场、香型谱系到工夫泡法，理解一类最会说“香”的乌龙茶</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/tea/bama-tea.html">
-  <span class="archive-item-title">八马茶业为什么能成为很多人认识中国茶的品牌入口：从铁观音、岩茶、白茶到被品牌化的茶类认知</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/tea/jasmine.html">
-  <span class="archive-item-title">茉莉花茶：从福州窨制到横州鲜花，理解一杯中国花茶为什么既讲工艺也讲产地</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/tea/longjing.html">
-  <span class="archive-item-title">龙井：从一杯绿茶看见杭州的春天、工艺与地方生活</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../zh/tea/black.html">
-  <span class="archive-item-title">红茶：从正山小种到金骏眉，从武夷到英国与印度</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../zh/tea/puer.html">
-  <span class="archive-item-title">普洱茶为什么不能只被理解成“陈年茶”：从云南大叶种、生熟分野、山头逻辑到仓储与冲泡的完整认识</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/tea/oolong.html">
-  <span class="archive-item-title">乌龙茶：球形、条索、大叶与最宽广的工艺表达</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-    </div>
-  </section>
-</section></main>
->创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a>
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
   </section>
 </section></main>

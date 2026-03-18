@@ -3,67 +3,48 @@ lang_switch_url: "../../en/teaware/index.html"
 layout: page
 lang: zh-CN
 asset_prefix: "../../"
-title: 茶具 — 中国茶志
-description: "中国茶具不是单纯的器物陈列，而是冲泡逻辑、控温方式与待客礼仪的一部分。理解茶具，等于理解中国茶怎么被做得更好喝。"
+title: "茶具 - China Tea Library"
+description: "从盖碗、公道杯到建盏、茶滤与景德镇，茶具不仅是器物，也是茶桌秩序与审美判断的一部分。"
 ---
-<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶具</h1><p class="lede">茶具不是附属品，而是泡茶方法的一部分。器形、保温、出汤和使用场景，都会改变一杯茶的呈现。</p></section>
+{% assign posts_all = site.zh_teaware | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶具</h1><p class="lede">从盖碗、公道杯到建盏、茶滤与景德镇，茶具不仅是器物，也是茶桌秩序与审美判断的一部分。</p></section>
 <section class="section-index-blocks">
   <section class="feature-card feature-panel">
-    <h2>置顶文章</h2>
-    <p>按发布时间排序的最新内容，适合先看最近更新。</p>
+    <h2>最新 / 热点文章</h2>
     <div class="feature-links">
-      <a class="feature-link" href="../../zh/teaware/tea-strainer.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/teacup-strainer-v1.jpg" alt="茶滤为什么在今天重新值得被认真讨论" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最新文章</span>
-    <h3>茶滤为什么在今天重新值得被认真讨论：单孔、球孔、滤网、断碎、出汤速度与最常见误区</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../zh/teaware/gaiwan.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/tea-service-tray-v2.jpg" alt="盖碗在日常茶席中的使用场景，比单纯干茶图更能说明器形与出汤逻辑" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最热文章</span>
-    <h3>为什么盖碗几乎可以应对所有中国茶</h3>
-  </div>
-</a>
+      {% for post in posts_all limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">最新文章</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+      {% for post in posts_featured limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">热点 / 置顶</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
     </div>
   </section>
   <section class="feature-card archive-panel">
     <h2>全部文章</h2>
-    <p>按时间倒序浏览本栏目全部文章。</p>
+    <p>按时间降序浏览本栏目全部文章。</p>
     <div class="archive-list">
-      <a class="archive-item" href="../../zh/teaware/tea-strainer.html">
-  <span class="archive-item-title">茶滤为什么在今天重新值得被认真讨论：单孔、球孔、滤网、断碎、出汤速度与最常见误区</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-18">2026-03-18</time> · 更新：<time datetime="2026-03-18">2026-03-18</time></span>
-</a>
-      <a class="archive-item" href="../../zh/teaware/chasen.html">
-  <span class="archive-item-title">茶筅为什么在今天重新变成热门茶器：点茶复兴、竹工艺细节、使用门槛与最常见误区</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/teaware/gongdao-cup.html">
-  <span class="archive-item-title">公道杯为什么在今天重新变成茶席核心：断水、挂汤、容量、材质与分茶秩序</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/teaware/jianshui.html">
-  <span class="archive-item-title">建水为什么在干泡法时代重新变成茶席主角：器物逻辑、审美回潮与使用误区</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/teaware/tea-pet.html">
-  <span class="archive-item-title">茶宠与主人杯：为什么今天年轻人喜欢“可爱茶桌”</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../zh/teaware/jingdezhen.html">
-  <span class="archive-item-title">景德镇与中国茶器：瓷器、官窑想象与茶桌审美</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../zh/teaware/jianzhan.html">
-  <span class="archive-item-title">建盏：黑釉、兔毫与宋代点茶审美的遗影</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../zh/teaware/gaiwan.html">
-  <span class="archive-item-title">为什么盖碗几乎可以应对所有中国茶</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
   </section>
 </section></main>

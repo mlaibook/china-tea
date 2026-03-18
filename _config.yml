@@ -11,3 +11,27 @@ collections:
   en_drinks:
     output: true
     permalink: /en/drinks/:name.html
+  zh_tea:
+    output: true
+    permalink: /zh/tea/:name.html
+  en_tea:
+    output: true
+    permalink: /en/tea/:name.html
+  zh_history:
+    output: true
+    permalink: /zh/history/:name.html
+  en_history:
+    output: true
+    permalink: /en/history/:name.html
+  zh_teaware:
+    output: true
+    permalink: /zh/teaware/:name.html
+  en_teaware:
+    output: true
+    permalink: /en/teaware/:name.html
+  zh_science:
+    output: true
+    permalink: /zh/science/:name.html
+  en_science:
+    output: true
+    permalink: /en/science/:name.html

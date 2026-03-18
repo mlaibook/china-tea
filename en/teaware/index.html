@@ -3,67 +3,48 @@ lang_switch_url: "../../zh/teaware/index.html"
 layout: page
 lang: en
 asset_prefix: "../../"
-title: Teaware — China Tea Library
-description: "Chinese teaware is not decoration alone. Shape, heat retention, pour control, and social use all matter. A vessel is part of the brewing method, not only a cultural symbol."
+title: "Teaware - China Tea Library"
+description: "From gaiwan and fairness pitcher to jianzhan, strainers, and Jingdezhen porcelain, teaware shapes both tea practice and tea aesthetics."
 ---
-<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Teaware</h1><p class="lede">Chinese teaware is not decoration alone. Shape, heat retention, pour control, and social use all matter. A vessel is part of the brewing method, not only a cultural symbol.</p></section>
+{% assign posts_all = site.en_teaware | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Teaware</h1><p class="lede">From gaiwan and fairness pitcher to jianzhan, strainers, and Jingdezhen porcelain, teaware shapes both tea practice and tea aesthetics.</p></section>
 <section class="section-index-blocks">
   <section class="feature-card feature-panel">
-    <h2>Featured links</h2>
-    <p>The newest piece in this section, sorted by publication date.</p>
+    <h2>Latest / featured reading</h2>
     <div class="feature-links">
-      <a class="feature-link" href="../../en/teaware/tea-strainer.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/teacup-strainer-v1.jpg" alt="Why tea strainers deserve serious attention again" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">Latest article</span>
-    <h3>Why tea strainers deserve serious attention again</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../en/teaware/gaiwan.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/tea-service-tray-v2.jpg" alt="A practical tea-table scene that better fits a gaiwan article than a dry-leaf photo" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">Most popular</span>
-    <h3>Why a gaiwan can handle almost every Chinese tea</h3>
-  </div>
-</a>
+      {% for post in posts_all limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">Latest</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+      {% for post in posts_featured limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">Featured</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
     </div>
   </section>
   <section class="feature-card archive-panel">
     <h2>All articles</h2>
-    <p>Browse every article in this section in reverse chronological order.</p>
+    <p>Browse the full section in reverse chronological order.</p>
     <div class="archive-list">
-      <a class="archive-item" href="../../en/teaware/tea-strainer.html">
-  <span class="archive-item-title">Why tea strainers deserve serious attention again: single-hole filters, mesh, broken leaf, pour speed, and today’s biggest mistakes</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-18">2026-03-18</time> · Updated: <time datetime="2026-03-18">2026-03-18</time></span>
-</a>
-      <a class="archive-item" href="../../en/teaware/chasen.html">
-  <span class="archive-item-title">Why the tea whisk has become popular again: Song-style tea revival, bamboo craft, technique, and the biggest mistakes</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../en/teaware/gongdao-cup.html">
-  <span class="archive-item-title">Why the gongdao cup has become central again on today’s tea table</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../en/teaware/jianshui.html">
-  <span class="archive-item-title">Why jianshui has become a central object again in the age of dry brewing</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../en/teaware/tea-pet.html">
-  <span class="archive-item-title">Tea pets and personal cups: why younger drinkers love the cute tea table</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../en/teaware/jingdezhen.html">
-  <span class="archive-item-title">Jingdezhen and Chinese teaware: porcelain, imperial imagination, and tea-table aesthetics</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../en/teaware/jianzhan.html">
-  <span class="archive-item-title">Jianzhan: black glaze, hare’s fur, and the afterimage of Song tea aesthetics</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../en/teaware/gaiwan.html">
-  <span class="archive-item-title">Why a gaiwan can handle almost every Chinese tea</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span>
-</a>
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
   </section>
 </section></main>

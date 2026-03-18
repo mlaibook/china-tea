@@ -1,10 +1,50 @@
 ---
-layout: default
+lang_switch_url: "../../zh/science/index.html"
+layout: page
 lang: en
-permalink: /en/science/
-class_name: page-science-index
 asset_prefix: "../../"
-title: Tea Science — China Tea
-description: "Research-led coverage of tea, health, caffeine, gut microbiome, metabolic health, and science-facing interpretations of modern tea-drink claims."
+title: "Tea Science - China Tea Library"
+description: "This section follows tea, tea drinks, and health-related research with an emphasis on evidence, mechanisms, and real-world context."
 ---
-<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Tea Science</h1><p class="lede">This section follows tea, modern tea drinks, and health-related research with an emphasis on turning hot online claims back into mechanisms, evidence strength, and real-life context.</p><div class="toc"><span class="pill">paper guides</span><span class="pill">research overviews</span><span class="pill">mechanisms</span><span class="pill">evidence limits</span></div></section><section class="section-index-blocks"><section class="feature-card feature-panel"><h2>Featured reading</h2><p>Start with the newest paper guides and the highest-interest topics.</p><div class="feature-links"><a class="feature-link" href="../../en/science/tea-drink-caffeine-sleep-window.html"><figure class="feature-link-media"><img src="../../assets/img/photos/light-milk-tea-chagee-v1.jpg" alt="A clear light milk tea used to illustrate caffeine, sleep windows, and labeling debates in modern tea drinks" /></figure><div class="feature-link-body"><span class="feature-chip">Latest</span><h3>Modern tea drinks, caffeine, sleep windows, and labeling debates</h3></div></a><a class="feature-link" href="../../en/science/tea-metabolic-health.html"><figure class="feature-link-media"><img src="../../assets/img/photos/longjing-dried-v2.jpg" alt="Tea and metabolic health" /></figure><div class="feature-link-body"><span class="feature-chip">Most read</span><h3>Tea and metabolic health: evidence, limits, and what “healthy tea drinks” should really mean</h3></div></a></div></section><section class="feature-card archive-panel"><h2>All guides</h2><p>Browse every science article in reverse chronological order.</p><div class="archive-list"><a class="archive-item" href="../../en/science/tea-drink-caffeine-sleep-window.html"><span class="archive-item-title">Modern tea drinks, caffeine, sleep windows, and labeling debates: why “tea is gentler than coffee” is no longer enough</span><span class="archive-item-meta">Created: <time datetime="2026-03-18">2026-03-18</time> · Updated: <time datetime="2026-03-18">2026-03-18</time></span></a><a class="archive-item" href="../../en/science/theanine-functional-tea-drinks.html"><span class="archive-item-title">Why L-theanine keeps getting framed as “calm but not sleepy”</span><span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-18">2026-03-18</time></span></a><a class="archive-item" href="../../en/science/tea-sweeteners-no-sugar.html"><span class="archive-item-title">Zero-sugar tea drinks, sweeteners, and the “0 sugar” debate: why it still matters how the whole drink is built</span><span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span></a><a class="archive-item" href="../../en/science/tea-drink-health-signals.html"><span class="archive-item-title">Do real-leaf brewing, low sugar, and short ingredient lists automatically mean a healthier tea drink?</span><span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span></a><a class="archive-item" href="../../en/science/tea-gut-microbiome.html"><span class="archive-item-title">Tea polyphenols, catechins, and the gut microbiome</span><span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-16">2026-03-16</time></span></a><a class="archive-item" href="../../en/science/tea-metabolic-health.html"><span class="archive-item-title">Tea and metabolic health: evidence, limits, and what “healthy tea drinks” should really mean</span><span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-16">2026-03-16</time></span></a><a class="archive-item" href="../../en/science/matcha-caffeine-focus.html"><span class="archive-item-title">Matcha, caffeine, and focus: a research guide to alertness and subjective steadiness</span><span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-16">2026-03-16</time></span></a></div></section></section></main>
+{% assign posts_all = site.en_science | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Tea Science</h1><p class="lede">This section follows tea, tea drinks, and health-related research with an emphasis on evidence, mechanisms, and real-world context.</p></section>
+<section class="section-index-blocks">
+  <section class="feature-card feature-panel">
+    <h2>Latest / featured reading</h2>
+    <div class="feature-links">
+      {% for post in posts_all limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">Latest</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+      {% for post in posts_featured limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">Featured</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  <section class="feature-card archive-panel">
+    <h2>All articles</h2>
+    <p>Browse the full section in reverse chronological order.</p>
+    <div class="archive-list">
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+</section></main>

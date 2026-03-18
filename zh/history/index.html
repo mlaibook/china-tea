@@ -3,59 +3,48 @@ lang_switch_url: "../../en/history/index.html"
 layout: page
 lang: zh-CN
 asset_prefix: "../../"
-title: 茶文化历史 — 中国茶志
-description: "中国茶从药用、贡茶、文人审美到家庭日常，不断变化又彼此叠加。真正重要的不是某个朝代的固定形式，而是茶如何持续进入人的生活。"
+title: "茶文化历史 - China Tea Library"
+description: "茶史不只是年代顺序，也是饮法、器物、审美、贸易与社会生活如何一起变化的历史。"
 ---
-<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶文化历史</h1><p class="lede">茶史不只是年代顺序，更是饮法、器物、审美和社会关系如何一起变化。</p></section>
+{% assign posts_all = site.zh_history | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶文化历史</h1><p class="lede">茶史不只是年代顺序，也是饮法、器物、审美、贸易与社会生活如何一起变化的历史。</p></section>
 <section class="section-index-blocks">
   <section class="feature-card feature-panel">
-    <h2>置顶文章</h2>
-    <p>按发布时间排序的最新内容，适合先看最近更新。</p>
+    <h2>最新 / 热点文章</h2>
     <div class="feature-links">
-      <a class="feature-link" href="../../zh/history/wanli-tea-road.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/chengdu-teahouse-v1.jpg" alt="万里茶道为什么会在今天重新被讨论：从晋商驼队、恰克图贸易到当代文化线路想象" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最新文章</span>
-    <h3>万里茶道为什么会在今天重新被讨论：从晋商驼队、恰克图贸易到当代文化线路想象</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../zh/history/cha-dao.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/longjing-dried-v2.jpg" alt="中国茶文化不只是仪式，而是一种生活秩序" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">最热文章</span>
-    <h3>中国茶文化不只是仪式，而是一种生活秩序</h3>
-  </div>
-</a>
+      {% for post in posts_all limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">最新文章</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+      {% for post in posts_featured limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">热点 / 置顶</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
     </div>
   </section>
   <section class="feature-card archive-panel">
     <h2>全部文章</h2>
-    <p>按时间倒序浏览本栏目全部文章。</p>
+    <p>按时间降序浏览本栏目全部文章。</p>
     <div class="archive-list">
-      <a class="archive-item" href="../../zh/history/wanli-tea-road.html">
-  <span class="archive-item-title">万里茶道为什么会在今天重新被讨论：从晋商驼队、恰克图贸易到当代文化线路想象</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-18">2026-03-18</time> · 更新：<time datetime="2026-03-18">2026-03-18</time></span>
-</a>
-      <a class="archive-item" href="../../zh/history/tea-baixi.html">
-  <span class="archive-item-title">茶百戏为什么会在今天重新走红：从宋代点茶、建盏审美到短视频时代的液体书画</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/history/stove-boiled-tea-history.html">
-  <span class="archive-item-title">围炉煮茶为什么能让年轻人着迷：从唐代煎茶、明清火炉闲坐到当代“古意氛围”的历史回路</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/history/tea-whisk-history.html">
-  <span class="archive-item-title">茶筅、点茶与“宋式复兴”：为什么年轻人又开始迷上击拂茶汤</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-17">2026-03-17</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/history/matcha.html">
-  <span class="archive-item-title">抹茶在中国历史上的兴衰：从末茶、点茶到日本茶道与当代复兴</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../zh/history/cha-dao.html">
-  <span class="archive-item-title">中国茶文化不只是仪式，而是一种生活秩序</span>
-  <span class="archive-item-meta">创建：<time datetime="2026-03-16">2026-03-16</time> · 更新：<time datetime="2026-03-18">2026-03-18</time></span>
-</a>
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
   </section>
 </section></main>

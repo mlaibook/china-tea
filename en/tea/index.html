@@ -3,97 +3,48 @@ lang_switch_url: "../../zh/tea/index.html"
 layout: page
 lang: en
 asset_prefix: "../../"
-title: Tea Leaves — China Tea Library
-description: "A section on Chinese tea leaves, beginning with an in-depth Longjing feature."
+title: "Tea Leaves - China Tea Library"
+description: "From classic tea types and mountain regions to processing logic and modern entry points, this section gathers key reads on Chinese tea leaves."
 ---
-<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Tea Leaves</h1><p class="lede">This section begins with a detailed Longjing feature because Longjing is one of the best gateways into Chinese green tea. It now also includes Liu’an Guapian as a key counterpoint showing that Chinese green tea is not only about buds, but also about leaf material, firing, and mountain character; and a new white tea feature that puts Fuding, Zhenghe, Silver Needle, White Peony, Shoumei, and aging debates back onto one readable knowledge map. From there, the site will expand toward Bi Luo Chun, Huangshan Maofeng, and other regionally distinct teas.</p></section>
+{% assign posts_all = site.en_tea | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Tea Leaves</h1><p class="lede">From classic tea types and mountain regions to processing logic and modern entry points, this section gathers key reads on Chinese tea leaves.</p></section>
 <section class="section-index-blocks">
   <section class="feature-card feature-panel">
-    <h2>Featured links</h2>
-    <p>The newest piece in this section, sorted by publication date.</p>
+    <h2>Latest / featured reading</h2>
     <div class="feature-links">
-      <a class="feature-link" href="../../en/tea/white-tea.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/green-tea-leaves-v1.jpg" alt="Why white tea is so often reduced to the older the better" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">Latest article</span>
-    <h3>Why white tea is so often reduced to “the older the better”</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../en/tea/fenghuang-dancong.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/oolong-tea.jpg" alt="Why Phoenix Dancong is best understood through Duck Shit Aroma" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">Latest article</span>
-    <h3>Why Phoenix Dancong is best understood through Duck Shit Aroma</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../en/tea/bama-tea.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/wikimedia-tea-shop-v2.jpg" alt="A tea shop and window display, closer to the Bama Tea article’s focus on branded retail space" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">Latest article</span>
-    <h3>Why Bama Tea became a mainstream gateway to Chinese tea</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../en/tea/jasmine.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/jasmine-dried-v1.jpg" alt="Jasmine tea: from Fuzhou scenting craft to Hengzhou flowers, and why this Chinese flower tea is really about process and place" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">Latest article</span>
-    <h3>Jasmine tea: from Fuzhou scenting craft to Hengzhou flowers, and why this Chinese flower tea is really about process and place</h3>
-  </div>
-</a>
-      <a class="feature-link" href="../../en/tea/longjing.html">
-  <figure class="feature-link-media"><img src="../../assets/img/photos/longjing-plantation-v2.jpg" alt="Longjing: spring in Hangzhou, pan-fired craft, and the local life inside one cup" /></figure>
-  <div class="feature-link-body">
-    <span class="feature-chip">Most popular</span>
-    <h3>Longjing: spring in Hangzhou, pan-fired craft, and the local life inside one cup</h3>
-  </div>
-</a>
+      {% for post in posts_all limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">Latest</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+      {% for post in posts_featured limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">Featured</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
     </div>
   </section>
   <section class="feature-card archive-panel">
     <h2>All articles</h2>
-    <p>Browse every article in this section in reverse chronological order.</p>
+    <p>Browse the full section in reverse chronological order.</p>
     <div class="archive-list">
-      <a class="archive-item" href="../../en/tea/white-tea.html">
-  <span class="archive-item-title">Why white tea is so often reduced to “the older the better”</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-18">2026-03-18</time> · Updated: <time datetime="2026-03-18">2026-03-18</time></span>
-</a>
-      <a class="archive-item" href="../../en/tea/luan-guapian.html">
-  <span class="archive-item-title">Why Liu’an Guapian deserves a full spring-tea reading</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../en/tea/fenghuang-dancong.html">
-  <span class="archive-item-title">Why Phoenix Dancong is best understood through Duck Shit Aroma</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../en/tea/bama-tea.html">
-  <span class="archive-item-title">Why Bama Tea became a mainstream gateway to Chinese tea</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-18">2026-03-18</time></span>
-</a>
-      <a class="archive-item" href="../../en/tea/jasmine.html">
-  <span class="archive-item-title">Jasmine tea: from Fuzhou scenting craft to Hengzhou flowers, and why this Chinese flower tea is really about process and place</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-17">2026-03-17</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../en/tea/puer.html">
-  <span class="archive-item-title">Why pu-erh should not be reduced to “aged tea”: Yunnan leaf, raw and ripe styles, mountain identity, storage, and brewing</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../en/tea/oolong.html">
-  <span class="archive-item-title">Oolong tea: shape, craft, and the widest expressive range in Chinese tea</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-17">2026-03-17</time></span>
-</a>
-      <a class="archive-item" href="../../en/tea/longjing.html">
-  <span class="archive-item-title">Longjing: spring in Hangzhou, pan-fired craft, and the local life inside one cup</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-      <a class="archive-item" href="../../en/tea/black.html">
-  <span class="archive-item-title">Chinese black tea: from Lapsang Souchong to Jin Jun Mei, and from Wuyi to Britain</span>
-  <span class="archive-item-meta">Created: <time datetime="2026-03-16">2026-03-16</time> · Updated: <time datetime="2026-03-16">2026-03-16</time></span>
-</a>
-    </div>
-  </section>
-</section></main>
-atetime="2026-03-16">2026-03-16</time></span>
-</a>
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
   </section>
 </section></main>
