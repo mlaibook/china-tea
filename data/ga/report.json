@@ -1,59 +1,119 @@
 {
-  "generatedAt": "2026-03-17T04:20:07.762Z",
+  "generatedAt": "2026-03-18T04:20:11.234Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 15,
-      "sessions": 17,
-      "views": 91,
-      "avgSessionDurationSeconds": 1756.1587045294118,
-      "engagementRate": 0
+      "activeUsers": 35,
+      "sessions": 44,
+      "views": 384,
+      "avgSessionDurationSeconds": 540.08769825,
+      "engagementRate": 0.5
     },
     "last30Days": {
-      "activeUsers": 15,
-      "sessions": 17,
-      "views": 91,
-      "avgSessionDurationSeconds": 1756.1587045294118,
-      "engagementRate": 0
+      "activeUsers": 35,
+      "sessions": 44,
+      "views": 384,
+      "avgSessionDurationSeconds": 540.08769825,
+      "engagementRate": 0.5
     }
   },
   "topPages7d": [
     {
       "path": "/en/index.html",
-      "views": 12,
-      "activeUsers": 11
+      "views": 43,
+      "activeUsers": 25
     },
     {
       "path": "/",
-      "views": 11,
-      "activeUsers": 11
+      "views": 37,
+      "activeUsers": 28
+    },
+    {
+      "path": "/zh/tea/index.html",
+      "views": 33,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/teaware/index.html",
+      "views": 30,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/drinks/index.html",
+      "views": 28,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/history/index.html",
+      "views": 27,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/index.html",
+      "views": 23,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/science/index.html",
+      "views": 22,
+      "activeUsers": 3
     },
     {
       "path": "/en/index.html",
+      "views": 13,
+      "activeUsers": 2
+    },
+    {
+      "path": "/en/tea/index.html",
+      "views": 10,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/index.html",
       "views": 9,
       "activeUsers": 1
     },
     {
-      "path": "/zh/index.html",
-      "views": 8,
-      "activeUsers": 1
+      "path": "/en/teaware/index.html",
+      "views": 9,
+      "activeUsers": 3
     },
     {
       "path": "/",
-      "views": 5,
+      "views": 6,
       "activeUsers": 2
     },
     {
       "path": "/zh/tea/index.html",
+      "views": 6,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks/index.html",
+      "views": 6,
+      "activeUsers": 2
+    },
+    {
+      "path": "/en/about.html",
       "views": 5,
       "activeUsers": 1
     },
     {
-      "path": "/en/about.html",
-      "views": 4,
+      "path": "/en/history/index.html",
+      "views": 5,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/drinks/bottled-tea-comeback.html",
+      "views": 5,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/ingredient-list-transparency.html",
+      "views": 5,
       "activeUsers": 1
     },
     {
@@ -62,7 +122,12 @@
       "activeUsers": 1
     },
     {
-      "path": "/en/teaware/index.html",
+      "path": "/zh/teaware/index.html",
+      "views": 4,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/tea/fenghuang-dancong.html",
       "views": 4,
       "activeUsers": 1
     },
@@ -77,110 +142,105 @@
       "activeUsers": 1
     },
     {
-      "path": "/zh/teaware/index.html",
+      "path": "/zh/about.html",
       "views": 3,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/tea/index.html",
-      "views": 3,
-      "activeUsers": 2
-    },
-    {
-      "path": "/en/history/index.html",
-      "views": 2,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/index.html",
-      "views": 2,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/drinks",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/drinks/chagee-rise",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/drinks/modern-tea-brands.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/history/matcha",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/science/index.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/tea/longjing.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/teaware/index.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/chagee-rise.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/modern-tea-brands.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/history/index.html",
-      "views": 1,
-      "activeUsers": 1
+      "activeUsers": 3
     }
   ],
   "topPages30d": [
     {
       "path": "/en/index.html",
-      "views": 12,
-      "activeUsers": 11
+      "views": 43,
+      "activeUsers": 25
     },
     {
       "path": "/",
-      "views": 11,
-      "activeUsers": 11
+      "views": 37,
+      "activeUsers": 28
+    },
+    {
+      "path": "/zh/tea/index.html",
+      "views": 33,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/teaware/index.html",
+      "views": 30,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/drinks/index.html",
+      "views": 28,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/history/index.html",
+      "views": 27,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/index.html",
+      "views": 23,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/science/index.html",
+      "views": 22,
+      "activeUsers": 3
     },
     {
       "path": "/en/index.html",
+      "views": 13,
+      "activeUsers": 2
+    },
+    {
+      "path": "/en/tea/index.html",
+      "views": 10,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/index.html",
       "views": 9,
       "activeUsers": 1
     },
     {
-      "path": "/zh/index.html",
-      "views": 8,
-      "activeUsers": 1
+      "path": "/en/teaware/index.html",
+      "views": 9,
+      "activeUsers": 3
     },
     {
       "path": "/",
-      "views": 5,
+      "views": 6,
       "activeUsers": 2
     },
     {
       "path": "/zh/tea/index.html",
+      "views": 6,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks/index.html",
+      "views": 6,
+      "activeUsers": 2
+    },
+    {
+      "path": "/en/about.html",
       "views": 5,
       "activeUsers": 1
     },
     {
-      "path": "/en/about.html",
-      "views": 4,
+      "path": "/en/history/index.html",
+      "views": 5,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/drinks/bottled-tea-comeback.html",
+      "views": 5,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/ingredient-list-transparency.html",
+      "views": 5,
       "activeUsers": 1
     },
     {
@@ -189,7 +249,12 @@
       "activeUsers": 1
     },
     {
-      "path": "/en/teaware/index.html",
+      "path": "/zh/teaware/index.html",
+      "views": 4,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/tea/fenghuang-dancong.html",
       "views": 4,
       "activeUsers": 1
     },
@@ -204,135 +269,70 @@
       "activeUsers": 1
     },
     {
-      "path": "/zh/teaware/index.html",
+      "path": "/zh/about.html",
       "views": 3,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/tea/index.html",
-      "views": 3,
-      "activeUsers": 2
-    },
-    {
-      "path": "/en/history/index.html",
-      "views": 2,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/index.html",
-      "views": 2,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/drinks",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/drinks/chagee-rise",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/drinks/modern-tea-brands.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/history/matcha",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/science/index.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/tea/longjing.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/teaware/index.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/chagee-rise.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/modern-tea-brands.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/history/index.html",
-      "views": 1,
-      "activeUsers": 1
+      "activeUsers": 3
     }
   ],
   "topSections30d": [
     {
-      "section": "en-home",
-      "label": "英文首页",
-      "views": 21,
-      "activeUsers": 12
-    },
-    {
-      "section": "home",
-      "label": "首页",
-      "views": 19,
-      "activeUsers": 14
-    },
-    {
       "section": "tea",
       "label": "茶叶",
-      "views": 13,
-      "activeUsers": 5
+      "views": 57,
+      "activeUsers": 9
+    },
+    {
+      "section": "en-home",
+      "label": "英文首页",
+      "views": 56,
+      "activeUsers": 27
     },
     {
       "section": "drinks",
       "label": "现制茶饮",
-      "views": 10,
-      "activeUsers": 7
+      "views": 47,
+      "activeUsers": 8
     },
     {
-      "section": "zh-home",
-      "label": "中文首页",
-      "views": 8,
-      "activeUsers": 1
+      "section": "home",
+      "label": "首页",
+      "views": 46,
+      "activeUsers": 31
     },
     {
       "section": "teaware",
       "label": "茶具",
-      "views": 8,
-      "activeUsers": 3
-    },
-    {
-      "section": "about.html",
-      "label": "about.html",
-      "views": 4,
-      "activeUsers": 1
+      "views": 43,
+      "activeUsers": 7
     },
     {
       "section": "history",
       "label": "茶文化历史",
-      "views": 4,
+      "views": 32,
+      "activeUsers": 5
+    },
+    {
+      "section": "zh-home",
+      "label": "中文首页",
+      "views": 32,
       "activeUsers": 3
     },
     {
       "section": "science",
       "label": "科学/健康",
-      "views": 1,
-      "activeUsers": 1
+      "views": 22,
+      "activeUsers": 3
+    },
+    {
+      "section": "about.html",
+      "label": "about.html",
+      "views": 8,
+      "activeUsers": 4
     }
   ],
   "insights": [
-    "近 7 天热门页面：/en/index.html（12 次浏览）。",
-    "近 30 天最强栏目：英文首页。",
+    "近 7 天热门页面：/en/index.html（43 次浏览）。",
+    "近 30 天最强栏目：茶叶。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
 }
