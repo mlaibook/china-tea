@@ -64,5 +64,17 @@
     "source": "existing local repository asset",
     "direct": "assets/img/photos/light-milk-tea-store-v1.jpg",
     "note": "Used in the tea intangible heritage feature to illustrate how traditional tea culture is being translated into contemporary retail and youth-facing tea spaces."
+  },
+  {
+    "file": "assets/img/photos/gongfu-tea-set-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chinese_Tea_Ceremony.jpg",
+    "direct": "https://commons.wikimedia.org/wiki/Special:FilePath/Chinese_Tea_Ceremony.jpg",
+    "note": "Gongfu tea setup with paired tall and short cups, downloaded for the Chinese and English aroma cup feature to illustrate the logic of wenxiangbei and drinking-cup pairing."
+  },
+  {
+    "file": "assets/img/photos/china-tea-service-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:China_tea.jpg",
+    "direct": "https://commons.wikimedia.org/wiki/Special:FilePath/China_tea.jpg",
+    "note": "Traditional tea service image used in the aroma cup feature to support discussion of the tall-cup and low-cup set as a functional pair rather than pure decoration."
   }
 ]
