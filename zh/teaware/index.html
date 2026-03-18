@@ -8,22 +8,11 @@ description: "从盖碗、公道杯到建盏、茶滤与景德镇，茶具不仅
 ---
 {% assign posts_all = site.zh_teaware | sort: 'date' | reverse %}
 {% assign posts_featured = posts_all | where: 'featured', true %}
-{% assign posts_highlights = posts_all | slice: 0, 2 | concat: posts_featured | uniq %}
 <main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶具</h1><p class="lede">从盖碗、公道杯到建盏、茶滤与景德镇，茶具不仅是器物，也是茶桌秩序与审美判断的一部分。</p></section>
 <section class="section-index-blocks">
   <section class="feature-card feature-panel">
     <h2>最新 / 热点文章</h2>
-    <div class="feature-links">
-      {% for post in posts_highlights %}
-      {% assign feature_label = "最新文章" %}
-      {% if post.featured %}{% assign feature_label = "热点 / 置顶" %}{% endif %}
-      <a class="feature-link" href="{{ post.url }}">
-        <figure class="feature-link-media"><img src="{{ post.thumbnail_image | default: post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.thumbnail_alt | default: post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
-        <div class="feature-link-body">
-          <span class="feature-chip">{{ feature_label }}</span>
-          <h3>{{ post.index_title | default: post.title }}</h3>
-          <p>{{ post.index_description | default: post.description }}</p>
-        </div>
+    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="最新文章" featured_label="热点 / 置顶" %}
       </a>
       {% endfor %}
     </div>

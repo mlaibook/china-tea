@@ -1,0 +1,19 @@
+{% assign section_posts = include.posts %}
+{% assign highlight_posts = section_posts | slice: 0, 2 | concat: include.featured_posts | uniq %}
+{% assign fallback_image = include.fallback_image | default: '../../assets/img/photos/milk-tea.jpg' %}
+{% assign latest_label = include.latest_label | default: 'Latest' %}
+{% assign featured_label = include.featured_label | default: 'Featured' %}
+<div class="feature-links">
+  {% for post in highlight_posts %}
+  {% assign feature_label = latest_label %}
+  {% if post.featured %}{% assign feature_label = featured_label %}{% endif %}
+  <a class="feature-link" href="{{ post.url }}">
+    <figure class="feature-link-media"><img src="{{ post.thumbnail_image | default: post.card_image | default: fallback_image }}" alt="{{ post.thumbnail_alt | default: post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+    <div class="feature-link-body">
+      <span class="feature-chip">{{ feature_label }}</span>
+      <h3>{{ post.index_title | default: post.title }}</h3>
+      <p>{{ post.index_description | default: post.description }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>

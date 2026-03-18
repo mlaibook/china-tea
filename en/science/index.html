@@ -8,22 +8,11 @@ description: "This section follows tea, tea drinks, and health-related research 
 ---
 {% assign posts_all = site.en_science | sort: 'date' | reverse %}
 {% assign posts_featured = posts_all | where: 'featured', true %}
-{% assign posts_highlights = posts_all | slice: 0, 2 | concat: posts_featured | uniq %}
 <main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Tea Science</h1><p class="lede">This section follows tea, tea drinks, and health-related research with an emphasis on evidence, mechanisms, and real-world context.</p></section>
 <section class="section-index-blocks">
   <section class="feature-card feature-panel">
     <h2>Latest / featured reading</h2>
-    <div class="feature-links">
-      {% for post in posts_highlights %}
-      {% assign feature_label = "Latest" %}
-      {% if post.featured %}{% assign feature_label = "Featured" %}{% endif %}
-      <a class="feature-link" href="{{ post.url }}">
-        <figure class="feature-link-media"><img src="{{ post.thumbnail_image | default: post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.thumbnail_alt | default: post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
-        <div class="feature-link-body">
-          <span class="feature-chip">{{ feature_label }}</span>
-          <h3>{{ post.index_title | default: post.title }}</h3>
-          <p>{{ post.index_description | default: post.description }}</p>
-        </div>
+    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="Latest" featured_label="Featured" %}
       </a>
       {% endfor %}
     </div>
