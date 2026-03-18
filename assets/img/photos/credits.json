@@ -10,5 +10,17 @@
     "source": "https://commons.wikimedia.org/wiki/File:Tea_strainer.jpg",
     "direct": "https://upload.wikimedia.org/wikipedia/commons/7/76/Tea_strainer.jpg",
     "note": "Close-up of a tea strainer; used for teaware article illustration."
+  },
+  {
+    "file": "assets/img/photos/wikimedia-teahouse-sichuan-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:TeahouseInSichuan.jpg",
+    "direct": "https://commons.wikimedia.org/wiki/Special:FilePath/TeahouseInSichuan.jpg",
+    "note": "Traditional Sichuan teahouse scene used for the Chinese and English history feature on the return of the teahouse as an urban public space."
+  },
+  {
+    "file": "assets/img/photos/wikimedia-huxinting-teahouse-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Huxinting_Teahouse_2016.jpg",
+    "direct": "https://commons.wikimedia.org/wiki/Special:FilePath/Huxinting%20Teahouse%202016.jpg",
+    "note": "Shanghai Huxinting Teahouse image used to illustrate the teahouse as part of urban public and scenic life."
   }
 ]
