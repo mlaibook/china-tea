@@ -1,0 +1,15 @@
+{% assign posts = include.posts | slice: 0, 6 %}
+{% assign fallback_image = include.fallback_image | default: '../assets/img/photos/milk-tea.jpg' %}
+{% assign chip_label = include.chip_label | default: 'Picked' %}
+<div class="feature-links">
+  {% for post in posts %}
+  <a class="feature-link" href="{{ post.url }}">
+    <figure class="feature-link-media"><img src="{{ post.thumbnail_image | default: post.card_image | default: fallback_image }}" alt="{{ post.thumbnail_alt | default: post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+    <div class="feature-link-body">
+      <span class="feature-chip">{{ chip_label }}</span>
+      <h3>{{ post.index_title | default: post.title }}</h3>
+      <p>{{ post.index_description | default: post.description }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>
