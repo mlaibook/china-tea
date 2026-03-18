@@ -8,51 +8,44 @@ description: "新式茶饮不是传统的反面，而是中国茶在城市消费
 ---
 {% assign drinks_all = site.zh_drinks | sort: 'date' | reverse %}
 {% assign drinks_featured = drinks_all | where: 'featured', true %}
-<main class="wrap">
-  <section class="hero story-hero">
-    <div class="hero-copy">
-      <p class="eyebrow">现制茶饮</p>
-      <h1>把中国茶放回城市日常：从品牌扩张到配方叙事，再到中文互联网里的饮品热点</h1>
-      <p class="lede">这个栏目现在已经改成 collection 驱动：文章会按照 front matter 里的日期自动排序，置顶文章也会按 metadata 自动汇总。这样既能保留原有发布 URL，又能让栏目页持续自动更新，不再依赖手工维护链接清单。</p>
-      <div class="toc"><span class="pill">按日期自动更新</span><span class="pill">置顶精选</span><span class="pill">现制茶饮</span><span class="pill">品牌</span><span class="pill">配方趋势</span><span class="pill">消费文化</span></div>
-    </div>
-    <figure class="photo">
-      <img src="../../assets/img/photos/milk-tea.jpg" alt="现代城市中的现制茶饮" />
-      <figcaption>新茶饮不是传统的反面，而是中国茶继续进入高频都市生活的一种方式。</figcaption>
-    </figure>
-  </section>
-
-  <section class="feature-card hot-strip">
-    <div class="hot-head">
-      <h2>置顶精选</h2>
-      <span class="hot-badge">Featured</span>
-    </div>
-    <p>这一组由 front matter 里的 <code>featured: true</code> 控制，再按日期倒序排序。以后要置顶或撤下某篇文章，只需要改文章 metadata，不用重写栏目页。</p>
-    <div class="post-grid">
-      {% for post in drinks_featured limit:4 %}
-      <a class="post" href="{{ post.url }}">
-        <span class="tag">精选</span>
-        <h3>{{ post.index_title | default: post.title }}</h3>
-        <p>{{ post.index_description | default: post.description }}</p>
+<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>现制茶饮</h1><p class="lede">这里集中追踪中国新茶饮的品牌扩张、产品语言、健康叙事与中文互联网里的高传播话题。现在这个栏目已经改成 collection 驱动：文章会自动按日期倒序更新，置顶也可以通过 metadata 控制。</p></section>
+<section class="section-index-blocks">
+  <section class="feature-card feature-panel">
+    <h2>最新 / 热点文章</h2>
+    <p>上面这组保留图文入口，适合先看最新更新与代表性话题；下面的全部文章则改成更紧凑的一行式列表，方便快速浏览。</p>
+    <div class="feature-links">
+      {% for post in drinks_all limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">最新文章</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+      {% for post in drinks_featured limit:2 %}
+      <a class="feature-link" href="{{ post.url }}">
+        <figure class="feature-link-media"><img src="{{ post.card_image | default: '../../assets/img/photos/milk-tea.jpg' }}" alt="{{ post.card_image_alt | default: post.index_title | default: post.title }}" /></figure>
+        <div class="feature-link-body">
+          <span class="feature-chip">热点 / 置顶</span>
+          <h3>{{ post.index_title | default: post.title }}</h3>
+          <p>{{ post.index_description | default: post.description }}</p>
+        </div>
       </a>
       {% endfor %}
     </div>
   </section>
-
-  <section class="feature-card">
-    <div class="hot-head">
-      <h2>最新发布</h2>
-      <span class="hot-badge">Newest</span>
-    </div>
-    <p>下面按时间整理这个栏目里的文章更新：有些更偏品牌与行业，有些更偏配方与健康表达，也有一些专门讨论中文互联网里最容易扩散的饮品话题。</p>
-    <div class="post-grid">
+  <section class="feature-card archive-panel">
+    <h2>全部文章</h2>
+    <p>按时间降序浏览本栏目全部文章。</p>
+    <div class="archive-list">
       {% for post in drinks_all %}
-      <a class="post" href="{{ post.url }}">
-        <span class="tag">{{ post.date | date: "%Y-%m-%d" }}</span>
-        <h3>{{ post.index_title | default: post.title }}</h3>
-        <p>{{ post.index_description | default: post.description }}</p>
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
       </a>
       {% endfor %}
     </div>
   </section>
-</main>
+</section></main>
