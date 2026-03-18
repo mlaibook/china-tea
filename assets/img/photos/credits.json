@@ -46,5 +46,23 @@
     "source": "existing local repository asset",
     "direct": "assets/img/photos/tea-service-tray-v2.jpg",
     "note": "Reused in the tea tasting cup feature to support discussion of recordable comparison, order, and tasting workflow."
+  },
+  {
+    "file": "assets/img/photos/longjing-frying-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/longjing-frying-v2.jpg",
+    "note": "Used in the Chinese and English history feature on tea intangible heritage revival to illustrate embodied hand-processing craft at the center of traditional tea heritage."
+  },
+  {
+    "file": "assets/img/photos/longjing-plantation-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/longjing-plantation-v2.jpg",
+    "note": "Used in the tea intangible heritage feature to show that tea heritage begins in tea landscapes, cultivation knowledge, and tea garden management."
+  },
+  {
+    "file": "assets/img/photos/light-milk-tea-store-v1.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/light-milk-tea-store-v1.jpg",
+    "note": "Used in the tea intangible heritage feature to illustrate how traditional tea culture is being translated into contemporary retail and youth-facing tea spaces."
   }
 ]
