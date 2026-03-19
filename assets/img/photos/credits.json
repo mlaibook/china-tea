@@ -1,5 +1,23 @@
 [
   {
+    "file": "assets/img/photos/tea-service-tray-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-service-tray-v2.jpg",
+    "note": "Reused as the lead visual for the Chinese and English Famen Temple crypt tea-set history feature to emphasize ordered, coordinated tea utensils rather than generic tea mood imagery."
+  },
+  {
+    "file": "assets/img/photos/tea-service-closeup-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-service-closeup-v2.jpg",
+    "note": "Reused in the Famen Temple crypt tea-set feature to illustrate functional differentiation within a coordinated tea-utensil system."
+  },
+  {
+    "file": "assets/img/photos/gongfu-tea-set-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chinese_Tea_Ceremony.jpg",
+    "direct": "https://commons.wikimedia.org/wiki/Special:FilePath/Chinese_Tea_Ceremony.jpg",
+    "note": "Reused in the Famen Temple crypt tea-set feature as a reader-friendly visual analogue for a coordinated tea-set layout, with captions explicitly limiting the comparison and avoiding false claims that it depicts Tang tea itself."
+  },
+  {
     "file": "assets/img/photos/teacup-strainer-v1.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Teacup%26Strainer.JPG",
     "direct": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Teacup%26Strainer.JPG",
