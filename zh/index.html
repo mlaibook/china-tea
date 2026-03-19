@@ -12,8 +12,13 @@ description: "从茶叶、茶具、茶文化历史到现制茶饮，系统介绍
 {% assign drinks_posts = site.zh_drinks | sort: 'date' | reverse %}
 {% assign science_posts = site.zh_science | sort: 'date' | reverse %}
 {% assign all_posts = tea_posts | concat: teaware_posts | concat: history_posts | concat: drinks_posts | concat: science_posts | sort: 'date' | reverse %}
-{% assign latest_posts = all_posts | slice: 0, 5 %}
-{% assign hot_urls = "/zh/drinks/light-milk-tea-return.html|/zh/drinks/chagee-rise.html|/zh/history/teahouse-revival-history.html|/zh/tea/wuyi-rock-tea-rougui-shuixian.html|/zh/science/tea-drink-caffeine-sleep-window.html|/zh/teaware/tea-tasting-cup.html" | split: "|" %}
+{% assign latest_urls = "/zh/science/light-milk-tea-protein-lactose-health.html|/zh/teaware/hucheng.html|/zh/history/famen-temple-tea-set.html|/zh/tea/biluochun.html" | split: "|" %}
+{% assign latest_posts = "" | split: "" %}
+{% for latest_url in latest_urls %}
+  {% assign matched = all_posts | where: 'url', latest_url %}
+  {% assign latest_posts = latest_posts | concat: matched %}
+{% endfor %}
+{% assign hot_urls = "/zh/drinks/chagee-rise.html|/zh/history/teahouse-revival-history.html|/zh/tea/wuyi-rock-tea-rougui-shuixian.html|/zh/science/tea-drink-caffeine-sleep-window.html|/zh/drinks/tea-base-identity.html|/zh/teaware/tea-tasting-cup.html" | split: "|" %}
 {% assign featured_posts = "" | split: "" %}
 {% for hot_url in hot_urls %}
   {% assign matched = all_posts | where: 'url', hot_url %}
@@ -22,9 +27,9 @@ description: "从茶叶、茶具、茶文化历史到现制茶饮，系统介绍
 <main class="wrap">
   <section class="hero story-hero">
     <div class="hero-copy">
-      <p class="eyebrow">中文版本</p>
+      <p class="eyebrow">中文版</p>
       <h1>中国茶，不止是茶叶</h1>
-      <p class="lede">从山场、器物、历史到现制茶饮与研究争议，这里持续整理中国茶在今天最值得追踪的新文章，也给第一次进站的读者留出一条好入口。</p>
+      <p class="lede">从山场、器物、历史到现制茶饮与研究争议，这里一边持续更新刚发布的新文章，一边把第一次进站最值得先看的代表作放在前面。</p>
       <div class="toc">
         <span class="pill">茶叶</span>
         <span class="pill">茶具</span>
@@ -41,21 +46,21 @@ description: "从茶叶、茶具、茶文化历史到现制茶饮，系统介绍
 
   <section class="feature-card archive-panel">
     <h2>最新发布</h2>
-    <p>这一轮新上线的文章集中在 2026 春季最活跃的话题：茶底辨识、联名经济、茶馆回潮、岩茶判断、审评器具，以及围绕健康标签的新争论。</p>
+    <p>这轮首页把刚上线的四篇新稿放到前排：一篇讲轻乳茶的“健康感”误读，一篇回到壶承这种容易被忽略的器物，一篇重看法门寺地宫茶具，一篇补上春茶季里最该看的碧螺春长稿。</p>
     {% include homepage_latest_list.html posts=latest_posts %}
   </section>
 
   <section class="feature-card feature-panel">
     <h2>最值得先看的文章</h2>
-    <p>这里不是“流量榜”，而是一组更适合第一次进站就打开的代表作：既有当下最热的现制茶饮，也有能建立中国茶基本坐标的经典主题。</p>
+    <p>这里不是伪造热度榜，而是一组更适合新读者先点开的编辑精选：既有当下最热的茶饮与健康话题，也有能迅速建立中国茶坐标的茶叶、茶具与历史入口。</p>
     {% include homepage_featured_grid.html posts=featured_posts chip_label="推荐" fallback_image="../assets/img/photos/milk-tea.jpg" %}
   </section>
 
   <section class="post-grid">
-    <a class="post" href="../zh/tea/index.html"><span class="tag">栏目</span><h3>茶叶</h3><p>从龙井、普洱、乌龙到凤凰单丛、茉莉花茶，建立理解中国茶的基础坐标。</p></a>
-    <a class="post" href="../zh/teaware/index.html"><span class="tag">栏目</span><h3>茶具</h3><p>盖碗、公道杯、建盏、景德镇与审评杯，把喝茶这件事里的手感、秩序与判断讲清楚。</p></a>
-    <a class="post" href="../zh/history/index.html"><span class="tag">栏目</span><h3>茶文化历史</h3><p>抹茶、点茶、茶百戏、茶道、茶馆与万里茶道，把今天的流行重新放回更长的历史里。</p></a>
-    <a class="post" href="../zh/drinks/index.html"><span class="tag">栏目</span><h3>现制茶饮</h3><p>品牌、配方、门店与消费语境，追踪中国城市茶饮如何持续变化。</p></a>
-    <a class="post" href="../zh/science/index.html"><span class="tag">栏目</span><h3>研究导读</h3><p>围绕咖啡因、代糖、肠道菌群、补水感等高讨论主题，整理更可靠的证据与判断框架。</p></a>
+    <a class="post" href="../zh/tea/index.html"><span class="tag">栏目</span><h3>茶叶</h3><p>从龙井、普洱、乌龙到凤凰单丛、茉莉花茶，把中国茶最基本也最容易混淆的风味坐标讲清楚。</p></a>
+    <a class="post" href="../zh/teaware/index.html"><span class="tag">栏目</span><h3>茶具</h3><p>盖碗、公道杯、建盏、景德镇与审评杯，也包括壶承、闻香杯这些正在重新回到讨论中心的器物。</p></a>
+    <a class="post" href="../zh/history/index.html"><span class="tag">栏目</span><h3>茶文化历史</h3><p>从抹茶、点茶、茶百戏到法门寺、茶馆与万里茶道，把今天的流行放回更长的历史里理解。</p></a>
+    <a class="post" href="../zh/drinks/index.html"><span class="tag">栏目</span><h3>现制茶饮</h3><p>品牌、配方、菜单语言与城市消费现场，追踪中国茶饮为什么总能不断长出新话题。</p></a>
+    <a class="post" href="../zh/science/index.html"><span class="tag">栏目</span><h3>研究导读</h3><p>围绕咖啡因、代糖、肠道菌群、补水感与“更健康”叙事，整理更可靠的证据框架。</p></a>
   </section>
 </main>
