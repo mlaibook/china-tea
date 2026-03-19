@@ -1,29 +1,52 @@
----
-lang_switch_url: "../../zh/drinks/index.html"
-layout: page
-lang: en
-asset_prefix: "../../"
-title: "Fresh Tea Drinks - China Tea Library"
-description: "Contemporary tea drinks inherit older Chinese habits of scenting, blending, fruit pairing, and seasonal refreshment. The modern tea shop is not outside tea culture; it is one of its current urban stages."
----
-{% assign drinks_all = site.en_drinks | sort: 'date' | reverse %}
-{% assign drinks_featured = drinks_all | where: 'featured', true %}
-<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Fresh tea drinks</h1><p class="lede">This section follows China’s modern tea-drink market through brands, formulas, health language, and high-discussion topics from the Chinese internet: rapid chain growth, light milk tea, lower-sugar formulas, fruit tea, salty milk tea, ingredient transparency, and the changing place of tea in everyday urban life.</p></section>
-<section class="section-index-blocks">
-  <section class="feature-card feature-panel">
-    <h2>Latest / featured reading</h2>
-    {% include section_highlights.html posts=drinks_all featured_posts=drinks_featured latest_label="Latest" featured_label="Featured" %}
-  </section>
-  <section class="feature-card archive-panel">
-    <h2>All articles</h2>
-    <p>Browse the full section in reverse chronological order.</p>
-    <div class="archive-list">
-      {% for post in drinks_all %}
-      <a class="archive-item" href="{{ post.url }}">
-        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
-        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
-      </a>
-      {% endfor %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fresh Tea Drinks — China Tea Journal</title>
+  <meta name="description" content="Long-form features on China’s made-to-order tea drinks, from light milk tea and fruit tea to ingredient transparency, tea-base identity, and the 2026 matcha boom." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Fresh Tea Drinks — China Tea Journal" />
+  <meta property="og:description" content="Long-form features on China’s made-to-order tea drinks, from light milk tea and fruit tea to ingredient transparency, tea-base identity, and the 2026 matcha boom." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/matcha-whisk-bowl-v1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header wrap">
+    <div class="nav">
+      <a class="brand" href="../index.html">China Tea Journal</a>
+      <nav>
+        <a href="../tea/index.html">Tea</a>
+        <a href="../teaware/index.html">Teaware</a>
+        <a href="../history/index.html">History</a>
+        <a href="../drinks/index.html">Fresh Tea Drinks</a>
+        <a href="../about.html">About</a>
+        <a class="lang" href="../../zh/drinks/index.html">中文</a>
+      </nav>
     </div>
-  </section>
-</section></main>
+  </header>
+  <main class="wrap">
+    <section class="subhero">
+      <p class="eyebrow">Section</p>
+      <h1>Fresh Tea Drinks</h1>
+      <p class="lede">A section for long-form features on China’s fast-moving tea-drinks market. The priority here is not short launch blurbs, but distinct topics with real discussion heat, strong explanatory value, and room for deeper writing.</p>
+    </section>
+    <section class="post-grid">
+      <a class="post" href="matcha-boom-2026.html"><span class="tag">New</span><h3>Why Matcha Is Exploding Again in 2026</h3><p>From Guming and Heytea to a broader taste for drinks that can stay slightly bitter, green, and tea-forward.</p></a>
+      <a class="post" href="salty-milk-tea-rise.html"><span class="tag">Trend</span><h3>Why Salty Milk Tea Suddenly Heated Up</h3><p>Salted dairy, sea-salt profiles, and the move toward flavor that feels less sweet but not bland.</p></a>
+      <a class="post" href="light-milk-tea-return.html"><span class="tag">Trend</span><h3>Why Light Milk Tea Returned to Center Stage</h3><p>How lighter dairy structure and clearer tea character reshaped the category.</p></a>
+      <a class="post" href="fruit-tea-return.html"><span class="tag">Trend</span><h3>Why Fruit Tea Returned to the Front Line</h3><p>A look at refreshment, frequency, and how fruit tea reclaimed strategic importance.</p></a>
+      <a class="post" href="ingredient-list-transparency.html"><span class="tag">Consumer</span><h3>Why Ingredient Transparency Became a Tea-Drink Obsession</h3><p>How the question of what is actually in the cup became a selling point.</p></a>
+      <a class="post" href="tea-base-identity.html"><span class="tag">Tea Base</span><h3>Why Tea Base Now Has an Identity Card</h3><p>How menus started naming jasmine, oolong, and other bases more explicitly again.</p></a>
+    </section>
+  </main>
+  <footer class="site-footer wrap">
+    <a href="../about.html">About</a>
+    <a href="../privacy.html">Privacy</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../terms.html">Terms</a>
+  </footer>
+</body>
+</html>
