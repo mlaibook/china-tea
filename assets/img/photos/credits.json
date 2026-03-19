@@ -320,5 +320,40 @@
     "direct": "assets/img/photos/green-tea-kanko-v1.jpg",
     "note": "Used in the spring tea time-consciousness feature to show how spring tea helps modern drinkers perceive seasonal arrival through liquor brightness and leaf unfolding.",
     "local": "green-tea-kanko-v1.jpg"
+  },
+  {
+    "file": "assets/img/photos/wuyi-oolong-wikimedia-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tea_in_Wuyi_Mountains.jpg",
+    "direct": "assets/img/photos/wuyi-oolong-wikimedia-v1.jpg",
+    "note": "Reused in the Chinese and English Duck Shit Aroma dancong feature as the lead oolong image to introduce high-aroma semi-oxidized tea through dry leaf and liquor color.",
+    "local": "wuyi-oolong-wikimedia-v1.jpg"
+  },
+  {
+    "file": "assets/img/photos/dahongpao-leaf-wikimedia-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:DaHongPao_Oolong_tea_leaf.jpg",
+    "direct": "assets/img/photos/dahongpao-leaf-wikimedia-v1.jpg",
+    "note": "Reused in the Duck Shit Aroma feature to support reader-facing explanation of strip-style semi-oxidized dry leaf judgment.",
+    "local": "dahongpao-leaf-wikimedia-v1.jpg"
+  },
+  {
+    "file": "assets/img/photos/oolong-tea-glass-wikimedia-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Oolong_tea.jpg",
+    "direct": "assets/img/photos/oolong-tea-glass-wikimedia-v1.jpg",
+    "note": "Reused in the Duck Shit Aroma feature to illustrate liquor brightness and the relation between aroma and tea body in high-aroma oolong.",
+    "local": "oolong-tea-glass-wikimedia-v1.jpg"
+  },
+  {
+    "file": "assets/img/photos/hucheng-gong-fu-cha-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gongfu_tea.jpg",
+    "direct": "assets/img/photos/hucheng-gong-fu-cha-v1.jpg",
+    "note": "Reused in the Duck Shit Aroma feature to illustrate gongfu-style brewing logic relevant to Phoenix dancong drinking.",
+    "local": "hucheng-gong-fu-cha-v1.jpg"
+  },
+  {
+    "file": "assets/img/photos/hucheng-kung-fu-cha-shanghai-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Kung_fu_cha_-_Shanghai.jpg",
+    "direct": "assets/img/photos/hucheng-kung-fu-cha-shanghai-v1.jpg",
+    "note": "Reused in the Duck Shit Aroma feature to contrast original-leaf gongfu tea context with fresh-tea-drink menu culture.",
+    "local": "hucheng-kung-fu-cha-shanghai-v1.jpg"
   }
 ]
