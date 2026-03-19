@@ -1,5 +1,11 @@
 # Image sources
 
+## 2026-03-19 — Shuifang / water-square teaware feature
+- `assets/img/photos/tea-service-closeup-v2.jpg` — Source: existing local repository asset; reused as lead image for the Chinese and English shuifang feature to show a compact tea-table working zone with clear boundaries near the main brewing area; verified locally with `file` as JPEG and confirmed tracked by git.
+- `assets/img/photos/tea-service-tray-v2.jpg` — Source: existing local repository asset; reused in the shuifang feature to illustrate local boundary management on a tea table that no longer relies on full-surface drainage; verified locally with `file` as JPEG and confirmed tracked by git.
+- `assets/img/photos/tea-cup-service-v2.jpg` — Source: existing local repository asset; reused in the shuifang feature to support discussion of order, support objects, and how local wet-zone control affects overall tea-table calmness; verified locally with `file` as JPEG and confirmed tracked by git.
+- `assets/img/photos/tea-cup-service-2-v2.jpg` — Source: existing local repository asset; reused in the shuifang feature to support discussion of shared tea service and bounded wet action on multi-person tea tables; verified locally with `file` as JPEG and confirmed tracked by git.
+
 ## 2026-03-18 — Wuyi rock tea Rougui vs Shuixian article
 - `assets/img/photos/wuyi-oolong-wikimedia-v1.jpg` — Source: https://commons.wikimedia.org/wiki/File:Wuyi_oolong_tea.jpg ; file URL: https://upload.wikimedia.org/wikipedia/commons/4/49/Wuyi_oolong_tea.jpg ; verified locally with `file` as JPEG.
 - `assets/img/photos/dahongpao-leaf-wikimedia-v1.jpg` — Source: https://commons.wikimedia.org/wiki/File:Da_Hong_Pao_Oolong_tea_leaf.jpg ; file URL: https://upload.wikimedia.org/wikipedia/commons/2/29/Da_Hong_Pao_Oolong_tea_leaf.jpg ; verified locally with `file` as JPEG.

@@ -1,5 +1,33 @@
 [
   {
+    "file": "assets/img/photos/tea-service-closeup-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-service-closeup-v2.jpg",
+    "note": "Reused as the lead image for the Chinese and English shuifang feature to show a compact brewing zone with clear support-tool boundaries near the main vessel, suitable for explaining open waste-water placement and short discard paths.",
+    "local": "tea-service-closeup-v2.jpg"
+  },
+  {
+    "file": "assets/img/photos/tea-service-tray-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-service-tray-v2.jpg",
+    "note": "Reused in the shuifang feature to illustrate local boundary management on tea tables that no longer rely on full-surface drainage.",
+    "local": "tea-service-tray-v2.jpg"
+  },
+  {
+    "file": "assets/img/photos/tea-cup-service-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-cup-service-v2.jpg",
+    "note": "Reused in the shuifang feature to support discussion of order, support objects, and the visual calm created by bounded wet-action zones.",
+    "local": "tea-cup-service-v2.jpg"
+  },
+  {
+    "file": "assets/img/photos/tea-cup-service-2-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-cup-service-2-v2.jpg",
+    "note": "Reused in the shuifang feature to support discussion of shared tea service and how local waste-water control protects the serving zone from spreading disorder.",
+    "local": "tea-cup-service-2-v2.jpg"
+  },
+  {
     "file": "assets/img/photos/tea-service-tray-v2.jpg",
     "source": "existing local repository asset",
     "direct": "assets/img/photos/tea-service-tray-v2.jpg",
