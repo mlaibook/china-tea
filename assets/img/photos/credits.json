@@ -140,5 +140,45 @@
     "descriptionUrl": "#",
     "license": "internal editorial review asset",
     "note": "Used to illustrate whisking ritual, tools, and bar-top matcha preparation aesthetics in the matcha boom feature."
+  },
+  {
+    "file": "assets/img/photos/jasmine-dried-v1.jpg",
+    "local": "jasmine-dried-v1.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/jasmine-dried-v1.jpg",
+    "artist": "Unknown",
+    "descriptionUrl": "#",
+    "license": "internal editorial review asset",
+    "note": "Lead dry-leaf image used in the Chinese and English jasmine tea feature to show scented finished tea as a crafted product rather than a decorative mix."
+  },
+  {
+    "file": "assets/img/photos/jasmine-curls-v1.jpg",
+    "local": "jasmine-curls-v1.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/jasmine-curls-v1.jpg",
+    "artist": "Unknown",
+    "descriptionUrl": "#",
+    "license": "internal editorial review asset",
+    "note": "Used in the jasmine tea feature to show curled scented-leaf structure and variation in tea-base form after scenting."
+  },
+  {
+    "file": "assets/img/photos/jasmine-dragon-pearls-v1.jpg",
+    "local": "jasmine-dragon-pearls-v1.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/jasmine-dragon-pearls-v1.jpg",
+    "artist": "Unknown",
+    "descriptionUrl": "#",
+    "license": "internal editorial review asset",
+    "note": "Used in the jasmine tea feature to illustrate pearl-shaped scented tea and how form changes brewing display and market positioning."
+  },
+  {
+    "file": "assets/img/photos/jasmine-handrolled-v1.jpg",
+    "local": "jasmine-handrolled-v1.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/jasmine-handrolled-v1.jpg",
+    "artist": "Unknown",
+    "descriptionUrl": "#",
+    "license": "internal editorial review asset",
+    "note": "Used in the jasmine tea feature to support discussion of higher-grade scented tea, finer buds, and crafted leaf presentation."
   }
 ]
