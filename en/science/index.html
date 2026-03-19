@@ -18,7 +18,11 @@ description: "This section follows tea, tea drinks, and health-related research 
     <h2>All articles</h2>
     <p>Browse the full section in reverse chronological order.</p>
     <div class="archive-list">
-      {% for post in posts_all %}
+      <a class="archive-item" href="fruit-veg-tea-fiber-satiety-health-halo.html">
+        <span class="archive-item-title">Why fruit-and-veg tea, kale drinks, fiber, and ‘light-body bottles’ so easily read as healthier</span>
+        <span class="archive-item-meta"><time datetime="2026-03-19">2026-03-19</time></span>
+      </a>
+            {% for post in posts_all %}
       <a class="archive-item" href="{{ post.url }}">
         <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
         <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
