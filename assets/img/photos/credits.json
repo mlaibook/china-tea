@@ -229,5 +229,33 @@
     "descriptionUrl": "#",
     "license": "internal editorial review asset",
     "note": "Used in the jasmine tea feature to support discussion of higher-grade scented tea, finer buds, and crafted leaf presentation."
+  },
+  {
+    "file": "assets/img/photos/green-tea-glass-v1.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/green-tea-glass-v1.jpg",
+    "note": "Used in the Chinese and English Xinyang Maojian feature as the lead brewing image to show glass-brewing observation, early-spring green tea liquor clarity, and unfolding leaves relevant to Maojian reading.",
+    "local": "green-tea-glass-v1.jpg"
+  },
+  {
+    "file": "assets/img/photos/green-tea-leaves-v1.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/green-tea-leaves-v1.jpg",
+    "note": "Used in the Xinyang Maojian feature to illustrate dry-leaf observation, strand shape, and the reader-facing logic of checking green tea appearance before buying.",
+    "local": "green-tea-leaves-v1.jpg"
+  },
+  {
+    "file": "assets/img/photos/green-tea-kanko-v1.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/green-tea-kanko-v1.jpg",
+    "note": "Used in the Xinyang Maojian feature to support discussion of liquor brightness, leaf unfolding, and how to read tenderness and cleanliness in a brewed green tea.",
+    "local": "green-tea-kanko-v1.jpg"
+  },
+  {
+    "file": "assets/img/photos/longjing-frying-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/longjing-frying-v2.jpg",
+    "note": "Reused in the Xinyang Maojian feature as a process-support visual for fine green tea heat control, with captions explicitly describing it as an illustration of processing logic rather than a literal Xinyang scene.",
+    "local": "longjing-frying-v2.jpg"
   }
 ]

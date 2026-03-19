@@ -1,29 +1,38 @@
----
-lang_switch_url: "../../en/tea/index.html"
-layout: page
-lang: zh-CN
-asset_prefix: "../../"
-title: "茶叶 - China Tea Library"
-description: "从经典茶类、产地工艺到品牌化入口，这里集中整理中国茶叶的关键阅读路径。"
----
-{% assign posts_all = site.zh_tea | sort: 'date' | reverse %}
-{% assign posts_featured = posts_all | where: 'featured', true %}
-<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶叶</h1><p class="lede">从经典茶类、产地工艺到品牌化入口，这里集中整理中国茶叶的关键阅读路径。</p></section>
-<section class="section-index-blocks">
-  <section class="feature-card feature-panel">
-    <h2>最新 / 热点文章</h2>
-    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="最新文章" featured_label="热点 / 置顶" %}
-  </section>
-  <section class="feature-card archive-panel">
-    <h2>全部文章</h2>
-    <p>按时间降序浏览本栏目全部文章。</p>
-    <div class="archive-list">
-      {% for post in posts_all %}
-      <a class="archive-item" href="{{ post.url }}">
-        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
-        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
-      </a>
-      {% endfor %}
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>茶叶 — 中国茶志</title>
+  <meta name="description" content="从龙井开始，逐步扩展到更多中国代表性茶叶。" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="茶叶 — 中国茶志" />
+  <meta property="og:description" content="从龙井开始，逐步扩展到更多中国代表性茶叶。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/longjing-dried.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header wrap">
+    <div class="nav">
+      <a class="brand" href="zh/index.html">中国茶志</a>
+      <nav>
+        <a href="zh/tea/index.html">茶叶</a>
+        <a href="zh/teaware/index.html">茶具</a>
+        <a href="zh/history/index.html">茶文化历史</a>
+        <a href="zh/drinks/index.html">现制茶饮</a>
+        <a href="zh/about.html">About</a>
+        <a class="lang" href="/china-tea/en/tea/index.html">English</a>
+      </nav>
     </div>
-  </section>
-</section></main>
+  </header>
+  <main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶叶</h1><p class="lede">这个栏目先从龙井切入，因为龙井几乎是理解中国绿茶最好的入口之一。接下来会继续扩展到碧螺春、黄山毛峰、六安瓜片、信阳毛尖等代表性茶叶。</p></section><div class="content-stream"><figure class="photo"><img src="assets/img/photos/longjing-dried.jpg" alt="龙井干茶" /><figcaption>龙井干茶的扁平外形，与其炒制和压扁工艺高度相关。</figcaption></figure><figure class="photo"><img src="assets/img/photos/longjing-steeped.jpg" alt="冲泡后的龙井" /><figcaption>冲泡后的龙井，汤色清亮，叶底嫩匀，能看出春茶的鲜活感。</figcaption></figure><section class="feature-card section-index-blocks"><div class="feature-panel feature-card"><h2>本栏重点文章</h2><div class="feature-links"><a class="feature-link" href="zh/tea/xinyang-maojian.html"><div class="feature-link-body"><span class="feature-chip">新稿 · 早春绿茶</span><h3>信阳毛尖：为什么一杯早春绿茶会牵出开采期、山场、白毫与真假春茶之争</h3></div><figure class="feature-link-media"><img src="assets/img/photos/green-tea-glass-v1.jpg" alt="玻璃杯中的绿茶" /></figure><p class="feature-link-desc">从 2026 年春茶开采争议切入，系统讲清信阳毛尖的产区、工艺、风味、杯泡方法与消费辨识逻辑。</p></a><a class="feature-link" href="zh/tea/longjing.html"><div class="feature-link-body"><span class="feature-chip">已发布 · 名优绿茶</span><h3>龙井：从一杯绿茶看见杭州的春天、工艺与地方生活</h3></div><figure class="feature-link-media"><img src="assets/img/photos/longjing-dried.jpg" alt="龙井干茶" /></figure><p class="feature-link-desc">从杭州、西湖与锅炒工艺切入，理解龙井的叶形、香气、水温、历史与旅行语境。</p></a></div></div><div class="archive-panel feature-card"><h2>栏目归档</h2><div class="archive-list"><a class="archive-item" href="zh/tea/xinyang-maojian.html"><span class="archive-item-title">信阳毛尖：为什么一杯早春绿茶会牵出开采期、山场、白毫与真假春茶之争</span><span class="archive-item-meta">2026-03-19 · 新增</span></a><a class="archive-item" href="zh/tea/longjing.html"><span class="archive-item-title">龙井：从一杯绿茶看见杭州的春天、工艺与地方生活</span><span class="archive-item-meta">2026-03-16</span></a></div></div></section></div></main>
+  <footer class="site-footer wrap">
+    <a href="zh/about.html">About</a>
+    <a href="zh/privacy.html">Privacy</a>
+    <a href="zh/contact.html">Contact</a>
+    <a href="zh/terms.html">Terms</a>
+  </footer>
+</body>
+</html>
