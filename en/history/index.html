@@ -1,29 +1,52 @@
----
-lang_switch_url: "../../zh/history/index.html"
-layout: page
-lang: en
-asset_prefix: "../../"
-title: "History - China Tea Library"
-description: "Tea history is not only chronology. It is also a history of brewing forms, vessels, aesthetics, trade, and social life."
----
-{% assign posts_all = site.en_history | sort: 'date' | reverse %}
-{% assign posts_featured = posts_all | where: 'featured', true %}
-<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>History</h1><p class="lede">Tea history is not only chronology. It is also a history of brewing forms, vessels, aesthetics, trade, and social life.</p></section>
-<section class="section-index-blocks">
-  <section class="feature-card feature-panel">
-    <h2>Latest / featured reading</h2>
-    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="Latest" featured_label="Featured" %}
-  </section>
-  <section class="feature-card archive-panel">
-    <h2>All articles</h2>
-    <p>Browse the full section in reverse chronological order.</p>
-    <div class="archive-list">
-      {% for post in posts_all %}
-      <a class="archive-item" href="{{ post.url }}">
-        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
-        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
-      </a>
-      {% endfor %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tea Culture & History — China Tea Journal</title>
+  <meta name="description" content="Long-form features on Chinese tea history, cultural revival, classical tea texts, and changing interpretations of tradition." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Tea Culture & History — China Tea Journal" />
+  <meta property="og:description" content="Long-form features on Chinese tea history, cultural revival, classical tea texts, and changing interpretations of tradition." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/song-jianzhan-hare-fur-v2.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header wrap">
+    <div class="nav">
+      <a class="brand" href="/en/index.html">China Tea Journal</a>
+      <nav>
+        <a href="/en/tea/index.html">Tea</a>
+        <a href="/en/teaware/index.html">Teaware</a>
+        <a href="/en/history/index.html">History</a>
+        <a href="/en/drinks/index.html">Fresh Tea Drinks</a>
+        <a href="/en/about.html">About</a>
+        <a class="lang" href="/zh/history/index.html">中文</a>
+      </nav>
     </div>
-  </section>
-</section></main>
+  </header>
+  <main class="wrap section-page">
+    <section class="subhero">
+      <p class="eyebrow">Section</p>
+      <h1>Tea Culture & History</h1>
+      <p class="lede">This section collects long-form features on Chinese tea history, historical revival, classical tea texts, older tea practices, and the ways tradition is being reinterpreted in contemporary life.</p>
+    </section>
+    <section class="post-grid">
+      <a class="post" href="/en/history/daguan-tea-essay.html">
+        <figure class="photo"><img src="../../assets/img/photos/song-jianzhan-hare-fur-v2.jpg" alt="Close view of a Song-style hare’s-fur Jian bowl, showing why dark bowls mattered in the whisked-tea world described in The Daguan Tea Treatise" /></figure>
+        <span class="tag">History feature</span>
+        <h3>Why The Daguan Tea Treatise keeps getting rediscovered: Emperor Huizong, Song tea revival, and how China rereads tea books today</h3>
+        <p>A long-form feature on why The Daguan Tea Treatise has become one of the most repeatedly cited Song tea texts in contemporary Chinese culture, from whisked-tea revival to modern re-readings of classical tea aesthetics.</p>
+      </a>
+    </section>
+  </main>
+  <footer class="site-footer wrap">
+    <a href="/en/about.html">About</a>
+    <a href="/en/privacy.html">Privacy</a>
+    <a href="/en/contact.html">Contact</a>
+    <a href="/en/terms.html">Terms</a>
+  </footer>
+</body>
+</html>

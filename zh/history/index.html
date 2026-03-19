@@ -1,29 +1,52 @@
----
-lang_switch_url: "../../en/history/index.html"
-layout: page
-lang: zh-CN
-asset_prefix: "../../"
-title: "茶文化历史 - China Tea Library"
-description: "茶史不只是年代顺序，也是饮法、器物、审美、贸易与社会生活如何一起变化的历史。"
----
-{% assign posts_all = site.zh_history | sort: 'date' | reverse %}
-{% assign posts_featured = posts_all | where: 'featured', true %}
-<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶文化历史</h1><p class="lede">茶史不只是年代顺序，也是饮法、器物、审美、贸易与社会生活如何一起变化的历史。</p></section>
-<section class="section-index-blocks">
-  <section class="feature-card feature-panel">
-    <h2>最新 / 热点文章</h2>
-    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="最新文章" featured_label="热点 / 置顶" %}
-  </section>
-  <section class="feature-card archive-panel">
-    <h2>全部文章</h2>
-    <p>按时间降序浏览本栏目全部文章。</p>
-    <div class="archive-list">
-      {% for post in posts_all %}
-      <a class="archive-item" href="{{ post.url }}">
-        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
-        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
-      </a>
-      {% endfor %}
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>茶文化历史 — 中国茶志</title>
+  <meta name="description" content="中国茶历史、茶文化复兴、古代茶事与当代重读专题。" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="茶文化历史 — 中国茶志" />
+  <meta property="og:description" content="中国茶历史、茶文化复兴、古代茶事与当代重读专题。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/song-jianzhan-hare-fur-v2.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header wrap">
+    <div class="nav">
+      <a class="brand" href="/zh/index.html">中国茶志</a>
+      <nav>
+        <a href="/zh/tea/index.html">茶叶</a>
+        <a href="/zh/teaware/index.html">茶具</a>
+        <a href="/zh/history/index.html">茶文化历史</a>
+        <a href="/zh/drinks/index.html">现制茶饮</a>
+        <a href="/zh/about.html">About</a>
+        <a class="lang" href="/en/history/index.html">English</a>
+      </nav>
     </div>
-  </section>
-</section></main>
+  </header>
+  <main class="wrap section-page">
+    <section class="subhero">
+      <p class="eyebrow">栏目</p>
+      <h1>茶文化历史</h1>
+      <p class="lede">这里收录中国茶史、茶文化复兴、古代茶事、传统概念与当代重读的深度图文稿。重点不只是“知识点”，更是中国茶在不同时代怎样被制作、观看、理解和重新发明。</p>
+    </section>
+    <section class="post-grid">
+      <a class="post" href="/zh/history/daguan-tea-essay.html">
+        <figure class="photo"><img src="../../assets/img/photos/song-jianzhan-hare-fur-v2.jpg" alt="宋代兔毫建盏特写，深色盏面强调了点茶时代对白色汤花与器物审美的重视" /></figure>
+        <span class="tag">历史深稿</span>
+        <h3>《大观茶论》为什么又被反复翻出来：宋徽宗、点茶热与当代中国重读茶书的方式</h3>
+        <p>从宋代点茶复兴到今天的《大观茶论》重读热，这篇长文讨论一本文字不算长的宋代茶书，为何会在当代中文互联网和茶文化空间里不断被重新引用。</p>
+      </a>
+    </section>
+  </main>
+  <footer class="site-footer wrap">
+    <a href="/zh/about.html">About</a>
+    <a href="/zh/privacy.html">Privacy</a>
+    <a href="/zh/contact.html">Contact</a>
+    <a href="/zh/terms.html">Terms</a>
+  </footer>
+</body>
+</html>
