@@ -1,5 +1,26 @@
 [
   {
+    "file": "assets/img/photos/tea-service-closeup-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-service-closeup-v2.jpg",
+    "note": "Reused as the lead image for the Chinese and English lid-rest feature to show clear brewing-zone boundaries and the kind of tabletop order that makes a dedicated lid-rest discussion meaningful.",
+    "local": "tea-service-closeup-v2.jpg"
+  },
+  {
+    "file": "assets/img/photos/tea-service-tray-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-service-tray-v2.jpg",
+    "note": "Reused in the lid-rest feature to illustrate dry-brewing zoning, tabletop boundaries, and the placement logic of small supporting utensils near the main brewing vessel.",
+    "local": "tea-service-tray-v2.jpg"
+  },
+  {
+    "file": "assets/img/photos/tea-cup-service-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-cup-service-v2.jpg",
+    "note": "Reused in the lid-rest feature to support discussion of material mood, support-tool boundaries, and how small teaware affects the overall steadiness of a tea table.",
+    "local": "tea-cup-service-v2.jpg"
+  },
+  {
     "file": "assets/img/photos/tea-service-tray-v2.jpg",
     "source": "existing local repository asset",
     "direct": "assets/img/photos/tea-service-tray-v2.jpg",

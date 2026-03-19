@@ -1,29 +1,64 @@
----
-lang_switch_url: "../../zh/teaware/index.html"
-layout: page
-lang: en
-asset_prefix: "../../"
-title: "Teaware - China Tea Library"
-description: "From gaiwan and fairness pitcher to jianzhan, strainers, and Jingdezhen porcelain, teaware shapes both tea practice and tea aesthetics."
----
-{% assign posts_all = site.en_teaware | sort: 'date' | reverse %}
-{% assign posts_featured = posts_all | where: 'featured', true %}
-<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Teaware</h1><p class="lede">From gaiwan and fairness pitcher to jianzhan, strainers, and Jingdezhen porcelain, teaware shapes both tea practice and tea aesthetics.</p></section>
-<section class="section-index-blocks">
-  <section class="feature-card feature-panel">
-    <h2>Latest / featured reading</h2>
-    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="Latest" featured_label="Featured" %}
-  </section>
-  <section class="feature-card archive-panel">
-    <h2>All articles</h2>
-    <p>Browse the full section in reverse chronological order.</p>
-    <div class="archive-list">
-      {% for post in posts_all %}
-      <a class="archive-item" href="{{ post.url }}">
-        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
-        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
-      </a>
-      {% endfor %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teaware — China Tea Journal</title>
+  <meta name="description" content="Chinese teaware features on vessels, support tools, brewing workflow, craft, aesthetics, and the practical logic behind the tea table—from gaiwans and fairness cups to lid rests." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Teaware — China Tea Journal" />
+  <meta property="og:description" content="Chinese teaware features on vessels, support tools, brewing workflow, craft, aesthetics, and the practical logic behind the tea table—from gaiwans and fairness cups to lid rests." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/tea-service-closeup-v2.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header wrap">
+    <div class="nav">
+      <a class="brand" href="../index.html">China Tea Journal</a>
+      <nav>
+        <a href="../tea/index.html">Tea</a>
+        <a href="../teaware/index.html">Teaware</a>
+        <a href="../history/index.html">History</a>
+        <a href="../drinks/index.html">Fresh Tea Drinks</a>
+        <a href="../about.html">About</a>
+        <a class="lang" href="../../zh/teaware/index.html">中文</a>
+      </nav>
     </div>
-  </section>
-</section></main>
+  </header>
+  <main class="page article-rich"><article>
+    <p class="eyebrow">Section</p>
+    <h1>Teaware</h1>
+    <p class="lede">This section looks at Chinese tea objects not only as beautiful vessels, but as working tools. The focus is on background, craft, tabletop workflow, aesthetics, and the practical misunderstandings that shape how tea is actually made and shared.</p>
+    <div class="story-grid">
+      <div>
+        <h2>Newest feature</h2>
+        <p><a href="gai-zhi.html"><strong>Why the lid rest matters again:</strong> dry brewing, lid placement, tabletop workflow, and the aesthetics of small teaware</a></p>
+        <p>This new article focuses on a small object that quietly reveals the maturity of a tea table: the lid rest. It explains why lid placement, pauses between actions, and support-tool boundaries matter far more than the object’s size suggests.</p>
+      </div>
+      <figure class="photo"><img src="../../assets/img/photos/tea-service-closeup-v2.jpg" alt="A close tea-table scene with clear boundaries between the main brewing vessel, fairness cup, and support tools" /><figcaption>Much of teaware’s real value appears not when an object sits alone, but when it makes the whole table feel steadier, clearer, and more usable.</figcaption></figure>
+    </div>
+    <h2>Published features</h2>
+    <ul>
+      <li><a href="gai-zhi.html">Why the lid rest matters again</a></li>
+      <li><a href="gaiwan.html">What a gaiwan really is and why it still matters</a></li>
+      <li><a href="gongdao-cup.html">Why the fairness cup returned to the center of the tea table</a></li>
+      <li><a href="jianshui.html">Why the waste-water bowl became central again in dry brewing</a></li>
+      <li><a href="hucheng.html">Why the pot rest matters again today</a></li>
+      <li><a href="tea-strainer.html">Why the tea strainer returned to the center of teaware debate</a></li>
+      <li><a href="wenxiang-cup.html">Why the aroma cup is being seriously discussed again</a></li>
+      <li><a href="tea-tasting-cup.html">Why the tea tasting cup deserves serious attention again</a></li>
+      <li><a href="jingdezhen.html">Jingdezhen and Chinese tea vessels</a></li>
+      <li><a href="jianzhan.html">Jianzhan and the afterimage of Song black-glazed bowl aesthetics</a></li>
+      <li><a href="tea-pet.html">Tea pets, host cups, and the rise of the “cute tea table”</a></li>
+    </ul>
+  </article></main>
+  <footer class="site-footer wrap">
+    <a href="../about.html">About</a>
+    <a href="../privacy.html">Privacy</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../terms.html">Terms</a>
+  </footer>
+</body>
+</html>
