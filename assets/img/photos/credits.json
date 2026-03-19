@@ -1,5 +1,33 @@
 [
   {
+    "file": "assets/img/photos/tea-service-tray-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/tea-service-tray-v2.jpg",
+    "note": "Reused as the lead image for the Chinese and English Ming loose-leaf tea history feature to show a reader-facing loose-leaf brewing order with gaiwan, fairness pitcher, and cups; also used to support discussion of how the tea table itself was reorganized after the rise of steeped loose tea.",
+    "local": "tea-service-tray-v2.jpg"
+  },
+  {
+    "file": "assets/img/photos/song-jianzhan-hare-fur-v2.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/song-jianzhan-hare-fur-v2.jpg",
+    "note": "Reused in the Ming loose-leaf tea history feature as a contrast image for the earlier bowl-surface-centered Song whisked-tea world that loose-leaf steeping gradually displaced.",
+    "local": "song-jianzhan-hare-fur-v2.jpg"
+  },
+  {
+    "file": "assets/img/photos/chengdu-teahouse-v1.jpg",
+    "source": "existing local repository asset",
+    "direct": "assets/img/photos/chengdu-teahouse-v1.jpg",
+    "note": "Reused in the Ming loose-leaf tea history feature to illustrate how loose-leaf brewing entered broad everyday teahouse and urban life beyond elite performance tea culture.",
+    "local": "chengdu-teahouse-v1.jpg"
+  },
+  {
+    "file": "assets/img/photos/gongfu-tea-set-v1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chinese_Tea_Ceremony.jpg",
+    "direct": "https://commons.wikimedia.org/wiki/Special:FilePath/Chinese_Tea_Ceremony.jpg",
+    "note": "Reused in the Ming loose-leaf tea history feature to illustrate the long afterlife and flexibility of loose-leaf brewing setups in later Chinese tea culture.",
+    "local": "gongfu-tea-set-v1.jpg"
+  },
+  {
     "file": "assets/img/photos/tea-service-closeup-v2.jpg",
     "source": "existing local repository asset",
     "direct": "assets/img/photos/tea-service-closeup-v2.jpg",
