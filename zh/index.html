@@ -1,66 +1,170 @@
----
-lang_switch_url: "../en/index.html"
-layout: page
-lang: zh-CN
-asset_prefix: "../"
-title: 中国茶志 — 中文版
-description: "从茶叶、茶具、茶文化历史到现制茶饮，系统介绍中国茶世界。"
----
-{% assign tea_posts = site.zh_tea | sort: 'date' | reverse %}
-{% assign teaware_posts = site.zh_teaware | sort: 'date' | reverse %}
-{% assign history_posts = site.zh_history | sort: 'date' | reverse %}
-{% assign drinks_posts = site.zh_drinks | sort: 'date' | reverse %}
-{% assign science_posts = site.zh_science | sort: 'date' | reverse %}
-{% assign all_posts = tea_posts | concat: teaware_posts | concat: history_posts | concat: drinks_posts | concat: science_posts | sort: 'date' | reverse %}
-{% assign latest_urls = "/zh/science/light-milk-tea-protein-lactose-health.html|/zh/teaware/hucheng.html|/zh/history/famen-temple-tea-set.html|/zh/tea/biluochun.html" | split: "|" %}
-{% assign latest_posts = "" | split: "" %}
-{% for latest_url in latest_urls %}
-  {% assign matched = all_posts | where: 'url', latest_url %}
-  {% assign latest_posts = latest_posts | concat: matched %}
-{% endfor %}
-{% assign hot_urls = "/zh/drinks/chagee-rise.html|/zh/history/teahouse-revival-history.html|/zh/tea/wuyi-rock-tea-rougui-shuixian.html|/zh/science/tea-drink-caffeine-sleep-window.html|/zh/drinks/tea-base-identity.html|/zh/teaware/tea-tasting-cup.html" | split: "|" %}
-{% assign featured_posts = "" | split: "" %}
-{% for hot_url in hot_urls %}
-  {% assign matched = all_posts | where: 'url', hot_url %}
-  {% assign featured_posts = featured_posts | concat: matched %}
-{% endfor %}
-<main class="wrap">
-  <section class="hero story-hero">
-    <div class="hero-copy">
-      <p class="eyebrow">中文版</p>
-      <h1>中国茶，不止是茶叶</h1>
-      <p class="lede">从山场、器物、历史到现制茶饮与研究争议，这里一边持续更新刚发布的新文章，一边把第一次进站最值得先看的代表作放在前面。</p>
-      <div class="toc">
-        <span class="pill">茶叶</span>
-        <span class="pill">茶具</span>
-        <span class="pill">茶文化历史</span>
-        <span class="pill">现制茶饮</span>
-        <span class="pill">研究导读</span>
-      </div>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>中国茶志 — 首页</title>
+  <meta name="description" content="中国茶志首页：查看最新发布的茶叶、茶具、茶史与现代茶饮文章，以及最值得先读的代表性长文。" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="中国茶志 — 首页" />
+  <meta property="og:description" content="最新发布与编辑精选并列呈现，帮助你从中国茶的产地、器物、历史与现代饮品世界开始浏览。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/longjing-plantation.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header wrap">
+    <div class="nav">
+      <a class="brand" href="/china-tea/zh/index.html">中国茶志</a>
+      <nav>
+        <a href="/china-tea/zh/tea/index.html">茶叶</a>
+        <a href="/china-tea/zh/teaware/index.html">茶具</a>
+        <a href="/china-tea/zh/history/index.html">茶文化历史</a>
+        <a href="/china-tea/zh/drinks/index.html">现代茶饮</a>
+        <a href="/china-tea/zh/science/index.html">茶与科学</a>
+        <a href="/china-tea/zh/about.html">About</a>
+        <a class="lang" href="/china-tea/en/index.html">English</a>
+      </nav>
     </div>
-    <figure class="photo">
-      <img src="../assets/img/photos/longjing-plantation-v2.jpg" alt="杭州龙井茶园" />
-      <figcaption>既能从一片茶叶开始，也能从一只杯子、一家茶馆或一杯城市茶饮重新进入中国茶。</figcaption>
-    </figure>
-  </section>
+  </header>
 
-  <section class="feature-card archive-panel">
-    <h2>最新发布</h2>
-    <p>这轮首页把刚上线的四篇新稿放到前排：一篇讲轻乳茶的“健康感”误读，一篇回到壶承这种容易被忽略的器物，一篇重看法门寺地宫茶具，一篇补上春茶季里最该看的碧螺春长稿。</p>
-    {% include homepage_latest_list.html posts=latest_posts %}
-  </section>
+  <main class="wrap grid-home">
+    <section class="hero story-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">中文版首页</p>
+        <h1>从春茶新作开始，也从几篇最值得先读的代表作开始</h1>
+        <p class="lede">中国茶志把茶叶、器物、历史、现代茶饮和研究放在同一个入口里。首页一边更新最近刚发布的长文，一边保留更适合第一次来到站里的读者先打开的编辑精选。</p>
+        <div class="cta-row">
+          <a class="btn" href="#latest">看最新发布</a>
+          <a class="btn ghost" href="#hot">看编辑精选</a>
+        </div>
+      </div>
+      <figure class="photo">
+        <img src="/china-tea/assets/img/photos/longjing-plantation.jpg" alt="杭州龙井茶园" />
+        <figcaption>从产地到日常喝法，中国茶的入口不止一种。</figcaption>
+      </figure>
+    </section>
 
-  <section class="feature-card feature-panel">
-    <h2>最值得先看的文章</h2>
-    <p>这里不是伪造热度榜，而是一组更适合新读者先点开的编辑精选：既有当下最热的茶饮与健康话题，也有能迅速建立中国茶坐标的茶叶、茶具与历史入口。</p>
-    {% include homepage_featured_grid.html posts=featured_posts chip_label="推荐" fallback_image="../assets/img/photos/milk-tea.jpg" %}
-  </section>
+    <section class="feature-card">
+      <div class="hot-head">
+        <div>
+          <p class="eyebrow">Browse by section</p>
+          <h2>先选你想进入的方向</h2>
+        </div>
+      </div>
+      <div class="post-grid">
+        <a class="post" href="/china-tea/zh/tea/index.html">
+          <span class="tag">茶叶</span>
+          <h3>绿茶、乌龙、白茶与产区</h3>
+          <p>从龙井、碧螺春到武夷岩茶，先建立对核心茶类与山场风格的基本判断。</p>
+        </a>
+        <a class="post" href="/china-tea/zh/teaware/index.html">
+          <span class="tag">茶具</span>
+          <h3>盖碗、壶承、盖置与桌面秩序</h3>
+          <p>不只看器形，也看它们怎样影响出汤、闻香、落盖和整张茶席的动线。</p>
+        </a>
+        <a class="post" href="/china-tea/zh/history/index.html">
+          <span class="tag">历史</span>
+          <h3>从唐宋茶事到今天的再发现</h3>
+          <p>把法门寺、宋代点茶、《大观茶论》和当代新中式热潮放回同一条文化脉络里看。</p>
+        </a>
+        <a class="post" href="/china-tea/zh/drinks/index.html">
+          <span class="tag">现代茶饮</span>
+          <h3>抹茶、轻乳茶、咸口奶茶与新品类</h3>
+          <p>追踪中文互联网里最活跃的新茶饮话题，看风味与消费心理怎样一起变化。</p>
+        </a>
+        <a class="post" href="/china-tea/zh/science/index.html">
+          <span class="tag">科学</span>
+          <h3>咖啡因、补水、乳糖与健康边界</h3>
+          <p>把“更健康”“更轻负担”之类常见说法拆开，看研究真正支持到哪一步。</p>
+        </a>
+        <a class="post" href="/china-tea/zh/about.html">
+          <span class="tag">关于本站</span>
+          <h3>为什么要中英双语写中国茶</h3>
+          <p>以中文语境为基础做内容，再整理成国际读者也能读懂的长期茶文化资料库。</p>
+        </a>
+      </div>
+    </section>
 
-  <section class="post-grid">
-    <a class="post" href="../zh/tea/index.html"><span class="tag">栏目</span><h3>茶叶</h3><p>从龙井、普洱、乌龙到凤凰单丛、茉莉花茶，把中国茶最基本也最容易混淆的风味坐标讲清楚。</p></a>
-    <a class="post" href="../zh/teaware/index.html"><span class="tag">栏目</span><h3>茶具</h3><p>盖碗、公道杯、建盏、景德镇与审评杯，也包括壶承、闻香杯这些正在重新回到讨论中心的器物。</p></a>
-    <a class="post" href="../zh/history/index.html"><span class="tag">栏目</span><h3>茶文化历史</h3><p>从抹茶、点茶、茶百戏到法门寺、茶馆与万里茶道，把今天的流行放回更长的历史里理解。</p></a>
-    <a class="post" href="../zh/drinks/index.html"><span class="tag">栏目</span><h3>现制茶饮</h3><p>品牌、配方、菜单语言与城市消费现场，追踪中国茶饮为什么总能不断长出新话题。</p></a>
-    <a class="post" href="../zh/science/index.html"><span class="tag">栏目</span><h3>研究导读</h3><p>围绕咖啡因、代糖、肠道菌群、补水感与“更健康”叙事，整理更可靠的证据框架。</p></a>
-  </section>
-</main>
+    <section id="latest" class="feature-card archive-panel">
+      <div class="hot-head">
+        <div>
+          <p class="eyebrow">Latest</p>
+          <h2>最新发布</h2>
+          <p class="lede">按最近更新整理，尽量覆盖茶具、科学、历史与茶饮四个方向。</p>
+        </div>
+      </div>
+      <div class="archive-list">
+        <a class="archive-item" href="/china-tea/zh/teaware/gai-zhi.html">
+          <span class="archive-item-title">盖置为什么又被认真讨论：干泡时代的落盖秩序、桌面动线与小器物审美</span>
+          <span class="archive-item-meta"><time datetime="2026-03-19">2026-03-19</time></span>
+        </a>
+        <a class="archive-item" href="/china-tea/zh/science/bottled-unsweetened-tea-polyphenols-caffeine-health.html">
+          <span class="archive-item-title">瓶装无糖茶为什么同时强调茶多酚、咖啡因和真茶感？</span>
+          <span class="archive-item-meta"><time datetime="2026-03-19">2026-03-19</time></span>
+        </a>
+        <a class="archive-item" href="/china-tea/zh/history/daguan-tea-essay.html">
+          <span class="archive-item-title">《大观茶论》为什么又被反复翻出来：宋徽宗、点茶热与当代中国重读茶书的方式</span>
+          <span class="archive-item-meta"><time datetime="2026-03-19">2026-03-19</time></span>
+        </a>
+        <a class="archive-item" href="/china-tea/zh/drinks/matcha-boom-2026.html">
+          <span class="archive-item-title">抹茶为什么在 2026 年又爆了：从古茗、喜茶到“更苦一点也愿意喝”的风味升级</span>
+          <span class="archive-item-meta"><time datetime="2026-03-19">2026-03-19</time></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="hot" class="feature-card feature-panel hot-strip">
+      <div class="hot-head">
+        <div>
+          <span class="hot-badge">编辑精选</span>
+          <h2>现在最值得先看的 4 篇</h2>
+          <p class="lede">这里不是伪造“热度榜”，而是优先放更有代表性、信息密度高、也更适合新访客理解站点气质的文章。</p>
+        </div>
+      </div>
+      <div class="feature-links">
+        <a class="feature-link" href="/china-tea/zh/tea/biluochun.html">
+          <div class="feature-link-body">
+            <span class="feature-chip">春茶代表作</span>
+            <h3>碧螺春的江南春味：洞庭山、茶果间作与一口鲜细卷香的来路</h3>
+          </div>
+          <figure class="feature-link-media"><img src="/china-tea/assets/img/photos/green-tea-leaves-v1.jpg" alt="碧螺春相关绿茶干茶近景" /></figure>
+          <p class="feature-link-desc">一篇能迅速建立“产地—工艺—风味—购买判断”完整框架的春茶长文。</p>
+        </a>
+        <a class="feature-link" href="/china-tea/zh/science/light-milk-tea-protein-lactose-health.html">
+          <div class="feature-link-body">
+            <span class="feature-chip">高讨论度</span>
+            <h3>有奶不等于更轻负担：轻乳茶、鲜奶茶里的蛋白质、乳糖与“更健康”想象</h3>
+          </div>
+          <figure class="feature-link-media"><img src="/china-tea/assets/img/photos/light-milk-tea-chagee-v1.jpg" alt="透明杯中的轻乳茶" /></figure>
+          <p class="feature-link-desc">把现代茶饮最容易被误读的“健康感”拆开讲，适合第一次进入本站的读者直接建立判断。</p>
+        </a>
+        <a class="feature-link" href="/china-tea/zh/tea/wuyi-rock-tea-rougui-shuixian.html">
+          <div class="feature-link-body">
+            <span class="feature-chip">入门硬核</span>
+            <h3>武夷岩茶里，肉桂和水仙到底怎么分：从山场、香气、焙火到冲泡</h3>
+          </div>
+          <figure class="feature-link-media"><img src="/china-tea/assets/img/photos/wuyi-oolong-wikimedia-v1.jpg" alt="武夷岩茶干茶" /></figure>
+          <p class="feature-link-desc">代表站内“讲透一个核心问题”的写法，信息密度高，也很能体现中国茶的复杂性。</p>
+        </a>
+        <a class="feature-link" href="/china-tea/zh/drinks/salty-milk-tea-rise.html">
+          <div class="feature-link-body">
+            <span class="feature-chip">茶饮趋势</span>
+            <h3>咸口奶茶突然升温：从咸乳酪、海盐风味到“不想太甜也不想太淡”的口味转向</h3>
+          </div>
+          <figure class="feature-link-media"><img src="/china-tea/assets/img/photos/light-milk-tea-cups-v1.jpg" alt="多杯现代奶茶" /></figure>
+          <p class="feature-link-desc">题材新、可读性强，也能让首页不只停留在传统茶，而是真正连接当下消费现场。</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <a href="/china-tea/zh/about.html">About</a>
+    <a href="/china-tea/zh/privacy.html">Privacy</a>
+    <a href="/china-tea/zh/contact.html">Contact</a>
+    <a href="/china-tea/zh/terms.html">Terms</a>
+  </footer>
+</body>
+</html>
