@@ -1,3 +1,14 @@
+"""DEPRECATED: legacy static-file generator.
+
+This repository is now Jekyll collection-based.
+Do NOT use this script to generate or rewrite zh/en article pages or index pages.
+It predates collection-managed content and can conflict with collection sources.
+
+Keep only as historical reference unless deliberately rewritten for the new architecture.
+"""
+
+raise SystemExit("generate_site.py is deprecated for the collection-based site. Do not run it.")
+
 from pathlib import Path
 import json
 root = Path('.')
