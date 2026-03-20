@@ -8,7 +8,7 @@ permalink: /sitemap.xml
 {% for p in page_candidates %}
   {% unless p.url contains '/assets/' or p.url contains '/docs/' or p.name == '404.html' or p.url == '/robots.txt' or p.url == '/sitemap.xml' %}
   <url>
-    <loc>{{ site.url }}{{ p.url | replace: 'index.html', '' | xml_escape }}</loc>
+    <loc>{{ site.url }}{{ p.url | xml_escape }}</loc>
     {% if p.updated %}<lastmod>{{ p.updated | date: "%Y-%m-%d" }}</lastmod>{% elsif p.date %}<lastmod>{{ p.date | date: "%Y-%m-%d" }}</lastmod>{% endif %}
   </url>
   {% endunless %}
@@ -19,7 +19,7 @@ permalink: /sitemap.xml
 {% for doc in all_collections %}
   {% unless doc.sitemap == false %}
   <url>
-    <loc>{{ site.url }}{{ doc.url | replace: 'index.html', '' | xml_escape }}</loc>
+    <loc>{{ site.url }}{{ doc.url | xml_escape }}</loc>
     {% if doc.updated %}<lastmod>{{ doc.updated | date: "%Y-%m-%d" }}</lastmod>{% elsif doc.date %}<lastmod>{{ doc.date | date: "%Y-%m-%d" }}</lastmod>{% endif %}
   </url>
   {% endunless %}
