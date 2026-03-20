@@ -1,141 +1,55 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>中国茶志 — 首页</title>
-  <meta name="description" content="中国茶、茶器、茶史与新茶饮的中英双语内容站，首页聚合最新发布与编辑精选文章。" />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="中国茶志 — 首页" />
-  <meta property="og:description" content="从产地、工艺、器物到现代茶饮趋势，首页精选最新发布与值得先读的中国茶文章。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/longjing-plantation.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
-<body>
-  <header class="site-header wrap">
-    <div class="nav">
-      <a class="brand" href="index.html">中国茶志</a>
-      <nav>
-        <a href="tea/index.html">茶叶</a>
-        <a href="teaware/index.html">茶具</a>
-        <a href="history/index.html">茶文化历史</a>
-        <a href="drinks/index.html">现制茶饮</a>
-        <a href="science/index.html">茶与健康</a>
-        <a href="about.html">About</a>
-        <a class="lang" href="/china-tea/en/index.html">English</a>
-      </nav>
+---
+lang_switch_url: "../en/index.html"
+layout: page
+lang: zh-CN
+asset_prefix: "../"
+title: 中国茶志 — 中文版
+description: "从茶叶、茶具、茶文化历史到现制茶饮，系统介绍中国茶世界。"
+---
+{% assign tea_posts = site.zh_tea | sort: 'date' | reverse %}
+{% assign teaware_posts = site.zh_teaware | sort: 'date' | reverse %}
+{% assign history_posts = site.zh_history | sort: 'date' | reverse %}
+{% assign drinks_posts = site.zh_drinks | sort: 'date' | reverse %}
+{% assign science_posts = site.zh_science | sort: 'date' | reverse %}
+{% assign all_posts = tea_posts | concat: teaware_posts | concat: history_posts | concat: drinks_posts | concat: science_posts | sort: 'date' | reverse %}
+{% assign latest_posts = all_posts | slice: 0, 4 %}
+{% assign featured_posts = all_posts | where: 'featured', true | slice: 0, 6 %}
+<main class="wrap">
+  <section class="hero story-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">中文版本</p>
+      <h1>中国茶，不止是茶叶</h1>
+      <p class="lede">这里从茶叶、茶具、历史到现制茶饮，持续整理中国茶在当下仍然活着的风味、器物、知识与城市经验。</p>
+      <div class="toc">
+        <span class="pill">茶叶</span>
+        <span class="pill">茶具</span>
+        <span class="pill">茶文化历史</span>
+        <span class="pill">现制茶饮</span>
+        <span class="pill">研究导读</span>
+      </div>
     </div>
-  </header>
-  <main class="wrap">
-    <section class="hero story-hero">
-      <div class="hero-copy">
-        <p class="eyebrow">中文版</p>
-        <h1>把中国茶写成立得住、也读得进的内容现场</h1>
-        <p class="lede">这里不只讲茶名，也讲山场、工艺、器物、时令和当代茶饮。首页会持续更新两条线：一条看最新发布，一条看最值得新读者先点开的代表文章。</p>
-      </div>
-      <figure class="photo">
-        <img src="../assets/img/photos/longjing-plantation.jpg" alt="杭州龙井茶园" />
-        <figcaption>从产地风土到城市茶饮，中国茶的故事并不只有一种入口。</figcaption>
-      </figure>
-    </section>
+    <figure class="photo">
+      <img src="../assets/img/photos/longjing-plantation-v2.jpg" alt="杭州龙井茶园" />
+      <figcaption>从山场、器物到城市饮用，中国茶始终在变化，也始终在延续。</figcaption>
+    </figure>
+  </section>
 
-    <section>
-      <div class="section-heading">
-        <p class="eyebrow">Latest</p>
-        <h2>最新发布</h2>
-        <p>按近期更新与首页代表性整理，优先展示刚发布、正在扩展站点版图的新内容。</p>
-      </div>
-      <div class="post-grid">
-        <a class="post" href="tea/duck-shit-aroma.html">
-          <span class="tag">茶叶</span>
-          <h3>鸭屎香单丛：从一个“怪名字”读进凤凰单丛世界</h3>
-          <p>新上线的长篇茶叶专题，用命名争议、山场、做青、焙火与新茶饮回流，把网站的茶类地图从春季绿茶正式拉向高香乌龙。</p>
-        </a>
-        <a class="post" href="science/fruit-veg-tea-fiber-satiety-health-halo.html">
-          <span class="tag">茶与健康</span>
-          <h3>果蔬茶为什么总被说成“更有纤维、更顶饱”</h3>
-          <p>围绕纤维、饱腹感与健康光环做拆解，适合接着看当下果蔬茶与功能化茶饮的传播逻辑。</p>
-        </a>
-        <a class="post" href="tea/longjing.html">
-          <span class="tag">茶叶</span>
-          <h3>龙井：一杯江南绿茶如何同时牵出产区、炒制与春茶秩序</h3>
-          <p>站内新增的龙井正文页，把原本较分散的绿茶线索收拢成一篇更完整的入门与进阶阅读。</p>
-        </a>
-        <a class="post" href="drinks/breakfastized-tea-drinks.html">
-          <span class="tag">现制茶饮</span>
-          <h3>茶饮“早餐化”：为什么 2026 年越来越多产品像在抢早晨</h3>
-          <p>从轻乳茶、饱腹感到通勤场景，观察新茶饮如何从下午茶逻辑转向工作日第一杯。</p>
-        </a>
-      </div>
-    </section>
+  <section class="feature-card archive-panel">
+    <h2>最新发布</h2>
+    <p>从全部栏目中提取最近更新的文章。</p>
+    {% include homepage_latest_list.html posts=latest_posts %}
+  </section>
 
-    <section>
-      <div class="section-heading">
-        <p class="eyebrow">Editor's Picks</p>
-        <h2>最热 / 最值得看</h2>
-        <p>当前站内暂无真实 analytics，本组按编辑精选整理：优先主题吸引力强、信息密度高、能代表本站气质、适合新访客先读的文章。</p>
-      </div>
-      <div class="post-grid">
-        <a class="post" href="tea/xinyang-maojian.html">
-          <span class="tag">茶叶</span>
-          <h3>信阳毛尖：一杯早春绿茶，为什么总和“真假春茶”一起被讨论</h3>
-          <p>把时令、产区、白毫、冲泡与市场争议放在一起讲，是非常好的中国名茶阅读入口。</p>
-        </a>
-        <a class="post" href="science/fruit-veg-tea-fiber-satiety-health-halo.html">
-          <span class="tag">茶与健康</span>
-          <h3>果蔬茶、纤维与“更轻体感”：健康光环是怎么被做出来的</h3>
-          <p>这是当前站内最适合新读者切入的 science 页之一，话题热、信息密，且和现制茶饮讨论能互相勾连。</p>
-        </a>
-        <a class="post" href="history/index.html">
-          <span class="tag">茶文化历史</span>
-          <h3>先从历史栏目进入：中国茶的器物、制度与文化线索</h3>
-          <p>如果你更想看茶为什么会变成今天这样，而不是先看单个品类，这里是最稳妥的入口。</p>
-        </a>
-        <a class="post" href="teaware/index.html">
-          <span class="tag">茶具</span>
-          <h3>先看茶具栏目：从器物理解“怎么喝茶”</h3>
-          <p>对新访客来说，茶具栏目比单篇更适合作为入口，能先建立基本器物地图，再往具体器型深读。</p>
-        </a>
-      </div>
-    </section>
+  <section class="feature-card feature-panel">
+    <h2>编辑精选文章</h2>
+    {% include homepage_featured_grid.html posts=featured_posts chip_label="精选" fallback_image="../assets/img/photos/milk-tea.jpg" %}
+  </section>
 
-    <section>
-      <div class="section-heading">
-        <p class="eyebrow">Sections</p>
-        <h2>继续浏览</h2>
-        <p>如果你想按主题而不是按单篇进入，可以从这几个栏目继续往下看。</p>
-      </div>
-      <div class="post-grid">
-        <a class="post" href="tea/index.html">
-          <span class="tag">茶叶</span>
-          <h3>茶叶专题</h3>
-          <p>从龙井、信阳毛尖到鸭屎香单丛，持续扩展中国茶的产区与茶类地图。</p>
-        </a>
-        <a class="post" href="drinks/index.html">
-          <span class="tag">现制茶饮</span>
-          <h3>现制茶饮观察</h3>
-          <p>追踪轻乳茶、果蔬茶、抹茶热与品牌叙事，记录中文互联网里的新茶饮变化。</p>
-        </a>
-        <a class="post" href="history/index.html">
-          <span class="tag">茶文化历史</span>
-          <h3>历史与文化</h3>
-          <p>把茶从文物、文本、制度与日常生活重新接起来，而不是只看几个典故。</p>
-        </a>
-        <a class="post" href="teaware/index.html">
-          <span class="tag">茶具</span>
-          <h3>茶具与器物</h3>
-          <p>从盖碗、茶宠到更多器物细节，补齐“怎么喝、用什么喝”的实际语境。</p>
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer wrap">
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="contact.html">Contact</a>
-    <a href="terms.html">Terms</a>
-  </footer>
-</body>
-</html>
+  <section class="post-grid">
+    <a class="post" href="../zh/tea/index.html"><span class="tag">栏目</span><h3>茶叶</h3><p>从龙井、普洱、乌龙到凤凰单丛、茉莉花茶，建立理解中国茶的基础坐标。</p></a>
+    <a class="post" href="../zh/teaware/index.html"><span class="tag">栏目</span><h3>茶具</h3><p>盖碗、公道杯、建盏、景德镇与茶筅，都是中国茶桌秩序与审美的一部分。</p></a>
+    <a class="post" href="../zh/history/index.html"><span class="tag">栏目</span><h3>茶文化历史</h3><p>抹茶、点茶、茶百戏、茶道与万里茶道，把今天的流行重新放回更长的历史里。</p></a>
+    <a class="post" href="../zh/drinks/index.html"><span class="tag">栏目</span><h3>现制茶饮</h3><p>品牌、配方、门店与消费语境，追踪中国城市茶饮如何持续变化。</p></a>
+    <a class="post" href="../zh/science/index.html"><span class="tag">栏目</span><h3>研究导读</h3><p>围绕茶叶、茶饮与健康研究里的高讨论主题，整理更可靠的证据与判断框架。</p></a>
+  </section>
+</main>

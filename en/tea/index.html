@@ -1,38 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tea Leaves — China Tea Journal</title>
-  <meta name="description" content="A section on Chinese tea leaves, beginning with an in-depth Longjing feature." />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="Tea Leaves — China Tea Journal" />
-  <meta property="og:description" content="A section on Chinese tea leaves, beginning with an in-depth Longjing feature." />
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/longjing-dried.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <header class="site-header wrap">
-    <div class="nav">
-      <a class="brand" href="en/index.html">China Tea Journal</a>
-      <nav>
-        <a href="en/tea/index.html">Tea</a>
-        <a href="en/teaware/index.html">Teaware</a>
-        <a href="en/history/index.html">History</a>
-        <a href="en/drinks/index.html">Fresh Tea Drinks</a>
-        <a href="en/about.html">About</a>
-        <a class="lang" href="/china-tea/zh/tea/index.html">中文</a>
-      </nav>
+---
+lang_switch_url: "../../zh/tea/index.html"
+layout: page
+lang: en
+asset_prefix: "../../"
+title: "Tea Leaves - China Tea Library"
+description: "From classic tea types and mountain regions to processing logic and modern entry points, this section gathers key reads on Chinese tea leaves."
+---
+{% assign posts_all = site.en_tea | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Tea Leaves</h1><p class="lede">From classic tea types and mountain regions to processing logic and modern entry points, this section gathers key reads on Chinese tea leaves.</p></section>
+<section class="section-index-blocks">
+  <section class="feature-card feature-panel">
+    <h2>Latest / featured reading</h2>
+    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="Latest" featured_label="Featured" %}
+  </section>
+  <section class="feature-card archive-panel">
+    <h2>All articles</h2>
+    <p>Browse the full section in reverse chronological order.</p>
+    <div class="archive-list">
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
-  </header>
-  <main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Tea Leaves</h1><p class="lede">This section no longer expands only through green tea. It is gradually opening out into the broader map of Chinese tea: spring green teas such as Longjing and Xinyang Maojian, but also Phoenix dancong, rock tea, white tea, and other styles defined by region, processing logic, and drinking method.</p></section><div class="content-stream"><figure class="photo"><img src="assets/img/photos/longjing-dried.jpg" alt="Dry Longjing tea leaves" /><figcaption>Dry Longjing leaves reveal the flat shape produced by pan-firing and pressing.</figcaption></figure><figure class="photo"><img src="assets/img/photos/wuyi-oolong-wikimedia-v1.jpg" alt="Dry oolong leaves and brewed tea liquor" /><figcaption>Moving from green tea into oolong shifts the reader’s attention from tenderness and freshness toward aroma type, mountain origin, oxidation, and roast.</figcaption></figure><section class="feature-card"><h2>Featured articles</h2><p>If you want to begin with famous Chinese green tea, start with <a href="longjing.html">Longjing</a> and <a href="xinyang-maojian.html">Xinyang Maojian</a>. If you want to enter a very different tea world shaped by high aroma, gongfu brewing, and naming controversy, go next to <a href="duck-shit-aroma.html">Duck Shit Aroma dancong</a>.</p><p><a class="btn" href="duck-shit-aroma.html">Read the Duck Shit Aroma feature</a></p></section></div></main>
-  <footer class="site-footer wrap">
-    <a href="en/about.html">About</a>
-    <a href="en/privacy.html">Privacy</a>
-    <a href="en/contact.html">Contact</a>
-    <a href="en/terms.html">Terms</a>
-  </footer>
-</body>
-</html>
+  </section>
+</section></main>

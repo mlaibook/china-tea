@@ -1,64 +1,29 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>现制茶饮 — 中国茶志</title>
-  <meta name="description" content="关于中国现制茶饮、新茶饮消费趋势、菜单变化与风味语言的深度图文稿。" />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="现制茶饮 — 中国茶志" />
-  <meta property="og:description" content="关于中国现制茶饮、新茶饮消费趋势、菜单变化与风味语言的深度图文稿。" />
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/light-milk-tea-cups-v1.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="../../assets/css/style.css" />
-</head>
-<body>
-  <header class="site-header wrap">
-    <div class="nav">
-      <a class="brand" href="../../zh/index.html">中国茶志</a>
-      <nav>
-        <a href="../../zh/tea/index.html">茶叶</a>
-        <a href="../../zh/teaware/index.html">茶具</a>
-        <a href="../../zh/history/index.html">茶文化历史</a>
-        <a href="../../zh/drinks/index.html">现制茶饮</a>
-        <a href="../../zh/about.html">About</a>
-        <a class="lang" href="../../en/drinks/index.html">English</a>
-      </nav>
+---
+lang_switch_url: "../../en/drinks/index.html"
+layout: page
+lang: zh-CN
+asset_prefix: "../../"
+title: "现制茶饮 — 中国茶志"
+description: "新式茶饮不是传统的反面，而是中国茶在城市消费环境中的当代表达。它延续了中国人对于拼配、调味、社交与便捷取饮的长期偏好。"
+---
+{% assign drinks_all = site.zh_drinks | sort: 'date' | reverse %}
+{% assign drinks_featured = drinks_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>现制茶饮</h1><p class="lede">这里集中追踪中国新茶饮的品牌扩张、产品语言、健康叙事与中文互联网里的高传播话题：从连锁品牌的快速扩张，到轻乳茶、低糖、鲜果茶、配料表透明，再到消费者如何在日常里重新理解“喝茶”这件事。</p></section>
+<section class="section-index-blocks">
+  <section class="feature-card feature-panel">
+    <h2>最新 / 热点文章</h2>
+    {% include section_highlights.html posts=drinks_all featured_posts=drinks_featured latest_label="最新文章" featured_label="热点 / 置顶" %}
+  </section>
+  <section class="feature-card archive-panel">
+    <h2>全部文章</h2>
+    <p>按时间降序浏览本栏目全部文章。</p>
+    <div class="archive-list">
+      {% for post in drinks_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
-  </header>
-  <main class="page">
-    <article>
-      <p class="eyebrow">栏目</p>
-      <h1>现制茶饮</h1>
-      <p class="note">这里收录关于中国新茶饮、现制饮品消费、菜单语言与风味变化的长篇图文。关注的不只是“哪款上新”，更是这些变化为什么会被讨论、被传播、又如何改写大家对茶饮的日常想象。</p>
-
-      <div class="feature-card">
-        <h2>最新更新</h2>
-        <p><a href="../../zh/drinks/salty-milk-tea-rise-2026.html">咸口奶茶为什么在 2026 年突然变热：从猎奇上新到“重风味合理化”的新茶饮转向</a><br />
-        从咸法酪、海苔碎、菌菇白酱到地域食材借味，拆解这一轮咸口奶茶热度背后的风味逻辑、社交传播机制与行业焦虑。</p>
-      </div>
-
-      <div class="story-grid">
-        <figure class="photo">
-          <img src="../../assets/img/photos/light-milk-tea-cups-v1.jpg" alt="并列摆放的多杯现制奶茶，适合表现新茶饮菜单正在朝不同风味方向分化" />
-          <figcaption>比起单杯爆款，真正更值得长期记录的，是菜单整体怎样改写风味层次、时段定位与消费语言。</figcaption>
-        </figure>
-        <div>
-          <h2>栏目文章</h2>
-          <ul>
-            <li><a href="../../zh/drinks/salty-milk-tea-rise-2026.html">咸口奶茶为什么在 2026 年突然变热</a> —— 看品牌为什么把“更像食物、更像料理、更有争议”的味道重新带回奶茶。</li>
-            <li><a href="../../zh/drinks/breakfastized-tea-drinks.html">茶饮为什么开始“早餐化”</a> —— 从轻乳茶、饱腹感到晨间通勤节奏，讨论茶饮如何争夺“早上第一杯”。</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </main>
-  <footer class="site-footer wrap">
-    <a href="../../zh/about.html">About</a>
-    <a href="../../zh/privacy.html">Privacy</a>
-    <a href="../../zh/contact.html">Contact</a>
-    <a href="../../zh/terms.html">Terms</a>
-  </footer>
-</body>
-</html>
+  </section>
+</section></main>

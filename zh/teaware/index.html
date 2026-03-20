@@ -1,55 +1,29 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>茶具专题 — 中国茶志</title>
-  <meta name="description" content="围绕中国茶器、器物工艺、使用逻辑与桌面秩序的深度图文专题。" />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="茶具专题 — 中国茶志" />
-  <meta property="og:description" content="围绕中国茶器、器物工艺、使用逻辑与桌面秩序的深度图文专题。" />
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://www.tealib.net/assets/img/photos/matcha-scoop-v1.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="../../assets/css/style.css" />
-</head>
-<body>
-  <header class="site-header wrap">
-    <div class="nav">
-      <a class="brand" href="../index.html">中国茶志</a>
-      <nav>
-        <a href="../tea/index.html">茶叶</a>
-        <a href="../teaware/index.html">茶具</a>
-        <a href="../history/index.html">茶文化历史</a>
-        <a href="../drinks/index.html">现制茶饮</a>
-        <a href="../about.html">About</a>
-        <a class="lang" href="/en/teaware/index.html">English</a>
-      </nav>
+---
+lang_switch_url: "../../en/teaware/index.html"
+layout: page
+lang: zh-CN
+asset_prefix: "../../"
+title: "茶具 - China Tea Library"
+description: "从盖碗、公道杯到建盏、茶滤与景德镇，茶具不仅是器物，也是茶桌秩序与审美判断的一部分。"
+---
+{% assign posts_all = site.zh_teaware | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶具</h1><p class="lede">从盖碗、公道杯到建盏、茶滤与景德镇，茶具不仅是器物，也是茶桌秩序与审美判断的一部分。</p></section>
+<section class="section-index-blocks">
+  <section class="feature-card feature-panel">
+    <h2>最新 / 热点文章</h2>
+    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="最新文章" featured_label="热点 / 置顶" %}
+  </section>
+  <section class="feature-card archive-panel">
+    <h2>全部文章</h2>
+    <p>按时间降序浏览本栏目全部文章。</p>
+    <div class="archive-list">
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
-  </header>
-  <main class="wrap">
-    <section class="hero story-hero">
-      <div class="hero-copy">
-        <p class="eyebrow">茶具栏目</p>
-        <h1>从盖碗到茶则：真正值得认真写的中国茶器</h1>
-        <p class="lede">这里收录的是面向读者的茶具长篇，不只讲器物叫什么，也讲它为什么存在、怎么使用、为什么今天又重新有讨论度。</p>
-      </div>
-      <figure class="photo"><img src="../../assets/img/photos/matcha-scoop-v1.jpg" alt="取茶动作型器物近景，适合代表茶具栏目里关于动作与器物分工的主题" /><figcaption>茶器不只是容器，也是动作、秩序与审美的组织方式。</figcaption></figure>
-    </section>
-    <section class="post-grid">
-      <a class="post" href="chaze-chahe.html"><span class="tag">新稿</span><h3>茶荷与茶则为什么又被认真讨论</h3><p>从干茶展示、投茶动作、器物分工到“六君子”退潮后的重看，这篇新稿把最容易被当成摆设的小器物重新讲清楚。</p></a>
-      <a class="post" href="shuifang.html"><span class="tag">深稿</span><h3>水方为什么重新值得认真写</h3><p>它不是建水的平替，而是干泡茶席里处理开放式废水边界的独立器物。</p></a>
-      <a class="post" href="gai-zhi.html"><span class="tag">深稿</span><h3>盖置为什么又被认真讨论</h3><p>从“盖子放哪儿”这个小问题出发，重新梳理主泡区的桌面秩序。</p></a>
-      <a class="post" href="tea-strainer.html"><span class="tag">深稿</span><h3>茶滤为什么重新回到讨论中心</h3><p>单孔、球孔、滤网、断碎与出汤速度背后，是不同器物哲学。</p></a>
-      <a class="post" href="tea-tasting-cup.html"><span class="tag">深稿</span><h3>审评杯为什么不无聊</h3><p>它不负责浪漫，负责把判断做清楚。</p></a>
-      <a class="post" href="wenxiang-cup.html"><span class="tag">深稿</span><h3>闻香杯为什么又被认真讨论</h3><p>高香乌龙、返香逻辑与组杯结构，让它重新回到茶器中心。</p></a>
-    </section>
-  </main>
-  <footer class="site-footer wrap">
-    <a href="../about.html">About</a>
-    <a href="../privacy.html">Privacy</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../terms.html">Terms</a>
-  </footer>
-</body>
-</html>
+  </section>
+</section></main>

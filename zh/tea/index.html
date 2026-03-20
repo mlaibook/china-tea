@@ -1,38 +1,29 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>茶叶 — 中国茶志</title>
-  <meta name="description" content="从龙井开始，逐步扩展到更多中国代表性茶叶。" />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="茶叶 — 中国茶志" />
-  <meta property="og:description" content="从龙井开始，逐步扩展到更多中国代表性茶叶。" />
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/longjing-dried.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <header class="site-header wrap">
-    <div class="nav">
-      <a class="brand" href="zh/index.html">中国茶志</a>
-      <nav>
-        <a href="zh/tea/index.html">茶叶</a>
-        <a href="zh/teaware/index.html">茶具</a>
-        <a href="zh/history/index.html">茶文化历史</a>
-        <a href="zh/drinks/index.html">现制茶饮</a>
-        <a href="zh/about.html">About</a>
-        <a class="lang" href="/china-tea/en/tea/index.html">English</a>
-      </nav>
+---
+lang_switch_url: "../../en/tea/index.html"
+layout: page
+lang: zh-CN
+asset_prefix: "../../"
+title: "茶叶 - China Tea Library"
+description: "从经典茶类、产地工艺到品牌化入口，这里集中整理中国茶叶的关键阅读路径。"
+---
+{% assign posts_all = site.zh_tea | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶叶</h1><p class="lede">从经典茶类、产地工艺到品牌化入口，这里集中整理中国茶叶的关键阅读路径。</p></section>
+<section class="section-index-blocks">
+  <section class="feature-card feature-panel">
+    <h2>最新 / 热点文章</h2>
+    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="最新文章" featured_label="热点 / 置顶" %}
+  </section>
+  <section class="feature-card archive-panel">
+    <h2>全部文章</h2>
+    <p>按时间降序浏览本栏目全部文章。</p>
+    <div class="archive-list">
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
-  </header>
-  <main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶叶</h1><p class="lede">这个栏目不再只从绿茶展开，而是逐步把中国茶的主要风格谱系拉开：既有龙井、信阳毛尖这样的春季绿茶，也会进入凤凰单丛、岩茶、白茶与更多能代表产区、工艺和品饮分野的重要茶类。</p></section><div class="content-stream"><figure class="photo"><img src="assets/img/photos/longjing-dried.jpg" alt="龙井干茶" /><figcaption>龙井干茶的扁平外形，与其炒制和压扁工艺高度相关。</figcaption></figure><figure class="photo"><img src="assets/img/photos/wuyi-oolong-wikimedia-v1.jpg" alt="乌龙茶干茶与茶汤" /><figcaption>从绿茶转入乌龙茶时，观察重点会从嫩度与鲜爽，扩展到香型、山场、做青与焙火。</figcaption></figure><section class="feature-card"><h2>本栏重点文章</h2><p>如果你想先理解中国名优绿茶，可以从<a href="longjing.html">龙井</a>和<a href="xinyang-maojian.html">信阳毛尖</a>读起；如果想跳进另一套更高香、更讲工夫冲泡与香型分化的体系，下一篇很适合读<a href="duck-shit-aroma.html">鸭屎香单丛</a>。</p><p><a class="btn" href="duck-shit-aroma.html">阅读鸭屎香专题</a></p></section></div></main>
-  <footer class="site-footer wrap">
-    <a href="zh/about.html">About</a>
-    <a href="zh/privacy.html">Privacy</a>
-    <a href="zh/contact.html">Contact</a>
-    <a href="zh/terms.html">Terms</a>
-  </footer>
-</body>
-</html>
+  </section>
+</section></main>

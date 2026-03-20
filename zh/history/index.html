@@ -1,38 +1,29 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tea Culture & History — 中国茶志</title>
-  <meta name="description" content="Tea Culture & History" />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="Tea Culture & History — 中国茶志" />
-  <meta property="og:description" content="Tea Culture & History" />
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/longjing-plantation.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <header class="site-header wrap">
-    <div class="nav">
-      <a class="brand" href="zh/index.html">中国茶志</a>
-      <nav>
-        <a href="zh/tea/index.html">茶叶</a>
-        <a href="zh/teaware/index.html">茶具</a>
-        <a href="zh/history/index.html">茶文化历史</a>
-        <a href="zh/drinks/index.html">现制茶饮</a>
-        <a href="zh/about.html">About</a>
-        <a class="lang" href="/china-tea/en/history/index.html">English</a>
-      </nav>
+---
+lang_switch_url: "../../en/history/index.html"
+layout: page
+lang: zh-CN
+asset_prefix: "../../"
+title: "茶文化历史 - China Tea Library"
+description: "茶史不只是年代顺序，也是饮法、器物、审美、贸易与社会生活如何一起变化的历史。"
+---
+{% assign posts_all = site.zh_history | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">栏目</p><h1>茶文化历史</h1><p class="lede">茶史不只是年代顺序，也是饮法、器物、审美、贸易与社会生活如何一起变化的历史。</p></section>
+<section class="section-index-blocks">
+  <section class="feature-card feature-panel">
+    <h2>最新 / 热点文章</h2>
+    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="最新文章" featured_label="热点 / 置顶" %}
+  </section>
+  <section class="feature-card archive-panel">
+    <h2>全部文章</h2>
+    <p>按时间降序浏览本栏目全部文章。</p>
+    <div class="archive-list">
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
-  </header>
-  <main class="page"><article><h1>茶文化历史</h1><p>这里收录中国茶的历史、制度、观念与生活方式长文。最新更新聚焦顾渚贡茶院，回看陆羽、《茶经》与唐代贡茶制度如何共同塑造中国茶的“源头”想象。</p><section class="card-grid"><a class="card" href="../history/guzhu-tribute-tea-yard.html"><img src="../../assets/img/photos/longjing-plantation-v2.jpg" alt="山坡上的茶园延展开去" /><h2>顾渚贡茶院为什么值得在今天重新讲</h2><p>从陆羽、《茶经》、唐代贡茶制度到当代“茶源头”想象，重看茶如何进入国家与文明叙事。</p></a><a class="card" href="../history/wanli-tea-road.html"><img src="../../assets/img/photos/chengdu-teahouse-v1.jpg" alt="成都茶馆里的日常饮茶场景" /><h2>万里茶道再度升温</h2><p>从晋商、恰克图到世界贸易网络，重看茶如何走出产地。</p></a><a class="card" href="../history/tea-intangible-heritage-revival.html"><img src="../../assets/img/photos/wikimedia-huxinting-teahouse-v1.jpg" alt="传统茶空间与建筑" /><h2>茶申遗之后，年轻人在复兴什么</h2><p>从非遗名录到当代茶生活，观察传统如何被重新翻译回日常。</p></a></section></article></main>
-  <footer class="site-footer wrap">
-    <a href="zh/about.html">About</a>
-    <a href="zh/privacy.html">Privacy</a>
-    <a href="zh/contact.html">Contact</a>
-    <a href="zh/terms.html">Terms</a>
-  </footer>
-</body>
-</html>
+  </section>
+</section></main>

@@ -1,55 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Teaware Features — China Tea Journal</title>
-  <meta name="description" content="Long-form features on Chinese teaware, craft logic, table order, and how tea tools are actually used." />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="Teaware Features — China Tea Journal" />
-  <meta property="og:description" content="Long-form features on Chinese teaware, craft logic, table order, and how tea tools are actually used." />
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://www.tealib.net/assets/img/photos/matcha-scoop-v1.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="../../assets/css/style.css" />
-</head>
-<body>
-  <header class="site-header wrap">
-    <div class="nav">
-      <a class="brand" href="../index.html">China Tea Journal</a>
-      <nav>
-        <a href="../tea/index.html">Tea</a>
-        <a href="../teaware/index.html">Teaware</a>
-        <a href="../history/index.html">History</a>
-        <a href="../drinks/index.html">Fresh Tea Drinks</a>
-        <a href="../about.html">About</a>
-        <a class="lang" href="/zh/teaware/index.html">中文</a>
-      </nav>
+---
+lang_switch_url: "../../zh/teaware/index.html"
+layout: page
+lang: en
+asset_prefix: "../../"
+title: "Teaware - China Tea Library"
+description: "From gaiwan and fairness pitcher to jianzhan, strainers, and Jingdezhen porcelain, teaware shapes both tea practice and tea aesthetics."
+---
+{% assign posts_all = site.en_teaware | sort: 'date' | reverse %}
+{% assign posts_featured = posts_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Teaware</h1><p class="lede">From gaiwan and fairness pitcher to jianzhan, strainers, and Jingdezhen porcelain, teaware shapes both tea practice and tea aesthetics.</p></section>
+<section class="section-index-blocks">
+  <section class="feature-card feature-panel">
+    <h2>Latest / featured reading</h2>
+    {% include section_highlights.html posts=posts_all featured_posts=posts_featured latest_label="Latest" featured_label="Featured" %}
+  </section>
+  <section class="feature-card archive-panel">
+    <h2>All articles</h2>
+    <p>Browse the full section in reverse chronological order.</p>
+    <div class="archive-list">
+      {% for post in posts_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
-  </header>
-  <main class="wrap">
-    <section class="hero story-hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Teaware section</p>
-        <h1>From the gaiwan to the tea scoop: Chinese tea tools worth reading deeply</h1>
-        <p class="lede">These are reader-facing long-form features on Chinese teaware: not just what each object is called, but why it exists, how it works, and why certain tools have become newly discussable again.</p>
-      </div>
-      <figure class="photo"><img src="../../assets/img/photos/matcha-scoop-v1.jpg" alt="A close-up of a tea-handling scoop, representing the role of movement and object logic in the teaware section" /><figcaption>Teaware is not only about containers; it is also about movement, order, and the way tea is made readable.</figcaption></figure>
-    </section>
-    <section class="post-grid">
-      <a class="post" href="chaze-chahe.html"><span class="tag">New</span><h3>Why Cha He and Cha Ze matter again</h3><p>A new feature on dry-leaf display, loading gestures, pre-brewing order, and why these small tools deserve to be judged beyond nostalgia.</p></a>
-      <a class="post" href="shuifang.html"><span class="tag">Feature</span><h3>Why Shuifang deserves serious attention again</h3><p>Not a low-grade substitute for Jianshui, but a distinct open-form waste-water tool in dry-brewing tea setups.</p></a>
-      <a class="post" href="gai-zhi.html"><span class="tag">Feature</span><h3>Why the lid rest is being discussed again</h3><p>What looks like a tiny question—where the lid goes—turns out to reorganize the whole working zone.</p></a>
-      <a class="post" href="tea-strainer.html"><span class="tag">Feature</span><h3>Why the tea strainer returned to the center</h3><p>Single holes, filter mesh, breakage control, and pour speed all point to larger philosophies of use.</p></a>
-      <a class="post" href="tea-tasting-cup.html"><span class="tag">Feature</span><h3>Why the tea tasting cup is not boring</h3><p>It does not exist to create romance. It exists to clarify judgement.</p></a>
-      <a class="post" href="wenxiang-cup.html"><span class="tag">Feature</span><h3>Why the aroma cup returned to discussion</h3><p>High-aroma oolong, returning fragrance, and paired-cup logic keep it newly relevant.</p></a>
-    </section>
-  </main>
-  <footer class="site-footer wrap">
-    <a href="../about.html">About</a>
-    <a href="../privacy.html">Privacy</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../terms.html">Terms</a>
-  </footer>
-</body>
-</html>
+  </section>
+</section></main>

@@ -1,64 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fresh Tea Drinks — China Tea Journal</title>
-  <meta name="description" content="Long-form features on Chinese fresh tea drinks, new tea consumption, menu language, and flavor shifts." />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="Fresh Tea Drinks — China Tea Journal" />
-  <meta property="og:description" content="Long-form features on Chinese fresh tea drinks, new tea consumption, menu language, and flavor shifts." />
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/light-milk-tea-cups-v1.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="../../assets/css/style.css" />
-</head>
-<body>
-  <header class="site-header wrap">
-    <div class="nav">
-      <a class="brand" href="../../en/index.html">China Tea Journal</a>
-      <nav>
-        <a href="../../en/tea/index.html">Tea</a>
-        <a href="../../en/teaware/index.html">Teaware</a>
-        <a href="../../en/history/index.html">History</a>
-        <a href="../../en/drinks/index.html">Fresh Tea Drinks</a>
-        <a href="../../en/about.html">About</a>
-        <a class="lang" href="../../zh/drinks/index.html">中文</a>
-      </nav>
+---
+lang_switch_url: "../../zh/drinks/index.html"
+layout: page
+lang: en
+asset_prefix: "../../"
+title: "Fresh Tea Drinks - China Tea Library"
+description: "Contemporary tea drinks inherit older Chinese habits of scenting, blending, fruit pairing, and seasonal refreshment. The modern tea shop is not outside tea culture; it is one of its current urban stages."
+---
+{% assign drinks_all = site.en_drinks | sort: 'date' | reverse %}
+{% assign drinks_featured = drinks_all | where: 'featured', true %}
+<main class="wrap"><section class="subhero"><p class="eyebrow">Section</p><h1>Fresh tea drinks</h1><p class="lede">This section follows China’s modern tea-drink market through brands, formulas, health language, and high-discussion topics from the Chinese internet: rapid chain growth, light milk tea, lower-sugar formulas, fruit tea, ingredient transparency, and the changing place of tea in everyday urban life.</p></section>
+<section class="section-index-blocks">
+  <section class="feature-card feature-panel">
+    <h2>Latest / featured reading</h2>
+    {% include section_highlights.html posts=drinks_all featured_posts=drinks_featured latest_label="Latest" featured_label="Featured" %}
+  </section>
+  <section class="feature-card archive-panel">
+    <h2>All articles</h2>
+    <p>Browse the full section in reverse chronological order.</p>
+    <div class="archive-list">
+      {% for post in drinks_all %}
+      <a class="archive-item" href="{{ post.url }}">
+        <span class="archive-item-title">{{ post.index_title | default: post.title }}</span>
+        <span class="archive-item-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+      </a>
+      {% endfor %}
     </div>
-  </header>
-  <main class="page">
-    <article>
-      <p class="eyebrow">Section</p>
-      <h1>Fresh Tea Drinks</h1>
-      <p class="note">This section follows Chinese tea-drink culture through long-form features rather than quick launch blurbs. The focus is not only on what brands release, but on why certain drinks suddenly become discussable, repeatable, and culturally legible.</p>
-
-      <div class="feature-card">
-        <h2>Latest feature</h2>
-        <p><a href="../../en/drinks/salty-milk-tea-rise-2026.html">Why Salty Milk Tea Suddenly Took Off in 2026</a><br />
-        A feature on savory drift in Chinese tea drinks: from salted fromage and seaweed to heavier, more food-like flavor structures built for argument and attention.</p>
-      </div>
-
-      <div class="story-grid">
-        <figure class="photo">
-          <img src="../../assets/img/photos/light-milk-tea-cups-v1.jpg" alt="Several fresh milk tea cups arranged side by side, showing how Chinese tea-drink menus are splitting into distinct flavor directions" />
-          <figcaption>What matters over time is not only the breakout drink, but how whole menus keep rewriting flavor hierarchy, time-slot logic, and everyday beverage language.</figcaption>
-        </figure>
-        <div>
-          <h2>Articles in this section</h2>
-          <ul>
-            <li><a href="../../en/drinks/salty-milk-tea-rise-2026.html">Why Salty Milk Tea Suddenly Took Off in 2026</a> — Why brands are pushing milk tea toward savory, culinary, higher-conflict flavor territory.</li>
-            <li><a href="../../en/drinks/breakfastized-tea-drinks.html">Why Tea Drinks Are Becoming “Breakfastized” in 2026</a> — How light milk tea, satiety talk, and commute timing reshaped the “first drink of the day.”</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </main>
-  <footer class="site-footer wrap">
-    <a href="../../en/about.html">About</a>
-    <a href="../../en/privacy.html">Privacy</a>
-    <a href="../../en/contact.html">Contact</a>
-    <a href="../../en/terms.html">Terms</a>
-  </footer>
-</body>
-</html>
+  </section>
+</section></main>
