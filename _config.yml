@@ -35,3 +35,9 @@ collections:
   en_science:
     output: true
     permalink: /en/science/:name.html
+  zh_section_index:
+    output: true
+    permalink: /zh/:name/index.html
+  en_section_index:
+    output: true
+    permalink: /en/:name/index.html
