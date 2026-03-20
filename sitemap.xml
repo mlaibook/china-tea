@@ -1,20 +1,27 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mlaibook.github.io/china-tea/</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/en/index.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/zh/index.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/en/tea/index.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/zh/tea/index.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/en/tea/longjing.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/zh/tea/longjing.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/en/history/daguan-tea-essay.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/zh/history/daguan-tea-essay.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/en/about.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/zh/about.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/en/privacy.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/zh/privacy.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/en/contact.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/zh/contact.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/en/terms.html</loc></url>
-  <url><loc>https://mlaibook.github.io/china-tea/zh/terms.html</loc></url>
+{% assign page_candidates = site.pages | where_exp: 'p', 'p.sitemap != false' %}
+{% for p in page_candidates %}
+  {% unless p.url contains '/assets/' or p.url contains '/docs/' or p.name == '404.html' or p.url == '/robots.txt' or p.url == '/sitemap.xml' %}
+  <url>
+    <loc>{{ site.url }}{{ p.url | replace: 'index.html', '' | xml_escape }}</loc>
+    {% if p.updated %}<lastmod>{{ p.updated | date: "%Y-%m-%d" }}</lastmod>{% elsif p.date %}<lastmod>{{ p.date | date: "%Y-%m-%d" }}</lastmod>{% endif %}
+  </url>
+  {% endunless %}
+{% endfor %}
+
+{% assign all_collections = '' | split: '' %}
+{% assign all_collections = all_collections | concat: site.zh_tea | concat: site.en_tea | concat: site.zh_teaware | concat: site.en_teaware | concat: site.zh_drinks | concat: site.en_drinks | concat: site.zh_science | concat: site.en_science | concat: site.zh_history | concat: site.en_history | concat: site.zh_section_index | concat: site.en_section_index %}
+{% for doc in all_collections %}
+  {% unless doc.sitemap == false %}
+  <url>
+    <loc>{{ site.url }}{{ doc.url | replace: 'index.html', '' | xml_escape }}</loc>
+    {% if doc.updated %}<lastmod>{{ doc.updated | date: "%Y-%m-%d" }}</lastmod>{% elsif doc.date %}<lastmod>{{ doc.date | date: "%Y-%m-%d" }}</lastmod>{% endif %}
+  </url>
+  {% endunless %}
+{% endfor %}
 </urlset>
