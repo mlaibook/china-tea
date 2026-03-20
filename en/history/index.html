@@ -1,50 +1,38 @@
----
-layout: page
-lang: en
-title: Tea Culture & History — China Tea Library
-description: Long-form features on tea history, historical practice, cultural revival, and how older tea worlds are being reinterpreted now.
-asset_prefix: ../../
----
-<h1>Tea Culture & History</h1>
-<p>This section gathers long-form features on Chinese tea across history, institutions, objects, ideas, and contemporary revival. It covers both older tea worlds and the historical themes now being rediscovered, debated, and reinterpreted in public culture.</p>
-
-{% assign latest_history = site.en_history | sort: 'date' | reverse %}
-{% assign featured_history = site.en_history | where: 'featured', true | sort: 'date' | reverse %}
-
-{% if featured_history.size > 0 %}
-<section class="section-block">
-  <h2>Featured essays</h2>
-  <div class="card-grid two-up">
-    {% for article in featured_history limit:2 %}
-    <article class="card card-feature">
-      <a class="card-link" href="{{ article.permalink | relative_url }}">
-        <img src="{{ article.thumbnail_image | relative_url }}" alt="{{ article.thumbnail_alt }}" />
-        <div class="card-body">
-          <p class="eyebrow">History feature</p>
-          <h3>{{ article.index_title | default: article.title }}</h3>
-          <p>{{ article.index_description | default: article.description }}</p>
-        </div>
-      </a>
-    </article>
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
-
-<section class="section-block">
-  <h2>All articles</h2>
-  <div class="card-list compact-list">
-    {% for article in latest_history %}
-    <article class="list-item">
-      <a href="{{ article.permalink | relative_url }}">
-        <img src="{{ article.thumbnail_image | relative_url }}" alt="{{ article.thumbnail_alt }}" />
-        <div>
-          <h3>{{ article.index_title | default: article.title }}</h3>
-          <p>{{ article.index_description | default: article.description }}</p>
-          <p class="meta">{{ article.date | date: "%Y-%m-%d" }}</p>
-        </div>
-      </a>
-    </article>
-    {% endfor %}
-  </div>
-</section>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tea Culture & History — China Tea Journal</title>
+  <meta name="description" content="Tea Culture & History" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Tea Culture & History — China Tea Journal" />
+  <meta property="og:description" content="Tea Culture & History" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://mlaibook.github.io/china-tea/assets/img/photos/longjing-plantation.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header wrap">
+    <div class="nav">
+      <a class="brand" href="en/index.html">China Tea Journal</a>
+      <nav>
+        <a href="en/tea/index.html">Tea</a>
+        <a href="en/teaware/index.html">Teaware</a>
+        <a href="en/history/index.html">History</a>
+        <a href="en/drinks/index.html">Fresh Tea Drinks</a>
+        <a href="en/about.html">About</a>
+        <a class="lang" href="/china-tea/zh/history/index.html">中文</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page"><article><h1>Tea Culture & History</h1><p>This section gathers long-form features on Chinese tea history, institutions, ideas, and everyday life. The newest piece turns to the Guzhu Tribute Tea Yard and asks how Lu Yu, <em>The Classic of Tea</em>, and Tang tribute tea helped define an enduring idea of tea origins.</p><section class="card-grid"><a class="card" href="../history/guzhu-tribute-tea-yard.html"><img src="../../assets/img/photos/longjing-plantation-v2.jpg" alt="Tea gardens stretching across a hillside" /><h2>Why the Guzhu Tribute Tea Yard Matters Again</h2><p>From Lu Yu and <em>The Classic of Tea</em> to Tang tribute tea and modern origin narratives, this feature follows tea into state order.</p></a><a class="card" href="../history/wanli-tea-road.html"><img src="../../assets/img/photos/chengdu-teahouse-v1.jpg" alt="Everyday tea drinking in a Chengdu teahouse" /><h2>The Wanli Tea Road in renewed discussion</h2><p>From Shanxi merchants and Kyakhta to world trade, a deep look at how tea traveled outward.</p></a><a class="card" href="../history/tea-intangible-heritage-revival.html"><img src="../../assets/img/photos/wikimedia-huxinting-teahouse-v1.jpg" alt="A traditional tea space and historic architecture" /><h2>What younger generations are reviving after tea’s UNESCO recognition</h2><p>How heritage language, tea life, and daily practice are being connected again.</p></a></section></article></main>
+  <footer class="site-footer wrap">
+    <a href="en/about.html">About</a>
+    <a href="en/privacy.html">Privacy</a>
+    <a href="en/contact.html">Contact</a>
+    <a href="en/terms.html">Terms</a>
+  </footer>
+</body>
+</html>
