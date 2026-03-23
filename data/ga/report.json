@@ -1,54 +1,54 @@
 {
-  "generatedAt": "2026-03-22T01:05:11.358Z",
+  "generatedAt": "2026-03-23T01:05:10.371Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 69,
-      "sessions": 96,
-      "views": 678,
-      "avgSessionDurationSeconds": 402.22531591666666,
-      "engagementRate": 0.6875
+      "activeUsers": 77,
+      "sessions": 105,
+      "views": 692,
+      "avgSessionDurationSeconds": 369.05322879047617,
+      "engagementRate": 0.6285714285714286
     },
     "last30Days": {
-      "activeUsers": 69,
-      "sessions": 96,
-      "views": 678,
-      "avgSessionDurationSeconds": 402.22531591666666,
-      "engagementRate": 0.6875
+      "activeUsers": 77,
+      "sessions": 105,
+      "views": 692,
+      "avgSessionDurationSeconds": 369.05322879047617,
+      "engagementRate": 0.6285714285714286
     }
   },
   "topPages7d": [
+    {
+      "path": "/",
+      "views": 78,
+      "activeUsers": 58
+    },
     {
       "path": "/en/index.html",
       "views": 75,
       "activeUsers": 41
     },
     {
-      "path": "/",
-      "views": 73,
-      "activeUsers": 53
-    },
-    {
       "path": "/zh/index.html",
-      "views": 71,
+      "views": 72,
       "activeUsers": 6
     },
     {
       "path": "/zh/tea/index.html",
-      "views": 61,
+      "views": 62,
       "activeUsers": 6
     },
     {
       "path": "/zh/drinks/index.html",
-      "views": 56,
+      "views": 57,
       "activeUsers": 4
     },
     {
       "path": "/zh/history/index.html",
-      "views": 48,
+      "views": 49,
       "activeUsers": 5
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "path": "/zh/science/index.html",
-      "views": 43,
+      "views": 44,
       "activeUsers": 4
     },
     {
@@ -112,6 +112,11 @@
       "activeUsers": 2
     },
     {
+      "path": "/zh/tea/fenghuang-dancong.html",
+      "views": 6,
+      "activeUsers": 3
+    },
+    {
       "path": "/en/about.html",
       "views": 5,
       "activeUsers": 1
@@ -120,11 +125,6 @@
       "path": "/zh/drinks/ingredient-list-transparency.html",
       "views": 5,
       "activeUsers": 1
-    },
-    {
-      "path": "/zh/tea/fenghuang-dancong.html",
-      "views": 5,
-      "activeUsers": 2
     },
     {
       "path": "/en/tea/index.html",
@@ -142,40 +142,40 @@
       "activeUsers": 4
     },
     {
-      "path": "/zh/tea/jasmine.html",
+      "path": "/en/science/index.html",
       "views": 4,
       "activeUsers": 4
     }
   ],
   "topPages30d": [
     {
+      "path": "/",
+      "views": 78,
+      "activeUsers": 58
+    },
+    {
       "path": "/en/index.html",
       "views": 75,
       "activeUsers": 41
     },
     {
-      "path": "/",
-      "views": 73,
-      "activeUsers": 53
-    },
-    {
       "path": "/zh/index.html",
-      "views": 71,
+      "views": 72,
       "activeUsers": 6
     },
     {
       "path": "/zh/tea/index.html",
-      "views": 61,
+      "views": 62,
       "activeUsers": 6
     },
     {
       "path": "/zh/drinks/index.html",
-      "views": 56,
+      "views": 57,
       "activeUsers": 4
     },
     {
       "path": "/zh/history/index.html",
-      "views": 48,
+      "views": 49,
       "activeUsers": 5
     },
     {
@@ -185,7 +185,7 @@
     },
     {
       "path": "/zh/science/index.html",
-      "views": 43,
+      "views": 44,
       "activeUsers": 4
     },
     {
@@ -239,6 +239,11 @@
       "activeUsers": 2
     },
     {
+      "path": "/zh/tea/fenghuang-dancong.html",
+      "views": 6,
+      "activeUsers": 3
+    },
+    {
       "path": "/en/about.html",
       "views": 5,
       "activeUsers": 1
@@ -247,11 +252,6 @@
       "path": "/zh/drinks/ingredient-list-transparency.html",
       "views": 5,
       "activeUsers": 1
-    },
-    {
-      "path": "/zh/tea/fenghuang-dancong.html",
-      "views": 5,
-      "activeUsers": 2
     },
     {
       "path": "/en/tea/index.html",
@@ -269,7 +269,7 @@
       "activeUsers": 4
     },
     {
-      "path": "/zh/tea/jasmine.html",
+      "path": "/en/science/index.html",
       "views": 4,
       "activeUsers": 4
     }
@@ -278,8 +278,8 @@
     {
       "section": "tea",
       "label": "茶叶",
-      "views": 95,
-      "activeUsers": 18
+      "views": 93,
+      "activeUsers": 15
     },
     {
       "section": "en-home",
@@ -288,21 +288,21 @@
       "activeUsers": 43
     },
     {
-      "section": "zh-home",
-      "label": "中文首页",
-      "views": 80,
-      "activeUsers": 7
-    },
-    {
       "section": "home",
       "label": "首页",
-      "views": 79,
-      "activeUsers": 55
+      "views": 84,
+      "activeUsers": 60
+    },
+    {
+      "section": "zh-home",
+      "label": "中文首页",
+      "views": 81,
+      "activeUsers": 7
     },
     {
       "section": "drinks",
       "label": "现制茶饮",
-      "views": 79,
+      "views": 80,
       "activeUsers": 10
     },
     {
@@ -314,14 +314,14 @@
     {
       "section": "history",
       "label": "茶文化历史",
-      "views": 56,
+      "views": 57,
       "activeUsers": 8
     },
     {
       "section": "science",
       "label": "科学/健康",
-      "views": 43,
-      "activeUsers": 4
+      "views": 48,
+      "activeUsers": 8
     },
     {
       "section": "about.html",
@@ -331,7 +331,7 @@
     }
   ],
   "insights": [
-    "近 7 天热门页面：/en/index.html（75 次浏览）。",
+    "近 7 天热门页面：/（78 次浏览）。",
     "近 30 天最强栏目：茶叶。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
