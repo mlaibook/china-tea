@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-03-23T01:05:10.897Z",
+  "generatedAt": "2026-03-24T01:05:10.719Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 77,
-      "sessions": 105,
-      "views": 692,
-      "avgSessionDurationSeconds": 369.05322879047617,
-      "engagementRate": 0.6285714285714286
+      "activeUsers": 81,
+      "sessions": 112,
+      "views": 707,
+      "avgSessionDurationSeconds": 350.80125806250004,
+      "engagementRate": 0.625
     },
     "last30Days": {
-      "activeUsers": 77,
-      "sessions": 105,
-      "views": 692,
-      "avgSessionDurationSeconds": 369.05322879047617,
-      "engagementRate": 0.6285714285714286
+      "activeUsers": 81,
+      "sessions": 112,
+      "views": 707,
+      "avgSessionDurationSeconds": 350.8012580625,
+      "engagementRate": 0.625
     }
   },
   "topPages7d": [
     {
       "path": "/",
-      "views": 78,
-      "activeUsers": 58
+      "views": 84,
+      "activeUsers": 61
     },
     {
       "path": "/en/index.html",
-      "views": 75,
-      "activeUsers": 41
+      "views": 80,
+      "activeUsers": 43
     },
     {
       "path": "/zh/index.html",
-      "views": 72,
+      "views": 74,
       "activeUsers": 6
     },
     {
@@ -150,17 +150,17 @@
   "topPages30d": [
     {
       "path": "/",
-      "views": 78,
-      "activeUsers": 58
+      "views": 84,
+      "activeUsers": 61
     },
     {
       "path": "/en/index.html",
-      "views": 75,
-      "activeUsers": 41
+      "views": 80,
+      "activeUsers": 43
     },
     {
       "path": "/zh/index.html",
-      "views": 72,
+      "views": 74,
       "activeUsers": 6
     },
     {
@@ -276,27 +276,27 @@
   ],
   "topSections30d": [
     {
+      "section": "en-home",
+      "label": "英文首页",
+      "views": 93,
+      "activeUsers": 45
+    },
+    {
       "section": "tea",
       "label": "茶叶",
       "views": 93,
       "activeUsers": 15
     },
     {
-      "section": "en-home",
-      "label": "英文首页",
-      "views": 88,
-      "activeUsers": 43
-    },
-    {
       "section": "home",
       "label": "首页",
-      "views": 84,
-      "activeUsers": 60
+      "views": 90,
+      "activeUsers": 63
     },
     {
       "section": "zh-home",
       "label": "中文首页",
-      "views": 81,
+      "views": 83,
       "activeUsers": 7
     },
     {
@@ -331,8 +331,8 @@
     }
   ],
   "insights": [
-    "近 7 天热门页面：/（78 次浏览）。",
-    "近 30 天最强栏目：茶叶。",
+    "近 7 天热门页面：/（84 次浏览）。",
+    "近 30 天最强栏目：英文首页。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
 }
