@@ -1,162 +1,162 @@
 {
-  "generatedAt": "2026-03-24T01:05:18.415Z",
+  "generatedAt": "2026-03-25T01:05:12.561Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 81,
-      "sessions": 112,
-      "views": 707,
-      "avgSessionDurationSeconds": 350.80125806250004,
-      "engagementRate": 0.625
+      "activeUsers": 73,
+      "sessions": 99,
+      "views": 384,
+      "avgSessionDurationSeconds": 177.76114382828283,
+      "engagementRate": 0.5353535353535354
     },
     "last30Days": {
-      "activeUsers": 81,
-      "sessions": 112,
-      "views": 707,
-      "avgSessionDurationSeconds": 350.8012580625,
-      "engagementRate": 0.625
+      "activeUsers": 92,
+      "sessions": 124,
+      "views": 717,
+      "avgSessionDurationSeconds": 316.9907264516129,
+      "engagementRate": 0.6048387096774194
     }
   },
   "topPages7d": [
     {
       "path": "/",
-      "views": 84,
-      "activeUsers": 61
-    },
-    {
-      "path": "/en/index.html",
-      "views": 80,
-      "activeUsers": 43
+      "views": 60,
+      "activeUsers": 45
     },
     {
       "path": "/zh/index.html",
-      "views": 74,
+      "views": 55,
       "activeUsers": 6
     },
     {
-      "path": "/zh/tea/index.html",
-      "views": 62,
-      "activeUsers": 6
+      "path": "/en/index.html",
+      "views": 48,
+      "activeUsers": 28
     },
     {
       "path": "/zh/drinks/index.html",
-      "views": 57,
+      "views": 32,
       "activeUsers": 4
     },
     {
-      "path": "/zh/history/index.html",
-      "views": 49,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/teaware/index.html",
-      "views": 47,
+      "path": "/zh/tea/index.html",
+      "views": 32,
       "activeUsers": 4
     },
     {
       "path": "/zh/science/index.html",
-      "views": 44,
+      "views": 26,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/history/index.html",
+      "views": 25,
       "activeUsers": 4
     },
     {
-      "path": "/en/tea/index.html",
-      "views": 15,
+      "path": "/zh/teaware/index.html",
+      "views": 23,
       "activeUsers": 4
-    },
-    {
-      "path": "/en/index.html",
-      "views": 13,
-      "activeUsers": 2
     },
     {
       "path": "/en/drinks/index.html",
-      "views": 12,
-      "activeUsers": 3
+      "views": 6,
+      "activeUsers": 2
     },
     {
-      "path": "/zh/index.html",
-      "views": 9,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/teaware/index.html",
-      "views": 9,
-      "activeUsers": 3
-    },
-    {
-      "path": "/en/history/index.html",
-      "views": 8,
+      "path": "/en/tea/index.html",
+      "views": 6,
       "activeUsers": 3
     },
     {
       "path": "/zh/about.html",
-      "views": 7,
-      "activeUsers": 5
+      "views": 5,
+      "activeUsers": 4
     },
     {
-      "path": "/",
-      "views": 6,
-      "activeUsers": 2
+      "path": "/zh/drinks/chagee-rise.html",
+      "views": 4,
+      "activeUsers": 4
     },
     {
-      "path": "/zh/tea/index.html",
-      "views": 6,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/bottled-tea-comeback.html",
-      "views": 6,
-      "activeUsers": 2
-    },
-    {
-      "path": "/zh/tea/fenghuang-dancong.html",
-      "views": 6,
+      "path": "/en/about.html",
+      "views": 3,
       "activeUsers": 3
     },
     {
-      "path": "/en/about.html",
-      "views": 5,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/ingredient-list-transparency.html",
-      "views": 5,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/tea/index.html",
-      "views": 4,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/teaware/index.html",
-      "views": 4,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/about.html",
-      "views": 4,
-      "activeUsers": 4
+      "path": "/en/history/index.html",
+      "views": 3,
+      "activeUsers": 2
     },
     {
       "path": "/en/science/index.html",
-      "views": 4,
-      "activeUsers": 4
+      "views": 3,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/tea/jasmine.html",
+      "views": 3,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/teaware/chaze-chahe.html",
+      "views": 3,
+      "activeUsers": 2
+    },
+    {
+      "path": "/en/contact.html",
+      "views": 2,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/contact.html",
+      "views": 2,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/fruit-tea-return.html",
+      "views": 2,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
+      "views": 2,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/drinks/tea-base-identity.html",
+      "views": 2,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/science/fruit-veg-tea-fiber-satiety-health-halo.html",
+      "views": 2,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/tea/bama-tea.html",
+      "views": 2,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/tea/black.html",
+      "views": 2,
+      "activeUsers": 2
     }
   ],
   "topPages30d": [
     {
       "path": "/",
-      "views": 84,
-      "activeUsers": 61
+      "views": 85,
+      "activeUsers": 62
     },
     {
       "path": "/en/index.html",
-      "views": 80,
-      "activeUsers": 43
+      "views": 81,
+      "activeUsers": 44
     },
     {
       "path": "/zh/index.html",
@@ -170,8 +170,8 @@
     },
     {
       "path": "/zh/drinks/index.html",
-      "views": 57,
-      "activeUsers": 4
+      "views": 58,
+      "activeUsers": 5
     },
     {
       "path": "/zh/history/index.html",
@@ -180,8 +180,8 @@
     },
     {
       "path": "/zh/teaware/index.html",
-      "views": 47,
-      "activeUsers": 4
+      "views": 48,
+      "activeUsers": 5
     },
     {
       "path": "/zh/science/index.html",
@@ -249,9 +249,14 @@
       "activeUsers": 1
     },
     {
+      "path": "/en/science/index.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
       "path": "/zh/drinks/ingredient-list-transparency.html",
       "views": 5,
-      "activeUsers": 1
+      "activeUsers": 2
     },
     {
       "path": "/en/tea/index.html",
@@ -265,11 +270,6 @@
     },
     {
       "path": "/en/about.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
-      "path": "/en/science/index.html",
       "views": 4,
       "activeUsers": 4
     }
@@ -278,8 +278,8 @@
     {
       "section": "en-home",
       "label": "英文首页",
-      "views": 93,
-      "activeUsers": 45
+      "views": 94,
+      "activeUsers": 46
     },
     {
       "section": "tea",
@@ -290,8 +290,8 @@
     {
       "section": "home",
       "label": "首页",
-      "views": 90,
-      "activeUsers": 63
+      "views": 91,
+      "activeUsers": 64
     },
     {
       "section": "zh-home",
@@ -302,14 +302,14 @@
     {
       "section": "drinks",
       "label": "现制茶饮",
-      "views": 80,
-      "activeUsers": 10
+      "views": 81,
+      "activeUsers": 12
     },
     {
       "section": "teaware",
       "label": "茶具",
-      "views": 60,
-      "activeUsers": 8
+      "views": 61,
+      "activeUsers": 9
     },
     {
       "section": "history",
@@ -320,8 +320,8 @@
     {
       "section": "science",
       "label": "科学/健康",
-      "views": 48,
-      "activeUsers": 8
+      "views": 49,
+      "activeUsers": 9
     },
     {
       "section": "about.html",
@@ -331,7 +331,7 @@
     }
   ],
   "insights": [
-    "近 7 天热门页面：/（84 次浏览）。",
+    "近 7 天热门页面：/（60 次浏览）。",
     "近 30 天最强栏目：英文首页。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
