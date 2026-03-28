@@ -1,73 +1,63 @@
 {
-  "generatedAt": "2026-03-27T01:05:10.819Z",
+  "generatedAt": "2026-03-28T01:05:10.867Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 65,
-      "sessions": 84,
-      "views": 193,
-      "avgSessionDurationSeconds": 69.58638810714285,
-      "engagementRate": 0.42857142857142855
+      "activeUsers": 61,
+      "sessions": 75,
+      "views": 136,
+      "avgSessionDurationSeconds": 36.63798309333334,
+      "engagementRate": 0.44
     },
     "last30Days": {
-      "activeUsers": 108,
-      "sessions": 144,
-      "views": 757,
-      "avgSessionDurationSeconds": 275.9631139236111,
-      "engagementRate": 0.5694444444444444
+      "activeUsers": 115,
+      "sessions": 150,
+      "views": 765,
+      "avgSessionDurationSeconds": 265.1019846133334,
+      "engagementRate": 0.5733333333333334
     }
   },
   "topPages7d": [
     {
       "path": "/",
-      "views": 46,
-      "activeUsers": 37
+      "views": 34,
+      "activeUsers": 30
     },
     {
       "path": "/en/index.html",
-      "views": 35,
-      "activeUsers": 22
+      "views": 28,
+      "activeUsers": 20
     },
     {
       "path": "/zh/index.html",
-      "views": 29,
+      "views": 17,
       "activeUsers": 5
     },
     {
       "path": "/zh/tea/index.html",
-      "views": 12,
-      "activeUsers": 3
-    },
-    {
-      "path": "/zh/history/index.html",
       "views": 9,
       "activeUsers": 3
     },
     {
-      "path": "/zh/drinks/index.html",
-      "views": 7,
+      "path": "/zh/history/index.html",
+      "views": 4,
       "activeUsers": 3
-    },
-    {
-      "path": "/zh/science/index.html",
-      "views": 5,
-      "activeUsers": 2
-    },
-    {
-      "path": "/zh/teaware/index.html",
-      "views": 5,
-      "activeUsers": 3
-    },
-    {
-      "path": "/en/tea/index.html",
-      "views": 3,
-      "activeUsers": 2
     },
     {
       "path": "/zh/drinks/chagee-rise.html",
+      "views": 3,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/drinks/index.html",
+      "views": 3,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/tea/fenghuang-dancong.html",
       "views": 3,
       "activeUsers": 3
     },
@@ -77,9 +67,9 @@
       "activeUsers": 3
     },
     {
-      "path": "/zh/teaware/chaze-chahe.html",
+      "path": "/zh/teaware/index.html",
       "views": 3,
-      "activeUsers": 2
+      "activeUsers": 3
     },
     {
       "path": "/en/science/index.html",
@@ -92,42 +82,17 @@
       "activeUsers": 2
     },
     {
-      "path": "/zh/about.html",
+      "path": "/zh/science/index.html",
       "views": 2,
       "activeUsers": 2
-    },
-    {
-      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
-      "path": "/zh/science/fruit-veg-tea-fiber-satiety-health-halo.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
-      "path": "/zh/tea/black.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
-      "path": "/zh/tea/fenghuang-dancong.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
-      "path": "/en/history/daguan-tea-essay.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/history/index.html",
-      "views": 1,
-      "activeUsers": 1
     },
     {
       "path": "/en/history/matcha.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/science/light-milk-tea-protein-lactose-health.html",
       "views": 1,
       "activeUsers": 1
     },
@@ -137,7 +102,17 @@
       "activeUsers": 1
     },
     {
+      "path": "/en/science/tea-uric-acid-gout-evidence.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
       "path": "/en/tea/huoshan-huangya.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/tea/index.html",
       "views": 1,
       "activeUsers": 1
     },
@@ -145,13 +120,38 @@
       "path": "/en/teaware/index.html",
       "views": 1,
       "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/ingredient-list-transparency.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/light-milk-tea-return.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/tea-drinks-office-survival.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/history/ming-loose-leaf-tea-revolution.html",
+      "views": 1,
+      "activeUsers": 1
     }
   ],
   "topPages30d": [
     {
       "path": "/",
-      "views": 95,
-      "activeUsers": 71
+      "views": 97,
+      "activeUsers": 73
     },
     {
       "path": "/en/index.html",
@@ -160,8 +160,8 @@
     },
     {
       "path": "/zh/index.html",
-      "views": 76,
-      "activeUsers": 6
+      "views": 77,
+      "activeUsers": 7
     },
     {
       "path": "/zh/tea/index.html",
@@ -224,6 +224,11 @@
       "activeUsers": 5
     },
     {
+      "path": "/zh/tea/fenghuang-dancong.html",
+      "views": 7,
+      "activeUsers": 4
+    },
+    {
       "path": "/",
       "views": 6,
       "activeUsers": 2
@@ -242,11 +247,6 @@
       "path": "/zh/drinks/ingredient-list-transparency.html",
       "views": 6,
       "activeUsers": 2
-    },
-    {
-      "path": "/zh/tea/fenghuang-dancong.html",
-      "views": 6,
-      "activeUsers": 3
     },
     {
       "path": "/en/about.html",
@@ -284,20 +284,20 @@
     {
       "section": "home",
       "label": "首页",
-      "views": 101,
-      "activeUsers": 73
+      "views": 103,
+      "activeUsers": 75
     },
     {
       "section": "tea",
       "label": "茶叶",
-      "views": 100,
-      "activeUsers": 20
+      "views": 101,
+      "activeUsers": 21
     },
     {
       "section": "zh-home",
       "label": "中文首页",
-      "views": 85,
-      "activeUsers": 7
+      "views": 86,
+      "activeUsers": 8
     },
     {
       "section": "drinks",
@@ -331,7 +331,7 @@
     }
   ],
   "insights": [
-    "近 7 天热门页面：/（46 次浏览）。",
+    "近 7 天热门页面：/（34 次浏览）。",
     "近 30 天最强栏目：英文首页。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
