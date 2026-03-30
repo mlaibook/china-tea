@@ -1,63 +1,48 @@
 {
-  "generatedAt": "2026-03-29T01:05:15.456Z",
+  "generatedAt": "2026-03-30T01:05:24.350Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 57,
-      "sessions": 66,
-      "views": 101,
-      "avgSessionDurationSeconds": 36.51613331818182,
-      "engagementRate": 0.3181818181818182
+      "activeUsers": 72,
+      "sessions": 77,
+      "views": 107,
+      "avgSessionDurationSeconds": 9.653386519480518,
+      "engagementRate": 0.23376623376623376
     },
     "last30Days": {
-      "activeUsers": 121,
-      "sessions": 156,
-      "views": 772,
-      "avgSessionDurationSeconds": 255.38574417307694,
-      "engagementRate": 0.5576923076923077
+      "activeUsers": 140,
+      "sessions": 175,
+      "views": 792,
+      "avgSessionDurationSeconds": 227.86688070285712,
+      "engagementRate": 0.5028571428571429
     }
   },
   "topPages7d": [
     {
       "path": "/",
-      "views": 26,
-      "activeUsers": 25
+      "views": 28,
+      "activeUsers": 26
     },
     {
       "path": "/en/index.html",
       "views": 20,
-      "activeUsers": 15
+      "activeUsers": 16
     },
     {
       "path": "/zh/index.html",
-      "views": 8,
-      "activeUsers": 3
-    },
-    {
-      "path": "/zh/drinks/index.html",
-      "views": 3,
-      "activeUsers": 3
-    },
-    {
-      "path": "/zh/tea/index.html",
-      "views": 3,
+      "views": 5,
       "activeUsers": 2
     },
     {
-      "path": "/zh/tea/jasmine.html",
-      "views": 3,
-      "activeUsers": 3
+      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
+      "views": 4,
+      "activeUsers": 4
     },
     {
-      "path": "/zh/teaware/index.html",
-      "views": 3,
-      "activeUsers": 3
-    },
-    {
-      "path": "/en/science/index.html",
+      "path": "/en/science/tea-bone-density-fracture-risk.html",
       "views": 2,
       "activeUsers": 2
     },
@@ -72,12 +57,7 @@
       "activeUsers": 2
     },
     {
-      "path": "/zh/history/index.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
-      "path": "/zh/science/index.html",
+      "path": "/zh/drinks/index.html",
       "views": 2,
       "activeUsers": 2
     },
@@ -87,7 +67,32 @@
       "activeUsers": 2
     },
     {
+      "path": "/zh/tea/index.html",
+      "views": 2,
+      "activeUsers": 1
+    },
+    {
+      "path": "/zh/teaware/index.html",
+      "views": 2,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/teaware/jianzhan.html",
+      "views": 2,
+      "activeUsers": 2
+    },
+    {
       "path": "/en/contact.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks/chagee-rise.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/drinks/salty-milk-tea-rise-2026.html",
       "views": 1,
       "activeUsers": 1
     },
@@ -102,17 +107,27 @@
       "activeUsers": 1
     },
     {
+      "path": "/en/science/index.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
       "path": "/en/science/light-milk-tea-protein-lactose-health.html",
       "views": 1,
       "activeUsers": 1
     },
     {
-      "path": "/en/science/tea-bone-density-fracture-risk.html",
+      "path": "/en/science/tea-drink-caffeine-sleep-window.html",
       "views": 1,
       "activeUsers": 1
     },
     {
       "path": "/en/science/tea-drinks-hydration-myth.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
+      "path": "/en/science/tea-oxalate-kidney-stone-risk.html",
       "views": 1,
       "activeUsers": 1
     },
@@ -127,22 +142,7 @@
       "activeUsers": 1
     },
     {
-      "path": "/en/teaware/index.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/ingredient-list-transparency.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/light-milk-tea-return.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
+      "path": "/en/tea/tieguanyin.html",
       "views": 1,
       "activeUsers": 1
     }
@@ -150,13 +150,13 @@
   "topPages30d": [
     {
       "path": "/",
-      "views": 98,
-      "activeUsers": 75
+      "views": 101,
+      "activeUsers": 77
     },
     {
       "path": "/en/index.html",
-      "views": 94,
-      "activeUsers": 54
+      "views": 95,
+      "activeUsers": 55
     },
     {
       "path": "/zh/index.html",
@@ -201,7 +201,7 @@
     {
       "path": "/en/drinks/index.html",
       "views": 12,
-      "activeUsers": 3
+      "activeUsers": 4
     },
     {
       "path": "/en/teaware/index.html",
@@ -220,8 +220,8 @@
     },
     {
       "path": "/zh/about.html",
-      "views": 7,
-      "activeUsers": 5
+      "views": 8,
+      "activeUsers": 6
     },
     {
       "path": "/zh/tea/fenghuang-dancong.html",
@@ -259,6 +259,11 @@
       "activeUsers": 5
     },
     {
+      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
       "path": "/zh/tea/jasmine.html",
       "views": 5,
       "activeUsers": 5
@@ -267,25 +272,20 @@
       "path": "/en/tea/index.html",
       "views": 4,
       "activeUsers": 1
-    },
-    {
-      "path": "/zh/teaware/index.html",
-      "views": 4,
-      "activeUsers": 1
     }
   ],
   "topSections30d": [
     {
       "section": "en-home",
       "label": "英文首页",
-      "views": 107,
-      "activeUsers": 56
+      "views": 108,
+      "activeUsers": 57
     },
     {
       "section": "home",
       "label": "首页",
-      "views": 104,
-      "activeUsers": 77
+      "views": 107,
+      "activeUsers": 79
     },
     {
       "section": "tea",
@@ -294,22 +294,22 @@
       "activeUsers": 21
     },
     {
+      "section": "drinks",
+      "label": "现制茶饮",
+      "views": 88,
+      "activeUsers": 18
+    },
+    {
       "section": "zh-home",
       "label": "中文首页",
       "views": 86,
       "activeUsers": 8
     },
     {
-      "section": "drinks",
-      "label": "现制茶饮",
-      "views": 83,
-      "activeUsers": 12
-    },
-    {
       "section": "teaware",
       "label": "茶具",
-      "views": 63,
-      "activeUsers": 9
+      "views": 59,
+      "activeUsers": 8
     },
     {
       "section": "history",
@@ -326,12 +326,12 @@
     {
       "section": "about.html",
       "label": "about.html",
-      "views": 12,
-      "activeUsers": 6
+      "views": 13,
+      "activeUsers": 7
     }
   ],
   "insights": [
-    "近 7 天热门页面：/（26 次浏览）。",
+    "近 7 天热门页面：/（28 次浏览）。",
     "近 30 天最强栏目：英文首页。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
