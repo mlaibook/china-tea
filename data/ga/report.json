@@ -1,45 +1,50 @@
 {
-  "generatedAt": "2026-03-31T01:05:12.711Z",
+  "generatedAt": "2026-04-01T01:05:07.815Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 80,
-      "sessions": 83,
-      "views": 108,
-      "avgSessionDurationSeconds": 7.378992144578314,
-      "engagementRate": 0.20481927710843373
+      "activeUsers": 83,
+      "sessions": 86,
+      "views": 109,
+      "avgSessionDurationSeconds": 7.054914697674419,
+      "engagementRate": 0.18604651162790697
     },
     "last30Days": {
-      "activeUsers": 157,
-      "sessions": 192,
-      "views": 811,
-      "avgSessionDurationSeconds": 207.83796205729166,
-      "engagementRate": 0.4739583333333333
+      "activeUsers": 165,
+      "sessions": 201,
+      "views": 818,
+      "avgSessionDurationSeconds": 198.54196817910446,
+      "engagementRate": 0.4527363184079602
     }
   },
   "topPages7d": [
     {
       "path": "/",
-      "views": 19,
-      "activeUsers": 19
+      "views": 18,
+      "activeUsers": 18
     },
     {
       "path": "/en/index.html",
-      "views": 17,
-      "activeUsers": 15
+      "views": 16,
+      "activeUsers": 14
     },
     {
       "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
-      "views": 10,
-      "activeUsers": 10
+      "views": 12,
+      "activeUsers": 12
     },
     {
       "path": "/zh/index.html",
       "views": 3,
       "activeUsers": 2
+    },
+    {
+      "path": "/zh/teaware/chaze-chahe.html",
+      "views": 3,
+      "activeUsers": 3
     },
     {
       "path": "/en/drinks/index.html",
@@ -48,11 +53,6 @@
     },
     {
       "path": "/en/science/tea-bone-density-fracture-risk.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
-      "path": "/zh/drinks/chagee-rise.html",
       "views": 2,
       "activeUsers": 2
     },
@@ -102,6 +102,11 @@
       "activeUsers": 1
     },
     {
+      "path": "/en/science/cold-brew-tea-caffeine-polyphenols-safety.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
       "path": "/en/science/index.html",
       "views": 1,
       "activeUsers": 1
@@ -132,17 +137,12 @@
       "activeUsers": 1
     },
     {
+      "path": "/en/science/tea-iron-absorption-timing.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
       "path": "/en/science/tea-oxalate-kidney-stone-risk.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/science/tea-stains-teeth-extrinsic-discoloration.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/science/tea-uric-acid-gout-evidence.html",
       "views": 1,
       "activeUsers": 1
     }
@@ -150,8 +150,8 @@
   "topPages30d": [
     {
       "path": "/",
-      "views": 101,
-      "activeUsers": 77
+      "views": 102,
+      "activeUsers": 78
     },
     {
       "path": "/en/index.html",
@@ -205,8 +205,8 @@
     },
     {
       "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
-      "views": 11,
-      "activeUsers": 11
+      "views": 13,
+      "activeUsers": 13
     },
     {
       "path": "/en/teaware/index.html",
@@ -269,9 +269,9 @@
       "activeUsers": 5
     },
     {
-      "path": "/en/tea/index.html",
-      "views": 4,
-      "activeUsers": 1
+      "path": "/zh/teaware/chaze-chahe.html",
+      "views": 5,
+      "activeUsers": 4
     }
   ],
   "topSections30d": [
@@ -284,20 +284,20 @@
     {
       "section": "home",
       "label": "首页",
-      "views": 107,
-      "activeUsers": 79
+      "views": 108,
+      "activeUsers": 80
     },
     {
       "section": "tea",
       "label": "茶叶",
-      "views": 102,
-      "activeUsers": 22
+      "views": 98,
+      "activeUsers": 21
     },
     {
       "section": "drinks",
       "label": "现制茶饮",
-      "views": 96,
-      "activeUsers": 25
+      "views": 98,
+      "activeUsers": 27
     },
     {
       "section": "zh-home",
@@ -308,8 +308,8 @@
     {
       "section": "teaware",
       "label": "茶具",
-      "views": 59,
-      "activeUsers": 8
+      "views": 64,
+      "activeUsers": 12
     },
     {
       "section": "history",
@@ -331,7 +331,7 @@
     }
   ],
   "insights": [
-    "近 7 天热门页面：/（19 次浏览）。",
+    "近 7 天热门页面：/（18 次浏览）。",
     "近 30 天最强栏目：英文首页。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
