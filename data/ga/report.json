@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-04-04T01:05:10.799Z",
+  "generatedAt": "2026-04-05T01:05:09.795Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 143,
-      "sessions": 148,
-      "views": 156,
-      "avgSessionDurationSeconds": 12.97271472972973,
-      "engagementRate": 0.06756756756756757
+      "activeUsers": 183,
+      "sessions": 188,
+      "views": 195,
+      "avgSessionDurationSeconds": 10.327077771276597,
+      "engagementRate": 0.06382978723404255
     },
     "last30Days": {
-      "activeUsers": 253,
-      "sessions": 294,
-      "views": 917,
-      "avgSessionDurationSeconds": 141.78334633673467,
-      "engagementRate": 0.32653061224489793
+      "activeUsers": 299,
+      "sessions": 340,
+      "views": 963,
+      "avgSessionDurationSeconds": 122.69576680882354,
+      "engagementRate": 0.2911764705882353
     }
   },
   "topPages7d": [
@@ -28,13 +28,33 @@
     },
     {
       "path": "/",
-      "views": 8,
-      "activeUsers": 8
+      "views": 7,
+      "activeUsers": 7
+    },
+    {
+      "path": "/en/history/salt-tea-exchange-history.html",
+      "views": 5,
+      "activeUsers": 3
     },
     {
       "path": "/en/index.html",
-      "views": 6,
-      "activeUsers": 6
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/tea/anji-baicha.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/tea/biluochun.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/teaware/chaze-chahe.html",
+      "views": 5,
+      "activeUsers": 5
     },
     {
       "path": "/en/drinks/chagee-rise.html",
@@ -42,32 +62,17 @@
       "activeUsers": 3
     },
     {
-      "path": "/zh/tea/anji-baicha.html",
-      "views": 4,
-      "activeUsers": 4
+      "path": "/en/science/cold-brew-tea-caffeine-polyphenols-safety.html",
+      "views": 3,
+      "activeUsers": 3
     },
     {
       "path": "/zh/tea/fenghuang-dancong.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
-      "path": "/zh/teaware/chaze-chahe.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
-      "path": "/en/history/salt-tea-exchange-history.html",
       "views": 3,
-      "activeUsers": 2
+      "activeUsers": 3
     },
     {
       "path": "/en/drinks/index.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
-      "path": "/en/science/cold-brew-tea-caffeine-polyphenols-safety.html",
       "views": 2,
       "activeUsers": 2
     },
@@ -77,7 +82,17 @@
       "activeUsers": 2
     },
     {
-      "path": "/zh/drinks/light-milk-tea-return.html",
+      "path": "/en/science/tea-iron-absorption-timing.html",
+      "views": 2,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/drinks/matcha-boom-2026.html",
+      "views": 2,
+      "activeUsers": 2
+    },
+    {
+      "path": "/zh/drinks/topping-simplification-tea-drinks.html",
       "views": 2,
       "activeUsers": 2
     },
@@ -87,19 +102,9 @@
       "activeUsers": 2
     },
     {
-      "path": "/zh/index.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
       "path": "/zh/science/index.html",
       "views": 2,
       "activeUsers": 2
-    },
-    {
-      "path": "/zh/science/tea-fluoride-intake-real-risk.html",
-      "views": 2,
-      "activeUsers": 1
     },
     {
       "path": "/zh/teaware/jianzhan.html",
@@ -107,7 +112,7 @@
       "activeUsers": 2
     },
     {
-      "path": "/en/contact.html",
+      "path": "/en/drinks",
       "views": 1,
       "activeUsers": 1
     },
@@ -122,27 +127,22 @@
       "activeUsers": 1
     },
     {
+      "path": "/en/history",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
       "path": "/en/history/cai-xiang-tea-record.html",
       "views": 1,
       "activeUsers": 1
     },
     {
+      "path": "/en/history/cha-dao.html",
+      "views": 1,
+      "activeUsers": 1
+    },
+    {
       "path": "/en/history/daguan-tea-essay.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/history/doucha-song-culture.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/history/spring-tea-time-consciousness.html",
-      "views": 1,
-      "activeUsers": 1
-    },
-    {
-      "path": "/en/history/tea-whisk-history.html",
       "views": 1,
       "activeUsers": 1
     }
@@ -234,6 +234,11 @@
       "activeUsers": 6
     },
     {
+      "path": "/zh/teaware/chaze-chahe.html",
+      "views": 8,
+      "activeUsers": 7
+    },
+    {
       "path": "/zh/drinks/bottled-tea-comeback.html",
       "views": 7,
       "activeUsers": 3
@@ -242,11 +247,6 @@
       "path": "/zh/drinks/ingredient-list-transparency.html",
       "views": 7,
       "activeUsers": 3
-    },
-    {
-      "path": "/zh/teaware/chaze-chahe.html",
-      "views": 7,
-      "activeUsers": 6
     },
     {
       "path": "/",
@@ -259,6 +259,11 @@
       "activeUsers": 1
     },
     {
+      "path": "/zh/tea/biluochun.html",
+      "views": 6,
+      "activeUsers": 6
+    },
+    {
       "path": "/zh/tea/jasmine.html",
       "views": 6,
       "activeUsers": 6
@@ -267,11 +272,6 @@
       "path": "/en/about.html",
       "views": 5,
       "activeUsers": 1
-    },
-    {
-      "path": "/en/science/index.html",
-      "views": 5,
-      "activeUsers": 5
     }
   ],
   "topSections30d": [
@@ -288,16 +288,16 @@
       "activeUsers": 59
     },
     {
+      "section": "tea",
+      "label": "茶叶",
+      "views": 109,
+      "activeUsers": 32
+    },
+    {
       "section": "drinks",
       "label": "现制茶饮",
       "views": 106,
       "activeUsers": 34
-    },
-    {
-      "section": "tea",
-      "label": "茶叶",
-      "views": 103,
-      "activeUsers": 26
     },
     {
       "section": "zh-home",
@@ -308,8 +308,8 @@
     {
       "section": "teaware",
       "label": "茶具",
-      "views": 67,
-      "activeUsers": 15
+      "views": 68,
+      "activeUsers": 16
     },
     {
       "section": "history",
@@ -320,8 +320,8 @@
     {
       "section": "science",
       "label": "科学/健康",
-      "views": 52,
-      "activeUsers": 10
+      "views": 47,
+      "activeUsers": 5
     },
     {
       "section": "about.html",
