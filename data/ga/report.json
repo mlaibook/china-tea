@@ -1,30 +1,35 @@
 {
-  "generatedAt": "2026-04-09T01:05:10.999Z",
+  "generatedAt": "2026-04-10T01:05:09.512Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 302,
-      "sessions": 303,
-      "views": 329,
-      "avgSessionDurationSeconds": 16.049857762376238,
-      "engagementRate": 0.0462046204620462
+      "activeUsers": 347,
+      "sessions": 348,
+      "views": 359,
+      "avgSessionDurationSeconds": 18.123500520114945,
+      "engagementRate": 0.05172413793103448
     },
     "last30Days": {
-      "activeUsers": 473,
-      "sessions": 513,
-      "views": 1155,
-      "avgSessionDurationSeconds": 87.73961229239767,
-      "engagementRate": 0.20857699805068225
+      "activeUsers": 528,
+      "sessions": 568,
+      "views": 1195,
+      "avgSessionDurationSeconds": 81.79931519014083,
+      "engagementRate": 0.1954225352112676
     }
   },
   "topPages7d": [
     {
+      "path": "/zh/drinks/matcha-boom-2026.html",
+      "views": 9,
+      "activeUsers": 9
+    },
+    {
       "path": "/zh/drinks/fruit-tea-return.html",
-      "views": 10,
-      "activeUsers": 7
+      "views": 8,
+      "activeUsers": 8
     },
     {
       "path": "/zh/tea/biluochun.html",
@@ -32,29 +37,29 @@
       "activeUsers": 8
     },
     {
-      "path": "/zh/drinks/matcha-boom-2026.html",
+      "path": "/",
       "views": 7,
       "activeUsers": 7
     },
     {
-      "path": "/zh/tea/enshi-yulu.html",
+      "path": "/zh/tea/jasmine.html",
       "views": 7,
-      "activeUsers": 1
+      "activeUsers": 7
     },
     {
-      "path": "/zh/tea/anji-baicha.html",
+      "path": "/zh/tea/fenghuang-dancong.html",
       "views": 6,
       "activeUsers": 6
     },
     {
-      "path": "/zh/tea/huangshan-maofeng.html",
-      "views": 6,
-      "activeUsers": 1
-    },
-    {
-      "path": "/",
+      "path": "/en/index.html",
       "views": 5,
       "activeUsers": 5
+    },
+    {
+      "path": "/en/science/bottled-unsweetened-tea-polyphenols-caffeine-health.html",
+      "views": 5,
+      "activeUsers": 3
     },
     {
       "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
@@ -62,12 +67,7 @@
       "activeUsers": 5
     },
     {
-      "path": "/zh/tea/jasmine.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/teaware/chaze-chahe.html",
+      "path": "/zh/drinks/spring-floral-tea-series.html",
       "views": 5,
       "activeUsers": 5
     },
@@ -77,22 +77,12 @@
       "activeUsers": 3
     },
     {
-      "path": "/en/index.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
       "path": "/zh/drinks/product-identity-card-tea-menus.html",
       "views": 4,
       "activeUsers": 4
     },
     {
-      "path": "/zh/drinks/spring-floral-tea-series.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
-      "path": "/zh/tea/fenghuang-dancong.html",
+      "path": "/zh/tea/anji-baicha.html",
       "views": 4,
       "activeUsers": 4
     },
@@ -102,12 +92,27 @@
       "activeUsers": 4
     },
     {
-      "path": "/zh/tea/yuhua-tea.html",
+      "path": "/zh/teaware/chaze-chahe.html",
       "views": 4,
-      "activeUsers": 2
+      "activeUsers": 4
+    },
+    {
+      "path": "/en/history/matcha.html",
+      "views": 3,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/drinks/hong-kong-style-lemon-tea-return.html",
+      "views": 3,
+      "activeUsers": 3
     },
     {
       "path": "/zh/drinks/new-tea.html",
+      "views": 3,
+      "activeUsers": 3
+    },
+    {
+      "path": "/zh/drinks/small-cup-tea-drinks.html",
       "views": 3,
       "activeUsers": 3
     },
@@ -122,41 +127,36 @@
       "activeUsers": 3
     },
     {
+      "path": "/zh/history/wanli-tea-road.html",
+      "views": 3,
+      "activeUsers": 3
+    },
+    {
       "path": "/zh/science/green-tea-extract-egcg-liver-risk.html",
       "views": 3,
       "activeUsers": 3
     },
     {
-      "path": "/en/drinks/chagee-rise.html",
-      "views": 2,
-      "activeUsers": 1
+      "path": "/zh/science/tea-cognition-focus-evidence.html",
+      "views": 3,
+      "activeUsers": 3
     },
     {
-      "path": "/en/history/cha-dao.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
-      "path": "/en/history/doucha-song-culture.html",
-      "views": 2,
-      "activeUsers": 2
-    },
-    {
-      "path": "/en/science/bottled-unsweetened-tea-polyphenols-caffeine-health.html",
-      "views": 2,
+      "path": "/zh/teaware/chapan.html",
+      "views": 3,
       "activeUsers": 2
     }
   ],
   "topPages30d": [
     {
       "path": "/",
-      "views": 107,
-      "activeUsers": 82
+      "views": 109,
+      "activeUsers": 84
     },
     {
       "path": "/en/index.html",
-      "views": 100,
-      "activeUsers": 59
+      "views": 101,
+      "activeUsers": 60
     },
     {
       "path": "/zh/index.html",
@@ -170,8 +170,8 @@
     },
     {
       "path": "/zh/drinks/index.html",
-      "views": 60,
-      "activeUsers": 5
+      "views": 61,
+      "activeUsers": 6
     },
     {
       "path": "/zh/history/index.html",
@@ -190,13 +190,18 @@
     },
     {
       "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
-      "views": 21,
-      "activeUsers": 21
+      "views": 22,
+      "activeUsers": 22
     },
     {
       "path": "/en/tea/index.html",
       "views": 16,
       "activeUsers": 5
+    },
+    {
+      "path": "/zh/tea/fenghuang-dancong.html",
+      "views": 15,
+      "activeUsers": 12
     },
     {
       "path": "/en/drinks/index.html",
@@ -209,14 +214,9 @@
       "activeUsers": 2
     },
     {
-      "path": "/zh/tea/fenghuang-dancong.html",
-      "views": 13,
-      "activeUsers": 10
-    },
-    {
-      "path": "/zh/drinks/fruit-tea-return.html",
+      "path": "/zh/tea/jasmine.html",
       "views": 12,
-      "activeUsers": 8
+      "activeUsers": 12
     },
     {
       "path": "/en/teaware/index.html",
@@ -224,24 +224,29 @@
       "activeUsers": 4
     },
     {
+      "path": "/zh/teaware/chaze-chahe.html",
+      "views": 11,
+      "activeUsers": 10
+    },
+    {
+      "path": "/zh/drinks/fruit-tea-return.html",
+      "views": 10,
+      "activeUsers": 9
+    },
+    {
       "path": "/zh/tea/biluochun.html",
       "views": 10,
       "activeUsers": 10
     },
     {
-      "path": "/zh/tea/jasmine.html",
-      "views": 10,
-      "activeUsers": 10
-    },
-    {
-      "path": "/zh/teaware/chaze-chahe.html",
-      "views": 10,
-      "activeUsers": 9
-    },
-    {
       "path": "/zh/index.html",
       "views": 9,
       "activeUsers": 1
+    },
+    {
+      "path": "/zh/drinks/matcha-boom-2026.html",
+      "views": 9,
+      "activeUsers": 9
     },
     {
       "path": "/en/history/index.html",
@@ -264,40 +269,35 @@
       "activeUsers": 3
     },
     {
-      "path": "/zh/drinks/matcha-boom-2026.html",
-      "views": 7,
-      "activeUsers": 7
-    },
-    {
-      "path": "/zh/tea/enshi-yulu.html",
-      "views": 7,
-      "activeUsers": 1
+      "path": "/",
+      "views": 6,
+      "activeUsers": 2
     }
   ],
   "topSections30d": [
     {
       "section": "drinks",
       "label": "现制茶饮",
-      "views": 128,
-      "activeUsers": 52
+      "views": 130,
+      "activeUsers": 57
     },
     {
       "section": "tea",
       "label": "茶叶",
-      "views": 121,
-      "activeUsers": 43
-    },
-    {
-      "section": "en-home",
-      "label": "英文首页",
-      "views": 113,
-      "activeUsers": 61
+      "views": 118,
+      "activeUsers": 46
     },
     {
       "section": "home",
       "label": "首页",
-      "views": 107,
-      "activeUsers": 82
+      "views": 115,
+      "activeUsers": 86
+    },
+    {
+      "section": "en-home",
+      "label": "英文首页",
+      "views": 114,
+      "activeUsers": 62
     },
     {
       "section": "zh-home",
@@ -308,8 +308,8 @@
     {
       "section": "teaware",
       "label": "茶具",
-      "views": 70,
-      "activeUsers": 18
+      "views": 71,
+      "activeUsers": 19
     },
     {
       "section": "history",
@@ -331,7 +331,7 @@
     }
   ],
   "insights": [
-    "近 7 天热门页面：/zh/drinks/fruit-tea-return.html（10 次浏览）。",
+    "近 7 天热门页面：/zh/drinks/matcha-boom-2026.html（9 次浏览）。",
     "近 30 天最强栏目：现制茶饮。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
