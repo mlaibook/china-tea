@@ -1,63 +1,43 @@
 {
-  "generatedAt": "2026-04-14T01:05:09.562Z",
+  "generatedAt": "2026-04-15T01:05:07.750Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 419,
-      "sessions": 421,
-      "views": 423,
-      "avgSessionDurationSeconds": 15.349187489311163,
-      "engagementRate": 0.0665083135391924
+      "activeUsers": 454,
+      "sessions": 457,
+      "views": 460,
+      "avgSessionDurationSeconds": 14.20925163238512,
+      "engagementRate": 0.05689277899343545
     },
     "last30Days": {
-      "activeUsers": 761,
-      "sessions": 802,
-      "views": 1428,
-      "avgSessionDurationSeconds": 61.92021489027431,
-      "engagementRate": 0.16458852867830423
+      "activeUsers": 827,
+      "sessions": 868,
+      "views": 1497,
+      "avgSessionDurationSeconds": 57.349912559907835,
+      "engagementRate": 0.1532258064516129
     }
   },
   "topPages7d": [
     {
-      "path": "/zh/drinks/fruit-tea-return.html",
+      "path": "/zh/tea/fenghuang-dancong.html",
       "views": 9,
       "activeUsers": 9
     },
     {
+      "path": "/zh/drinks/fruit-tea-return.html",
+      "views": 8,
+      "activeUsers": 8
+    },
+    {
       "path": "/",
-      "views": 8,
-      "activeUsers": 8
-    },
-    {
-      "path": "/zh/drinks/matcha-boom-2026.html",
-      "views": 8,
-      "activeUsers": 8
-    },
-    {
-      "path": "/zh/tea/biluochun.html",
-      "views": 8,
-      "activeUsers": 8
-    },
-    {
-      "path": "/zh/tea/jasmine.html",
-      "views": 8,
-      "activeUsers": 8
+      "views": 7,
+      "activeUsers": 7
     },
     {
       "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
-      "views": 7,
-      "activeUsers": 7
-    },
-    {
-      "path": "/zh/drinks/spring-floral-tea-series.html",
-      "views": 7,
-      "activeUsers": 7
-    },
-    {
-      "path": "/zh/tea/fenghuang-dancong.html",
       "views": 7,
       "activeUsers": 7
     },
@@ -67,12 +47,32 @@
       "activeUsers": 6
     },
     {
+      "path": "/zh/drinks/matcha-boom-2026.html",
+      "views": 6,
+      "activeUsers": 6
+    },
+    {
+      "path": "/zh/drinks/spring-floral-tea-series.html",
+      "views": 6,
+      "activeUsers": 6
+    },
+    {
       "path": "/zh/science/tea-cognition-focus-evidence.html",
       "views": 6,
       "activeUsers": 6
     },
     {
-      "path": "/zh/drinks/product-identity-card-tea-menus.html",
+      "path": "/zh/tea/biluochun.html",
+      "views": 6,
+      "activeUsers": 6
+    },
+    {
+      "path": "/zh/tea/duck-shit-aroma.html",
+      "views": 6,
+      "activeUsers": 6
+    },
+    {
+      "path": "/zh/history/matcha.html",
       "views": 5,
       "activeUsers": 5
     },
@@ -82,7 +82,27 @@
       "activeUsers": 5
     },
     {
+      "path": "/zh/tea/jasmine.html",
+      "views": 5,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/tea/longjing.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/teaware/chaxi.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
       "path": "/zh/teaware/gongdao-cup.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/teaware/hucheng.html",
       "views": 5,
       "activeUsers": 5
     },
@@ -92,12 +112,17 @@
       "activeUsers": 5
     },
     {
-      "path": "/en/index.html",
+      "path": "/en/science/tea-uric-acid-gout-evidence.html",
       "views": 4,
       "activeUsers": 4
     },
     {
       "path": "/zh/drinks/oriental-iced-tea-series.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/drinks/product-identity-card-tea-menus.html",
       "views": 4,
       "activeUsers": 4
     },
@@ -117,32 +142,7 @@
       "activeUsers": 4
     },
     {
-      "path": "/zh/history/matcha.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
       "path": "/zh/tea/chinese-tea-categories-guide.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
-      "path": "/zh/tea/duck-shit-aroma.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
-      "path": "/zh/tea/guzhu-zisun.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
-      "path": "/zh/tea/longjing.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
-      "path": "/zh/teaware/chaxi.html",
       "views": 4,
       "activeUsers": 4
     }
@@ -195,8 +195,8 @@
     },
     {
       "path": "/zh/tea/fenghuang-dancong.html",
-      "views": 17,
-      "activeUsers": 14
+      "views": 19,
+      "activeUsers": 16
     },
     {
       "path": "/en/tea/index.html",
@@ -215,8 +215,13 @@
     },
     {
       "path": "/zh/tea/jasmine.html",
-      "views": 14,
+      "views": 15,
       "activeUsers": 14
+    },
+    {
+      "path": "/zh/teaware/chaze-chahe.html",
+      "views": 14,
+      "activeUsers": 13
     },
     {
       "path": "/en/index.html",
@@ -224,14 +229,9 @@
       "activeUsers": 2
     },
     {
-      "path": "/zh/teaware/chaze-chahe.html",
+      "path": "/zh/drinks/fruit-tea-return.html",
       "views": 13,
       "activeUsers": 12
-    },
-    {
-      "path": "/zh/drinks/fruit-tea-return.html",
-      "views": 12,
-      "activeUsers": 11
     },
     {
       "path": "/en/teaware/index.html",
@@ -254,14 +254,14 @@
       "activeUsers": 1
     },
     {
+      "path": "/en/history/index.html",
+      "views": 9,
+      "activeUsers": 4
+    },
+    {
       "path": "/zh/drinks/spring-floral-tea-series.html",
       "views": 9,
       "activeUsers": 9
-    },
-    {
-      "path": "/en/history/index.html",
-      "views": 8,
-      "activeUsers": 3
     },
     {
       "path": "/zh/about.html",
@@ -278,14 +278,14 @@
     {
       "section": "drinks",
       "label": "现制茶饮",
-      "views": 154,
-      "activeUsers": 85
+      "views": 155,
+      "activeUsers": 86
     },
     {
       "section": "tea",
       "label": "茶叶",
-      "views": 127,
-      "activeUsers": 55
+      "views": 130,
+      "activeUsers": 57
     },
     {
       "section": "en-home",
@@ -308,14 +308,14 @@
     {
       "section": "teaware",
       "label": "茶具",
-      "views": 73,
-      "activeUsers": 21
+      "views": 74,
+      "activeUsers": 22
     },
     {
       "section": "history",
       "label": "茶文化历史",
-      "views": 60,
-      "activeUsers": 9
+      "views": 61,
+      "activeUsers": 10
     },
     {
       "section": "science",
@@ -331,7 +331,7 @@
     }
   ],
   "insights": [
-    "近 7 天热门页面：/zh/drinks/fruit-tea-return.html（9 次浏览）。",
+    "近 7 天热门页面：/zh/tea/fenghuang-dancong.html（9 次浏览）。",
     "近 30 天最强栏目：现制茶饮。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
