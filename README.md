@@ -24,6 +24,7 @@ This repo now includes a static `analytics.html` page for internal reporting.
 - `scripts/render_analytics_report.js` — renders `analytics.html` from `data/ga/report.json`
 - `scripts/update_analytics_report.sh` — fetch + render wrapper
 - `scripts/openclaw_refresh_analytics.sh` — local OpenClaw cron entrypoint; refreshes, commits, and pushes if data changed
+- `scripts/check_teaware_collections.py` — validates `_zh_teaware` / `_en_teaware` bilingual collection metadata alignment without touching generated pages
 - `data/ga/report.json` — cached analytics snapshot used by the page
 
 ### Local GA4 configuration for OpenClaw cron
