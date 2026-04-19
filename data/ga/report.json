@@ -1,48 +1,38 @@
 {
-  "generatedAt": "2026-04-18T01:05:10.407Z",
+  "generatedAt": "2026-04-19T01:05:13.943Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 429,
-      "sessions": 435,
-      "views": 439,
-      "avgSessionDurationSeconds": 220.71399905747128,
-      "engagementRate": 0.06666666666666667
+      "activeUsers": 418,
+      "sessions": 424,
+      "views": 432,
+      "avgSessionDurationSeconds": 223.37792727830188,
+      "engagementRate": 0.06132075471698113
     },
     "last30Days": {
-      "activeUsers": 956,
-      "sessions": 989,
-      "views": 1244,
-      "avgSessionDurationSeconds": 121.76346849241659,
-      "engagementRate": 0.11122345803842265
+      "activeUsers": 992,
+      "sessions": 1021,
+      "views": 1151,
+      "avgSessionDurationSeconds": 107.31416963858963,
+      "engagementRate": 0.10088148873653281
     }
   },
   "topPages7d": [
     {
       "path": "/zh/tea/duck-shit-aroma.html",
-      "views": 8,
-      "activeUsers": 8
+      "views": 10,
+      "activeUsers": 10
     },
     {
-      "path": "/zh/tea/biluochun.html",
+      "path": "/zh/drinks/floral-tea-drinks-rise.html",
       "views": 7,
       "activeUsers": 7
     },
     {
-      "path": "/zh/drinks/floral-tea-drinks-rise.html",
-      "views": 6,
-      "activeUsers": 6
-    },
-    {
-      "path": "/zh/drinks/hong-kong-style-lemon-tea-return.html",
-      "views": 6,
-      "activeUsers": 6
-    },
-    {
-      "path": "/zh/science/tea-cognition-focus-evidence.html",
+      "path": "/",
       "views": 6,
       "activeUsers": 6
     },
@@ -57,11 +47,6 @@
       "activeUsers": 6
     },
     {
-      "path": "/zh/tea/guzhu-zisun.html",
-      "views": 6,
-      "activeUsers": 5
-    },
-    {
       "path": "/zh/tea/white-tea.html",
       "views": 6,
       "activeUsers": 6
@@ -72,22 +57,32 @@
       "activeUsers": 5
     },
     {
-      "path": "/zh/drinks/regional-flavors-tea-drinks.html",
+      "path": "/zh/drinks/oriental-iced-tea-series.html",
       "views": 5,
       "activeUsers": 5
     },
     {
-      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
+      "path": "/zh/drinks/topping-simplification-tea-drinks.html",
+      "views": 5,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/history/matcha.html",
+      "views": 5,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/science/tea-cognition-focus-evidence.html",
       "views": 5,
       "activeUsers": 5
     },
     {
-      "path": "/zh/drinks/spring-floral-tea-series.html",
+      "path": "/zh/tea/biluochun.html",
       "views": 5,
       "activeUsers": 5
     },
     {
-      "path": "/zh/science/light-milk-tea-protein-lactose-health.html",
+      "path": "/zh/tea/chinese-tea-categories-guide.html",
       "views": 5,
       "activeUsers": 5
     },
@@ -102,6 +97,11 @@
       "activeUsers": 5
     },
     {
+      "path": "/zh/tea/guzhu-zisun.html",
+      "views": 5,
+      "activeUsers": 4
+    },
+    {
       "path": "/zh/tea/liubao-tea.html",
       "views": 5,
       "activeUsers": 5
@@ -112,32 +112,32 @@
       "activeUsers": 5
     },
     {
-      "path": "/zh/teaware/gongdao-cup.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/teaware/hucheng.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/teaware/tea-funnel.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
       "path": "/en/drinks/chagee-rise.html",
       "views": 4,
       "activeUsers": 4
     },
     {
-      "path": "/en/science/tea-gerd-reflux-heartburn-trigger.html",
+      "path": "/en/index.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/drinks/cold-brew-feel-tea-drinks.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/drinks/fruit-tea-return.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/drinks/hong-kong-style-lemon-tea-return.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/drinks/kale-drinks.html",
       "views": 4,
       "activeUsers": 4
     },
@@ -150,28 +150,18 @@
   "topPages30d": [
     {
       "path": "/",
-      "views": 72,
-      "activeUsers": 59
-    },
-    {
-      "path": "/zh/index.html",
-      "views": 55,
-      "activeUsers": 8
+      "views": 68,
+      "activeUsers": 58
     },
     {
       "path": "/en/index.html",
-      "views": 53,
+      "views": 48,
       "activeUsers": 34
     },
     {
-      "path": "/zh/tea/index.html",
-      "views": 30,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/drinks/index.html",
-      "views": 29,
-      "activeUsers": 7
+      "path": "/zh/index.html",
+      "views": 33,
+      "activeUsers": 8
     },
     {
       "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
@@ -179,24 +169,9 @@
       "activeUsers": 28
     },
     {
-      "path": "/zh/history/index.html",
-      "views": 23,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/science/index.html",
-      "views": 23,
-      "activeUsers": 4
-    },
-    {
-      "path": "/zh/teaware/index.html",
-      "views": 18,
-      "activeUsers": 5
-    },
-    {
       "path": "/zh/tea/biluochun.html",
-      "views": 17,
-      "activeUsers": 17
+      "views": 18,
+      "activeUsers": 18
     },
     {
       "path": "/zh/tea/fenghuang-dancong.html",
@@ -204,12 +179,17 @@
       "activeUsers": 15
     },
     {
-      "path": "/zh/tea/jasmine.html",
-      "views": 14,
-      "activeUsers": 13
+      "path": "/zh/teaware/chaze-chahe.html",
+      "views": 15,
+      "activeUsers": 14
     },
     {
-      "path": "/zh/teaware/chaze-chahe.html",
+      "path": "/zh/tea/index.html",
+      "views": 14,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/tea/jasmine.html",
       "views": 14,
       "activeUsers": 13
     },
@@ -224,6 +204,21 @@
       "activeUsers": 12
     },
     {
+      "path": "/zh/drinks/index.html",
+      "views": 11,
+      "activeUsers": 6
+    },
+    {
+      "path": "/zh/history/index.html",
+      "views": 11,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/tea/duck-shit-aroma.html",
+      "views": 11,
+      "activeUsers": 11
+    },
+    {
       "path": "/zh/drinks/hong-kong-style-lemon-tea-return.html",
       "views": 10,
       "activeUsers": 10
@@ -234,12 +229,12 @@
       "activeUsers": 10
     },
     {
-      "path": "/zh/science/tea-cognition-focus-evidence.html",
-      "views": 9,
+      "path": "/zh/drinks/topping-simplification-tea-drinks.html",
+      "views": 10,
       "activeUsers": 9
     },
     {
-      "path": "/zh/tea/duck-shit-aroma.html",
+      "path": "/zh/science/tea-cognition-focus-evidence.html",
       "views": 9,
       "activeUsers": 9
     },
@@ -249,19 +244,19 @@
       "activeUsers": 7
     },
     {
+      "path": "/zh/drinks/floral-tea-drinks-rise.html",
+      "views": 8,
+      "activeUsers": 8
+    },
+    {
       "path": "/zh/drinks/regional-flavors-tea-drinks.html",
       "views": 8,
       "activeUsers": 8
     },
     {
-      "path": "/zh/drinks/topping-simplification-tea-drinks.html",
+      "path": "/zh/history/matcha.html",
       "views": 8,
-      "activeUsers": 8
-    },
-    {
-      "path": "/zh/science/light-milk-tea-protein-lactose-health.html",
-      "views": 8,
-      "activeUsers": 8
+      "activeUsers": 7
     },
     {
       "path": "/zh/tea/guzhu-zisun.html",
@@ -272,60 +267,65 @@
       "path": "/zh/tea/longjing.html",
       "views": 8,
       "activeUsers": 8
+    },
+    {
+      "path": "/zh/teaware/gongdao-cup.html",
+      "views": 8,
+      "activeUsers": 8
     }
   ],
   "topSections30d": [
     {
       "section": "drinks",
       "label": "现制茶饮",
-      "views": 126,
-      "activeUsers": 103
+      "views": 118,
+      "activeUsers": 111
     },
     {
       "section": "tea",
       "label": "茶叶",
-      "views": 101,
-      "activeUsers": 74
+      "views": 88,
+      "activeUsers": 77
     },
     {
       "section": "home",
       "label": "首页",
-      "views": 72,
-      "activeUsers": 59
-    },
-    {
-      "section": "zh-home",
-      "label": "中文首页",
-      "views": 55,
-      "activeUsers": 8
+      "views": 68,
+      "activeUsers": 58
     },
     {
       "section": "en-home",
       "label": "英文首页",
-      "views": 53,
+      "views": 48,
       "activeUsers": 34
     },
     {
-      "section": "science",
-      "label": "科学/健康",
-      "views": 40,
-      "activeUsers": 21
+      "section": "zh-home",
+      "label": "中文首页",
+      "views": 33,
+      "activeUsers": 8
     },
     {
       "section": "teaware",
       "label": "茶具",
-      "views": 32,
-      "activeUsers": 18
+      "views": 23,
+      "activeUsers": 22
     },
     {
       "section": "history",
       "label": "茶文化历史",
-      "views": 23,
-      "activeUsers": 5
+      "views": 19,
+      "activeUsers": 11
+    },
+    {
+      "section": "science",
+      "label": "科学/健康",
+      "views": 9,
+      "activeUsers": 9
     }
   ],
   "insights": [
-    "近 7 天热门页面：/zh/tea/duck-shit-aroma.html（8 次浏览）。",
+    "近 7 天热门页面：/zh/tea/duck-shit-aroma.html（10 次浏览）。",
     "近 30 天最强栏目：现制茶饮。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
