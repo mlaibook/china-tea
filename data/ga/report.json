@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T01:05:07.739Z",
+  "generatedAt": "2026-04-24T01:05:08.205Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
@@ -9,7 +9,7 @@
       "activeUsers": 451,
       "sessions": 458,
       "views": 465,
-      "avgSessionDurationSeconds": 210.6394282445415,
+      "avgSessionDurationSeconds": 210.63942824454148,
       "engagementRate": 0.05240174672489083
     },
     "last30Days": {
