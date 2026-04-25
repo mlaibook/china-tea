@@ -1,28 +1,33 @@
 {
-  "generatedAt": "2026-04-24T01:05:08.205Z",
+  "generatedAt": "2026-04-25T01:05:08.750Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 451,
-      "sessions": 458,
-      "views": 465,
-      "avgSessionDurationSeconds": 210.63942824454148,
-      "engagementRate": 0.05240174672489083
+      "activeUsers": 468,
+      "sessions": 474,
+      "views": 478,
+      "avgSessionDurationSeconds": 13.832644529535866,
+      "engagementRate": 0.05485232067510549
     },
     "last30Days": {
-      "activeUsers": 1292,
-      "sessions": 1310,
-      "views": 1351,
-      "avgSessionDurationSeconds": 82.70608108549618,
-      "engagementRate": 0.0717557251908397
+      "activeUsers": 1345,
+      "sessions": 1366,
+      "views": 1399,
+      "avgSessionDurationSeconds": 80.03325243265007,
+      "engagementRate": 0.06954612005856516
     }
   },
   "topPages7d": [
     {
-      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
+      "path": "/",
+      "views": 9,
+      "activeUsers": 10
+    },
+    {
+      "path": "/zh/drinks/matcha-boom-2026.html",
       "views": 9,
       "activeUsers": 9
     },
@@ -32,19 +37,14 @@
       "activeUsers": 9
     },
     {
-      "path": "/",
-      "views": 8,
-      "activeUsers": 9
-    },
-    {
-      "path": "/zh/drinks/regional-flavors-tea-drinks.html",
+      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
       "views": 8,
       "activeUsers": 8
     },
     {
-      "path": "/zh/tea/anji-white-tea.html",
-      "views": 8,
-      "activeUsers": 8
+      "path": "/en/index.html",
+      "views": 7,
+      "activeUsers": 7
     },
     {
       "path": "/zh/drinks/product-identity-card-tea-menus.html",
@@ -52,9 +52,9 @@
       "activeUsers": 7
     },
     {
-      "path": "/en/index.html",
-      "views": 6,
-      "activeUsers": 6
+      "path": "/zh/teaware/chaxi.html",
+      "views": 7,
+      "activeUsers": 7
     },
     {
       "path": "/zh/drinks/bayberry-iced-tea-rise.html",
@@ -72,12 +72,12 @@
       "activeUsers": 6
     },
     {
-      "path": "/zh/drinks/matcha-boom-2026.html",
+      "path": "/zh/science/tea-uric-acid-gout-evidence.html",
       "views": 6,
       "activeUsers": 6
     },
     {
-      "path": "/zh/teaware/chaxi.html",
+      "path": "/zh/tea/biluochun.html",
       "views": 6,
       "activeUsers": 6
     },
@@ -87,17 +87,7 @@
       "activeUsers": 6
     },
     {
-      "path": "/zh/drinks/beany-roasty-tea-base-drinks.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/drinks/floral-tea-drinks-rise.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/drinks/hong-kong-style-lemon-tea-return.html",
+      "path": "/zh/drinks/regional-flavors-tea-drinks.html",
       "views": 5,
       "activeUsers": 5
     },
@@ -107,27 +97,7 @@
       "activeUsers": 5
     },
     {
-      "path": "/zh/science/green-tea-oral-health-halitosis-plaque-evidence.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/science/tea-uric-acid-gout-evidence.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/tea/biluochun.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/tea/duck-shit-aroma.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/tea/enshi-yulu.html",
+      "path": "/zh/tea/anji-white-tea.html",
       "views": 5,
       "activeUsers": 5
     },
@@ -137,12 +107,42 @@
       "activeUsers": 5
     },
     {
-      "path": "/zh/tea/luan-guapian.html",
+      "path": "/zh/tea/huoshan-huangya.html",
       "views": 5,
-      "activeUsers": 4
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/tea/yuhua-tea.html",
+      "views": 5,
+      "activeUsers": 5
     },
     {
       "path": "/en/science/tea-cognition-focus-evidence.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/drinks/beany-roasty-tea-base-drinks.html",
+      "views": 4,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/drinks/default-simple-tea-orders.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/drinks/floral-tea-drinks-rise.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/drinks/hong-kong-style-lemon-tea-return.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/drinks/small-cup-tea-drinks.html",
       "views": 4,
       "activeUsers": 4
     }
@@ -150,38 +150,33 @@
   "topPages30d": [
     {
       "path": "/",
-      "views": 38,
-      "activeUsers": 38
-    },
-    {
-      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
       "views": 35,
       "activeUsers": 35
     },
     {
+      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
+      "views": 34,
+      "activeUsers": 34
+    },
+    {
       "path": "/en/index.html",
-      "views": 29,
-      "activeUsers": 26
+      "views": 26,
+      "activeUsers": 23
     },
     {
       "path": "/zh/tea/biluochun.html",
-      "views": 21,
-      "activeUsers": 21
+      "views": 23,
+      "activeUsers": 23
     },
     {
       "path": "/zh/drinks/matcha-boom-2026.html",
-      "views": 19,
-      "activeUsers": 19
+      "views": 22,
+      "activeUsers": 22
     },
     {
       "path": "/zh/tea/fenghuang-dancong.html",
       "views": 17,
       "activeUsers": 17
-    },
-    {
-      "path": "/zh/teaware/chaze-chahe.html",
-      "views": 15,
-      "activeUsers": 15
     },
     {
       "path": "/zh/drinks/fruit-tea-return.html",
@@ -194,17 +189,27 @@
       "activeUsers": 14
     },
     {
-      "path": "/zh/tea/jasmine.html",
-      "views": 14,
-      "activeUsers": 13
-    },
-    {
       "path": "/zh/tea/shucheng-xiaolanhua.html",
       "views": 14,
       "activeUsers": 14
     },
     {
+      "path": "/zh/teaware/chaze-chahe.html",
+      "views": 14,
+      "activeUsers": 14
+    },
+    {
       "path": "/zh/drinks/product-identity-card-tea-menus.html",
+      "views": 13,
+      "activeUsers": 13
+    },
+    {
+      "path": "/zh/tea/jasmine.html",
+      "views": 13,
+      "activeUsers": 12
+    },
+    {
+      "path": "/zh/teaware/chaxi.html",
       "views": 13,
       "activeUsers": 13
     },
@@ -229,17 +234,32 @@
       "activeUsers": 12
     },
     {
-      "path": "/zh/teaware/chaxi.html",
-      "views": 12,
-      "activeUsers": 12
-    },
-    {
       "path": "/zh/drinks/hot-tea-drinks-return.html",
       "views": 11,
       "activeUsers": 11
     },
     {
       "path": "/zh/drinks/topping-simplification-tea-drinks.html",
+      "views": 11,
+      "activeUsers": 11
+    },
+    {
+      "path": "/zh/science/tea-cognition-focus-evidence.html",
+      "views": 11,
+      "activeUsers": 11
+    },
+    {
+      "path": "/zh/tea/huoshan-huangya.html",
+      "views": 11,
+      "activeUsers": 11
+    },
+    {
+      "path": "/zh/teaware/gongdao-cup.html",
+      "views": 11,
+      "activeUsers": 11
+    },
+    {
+      "path": "/zh/teaware/hucheng.html",
       "views": 11,
       "activeUsers": 11
     },
@@ -252,68 +272,48 @@
       "path": "/zh/drinks/floral-tea-drinks-rise.html",
       "views": 10,
       "activeUsers": 10
-    },
-    {
-      "path": "/zh/science/tea-cognition-focus-evidence.html",
-      "views": 10,
-      "activeUsers": 10
-    },
-    {
-      "path": "/zh/science/tea-warfarin-vitamin-k-consistency.html",
-      "views": 10,
-      "activeUsers": 10
-    },
-    {
-      "path": "/zh/tea/enshi-yulu.html",
-      "views": 10,
-      "activeUsers": 10
-    },
-    {
-      "path": "/zh/tea/huoshan-huangya.html",
-      "views": 10,
-      "activeUsers": 11
     }
   ],
   "topSections30d": [
     {
       "section": "drinks",
       "label": "现制茶饮",
-      "views": 161,
-      "activeUsers": 160
+      "views": 163,
+      "activeUsers": 162
     },
     {
       "section": "tea",
       "label": "茶叶",
-      "views": 110,
-      "activeUsers": 110
-    },
-    {
-      "section": "home",
-      "label": "首页",
-      "views": 38,
-      "activeUsers": 38
-    },
-    {
-      "section": "en-home",
-      "label": "英文首页",
-      "views": 29,
-      "activeUsers": 26
+      "views": 102,
+      "activeUsers": 101
     },
     {
       "section": "teaware",
       "label": "茶具",
-      "views": 27,
-      "activeUsers": 27
+      "views": 49,
+      "activeUsers": 49
+    },
+    {
+      "section": "home",
+      "label": "首页",
+      "views": 35,
+      "activeUsers": 35
+    },
+    {
+      "section": "en-home",
+      "label": "英文首页",
+      "views": 26,
+      "activeUsers": 23
     },
     {
       "section": "science",
       "label": "科学/健康",
-      "views": 20,
-      "activeUsers": 20
+      "views": 11,
+      "activeUsers": 11
     }
   ],
   "insights": [
-    "近 7 天热门页面：/zh/drinks/salty-milk-tea-rise-2026.html（9 次浏览）。",
+    "近 7 天热门页面：/（9 次浏览）。",
     "近 30 天最强栏目：现制茶饮。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
