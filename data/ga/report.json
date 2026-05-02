@@ -1,58 +1,53 @@
 {
-  "generatedAt": "2026-05-01T01:05:17.266Z",
+  "generatedAt": "2026-05-02T01:05:13.699Z",
   "source": "ga4-data-api",
   "note": "已通过本地 OpenClaw 脚本从 GA4 Data API 拉取数据，并生成静态页面。",
   "propertyId": "528568945",
   "measurementId": "G-4VCYC4P23R",
   "summary": {
     "last7Days": {
-      "activeUsers": 410,
-      "sessions": 419,
-      "views": 446,
-      "avgSessionDurationSeconds": 23.28408950357995,
-      "engagementRate": 0.10023866348448687
+      "activeUsers": 377,
+      "sessions": 388,
+      "views": 415,
+      "avgSessionDurationSeconds": 23.649000023195875,
+      "engagementRate": 0.1056701030927835
     },
     "last30Days": {
-      "activeUsers": 1585,
-      "sessions": 1613,
-      "views": 1655,
-      "avgSessionDurationSeconds": 72.79312156416616,
-      "engagementRate": 0.07439553626782393
+      "activeUsers": 1613,
+      "sessions": 1641,
+      "views": 1685,
+      "avgSessionDurationSeconds": 71.54972815051798,
+      "engagementRate": 0.07434491163924437
     }
   },
   "topPages7d": [
     {
       "path": "/",
-      "views": 14,
-      "activeUsers": 12
+      "views": 12,
+      "activeUsers": 9
     },
     {
       "path": "/en/index.html",
-      "views": 13,
-      "activeUsers": 9
+      "views": 11,
+      "activeUsers": 7
     },
     {
       "path": "/zh/teaware/host-cup.html",
-      "views": 9,
-      "activeUsers": 9
-    },
-    {
-      "path": "/zh/science/l-theanine-sleep-evidence.html",
       "views": 8,
       "activeUsers": 8
     },
     {
-      "path": "/zh/drinks/matcha-boom-2026.html",
+      "path": "/zh/science/l-theanine-sleep-evidence.html",
       "views": 7,
       "activeUsers": 7
     },
     {
-      "path": "/zh/tea/yuhua-tea.html",
-      "views": 7,
-      "activeUsers": 7
+      "path": "/zh/drinks/cold-brew-tea-lines.html",
+      "views": 6,
+      "activeUsers": 6
     },
     {
-      "path": "/zh/drinks/small-cup-tea-drinks.html",
+      "path": "/zh/tea/dark-tea.html",
       "views": 6,
       "activeUsers": 6
     },
@@ -62,37 +57,47 @@
       "activeUsers": 6
     },
     {
-      "path": "/zh/teaware/gongdao-cup.html",
+      "path": "/zh/tea/yuhua-tea.html",
       "views": 6,
       "activeUsers": 6
     },
     {
-      "path": "/en/science/tea-iron-absorption-timing.html",
+      "path": "/en/science/tea-polyphenols-protein-binding-absorption.html",
       "views": 5,
-      "activeUsers": 4
+      "activeUsers": 2
     },
     {
-      "path": "/zh/drinks/bayberry-iced-tea-rise.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/zh/drinks/cold-brew-tea-lines.html",
+      "path": "/zh/drinks/electrolyte-lemon-tea-drinks-2026.html",
       "views": 5,
       "activeUsers": 5
     },
     {
-      "path": "/zh/drinks/spicy-food-tea-drinks.html",
+      "path": "/zh/drinks/kale-drinks.html",
       "views": 5,
       "activeUsers": 5
     },
     {
-      "path": "/zh/science/tea-drinks-hydration-electrolytes.html",
+      "path": "/zh/drinks/matcha-boom-2026.html",
       "views": 5,
       "activeUsers": 5
     },
     {
-      "path": "/zh/tea/dark-tea.html",
+      "path": "/zh/drinks/regional-flavors-tea-drinks.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/drinks/small-cup-tea-drinks.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/science/tea-warfarin-vitamin-k-consistency.html",
+      "views": 5,
+      "activeUsers": 5
+    },
+    {
+      "path": "/zh/tea/anji-white-tea.html",
       "views": 5,
       "activeUsers": 5
     },
@@ -102,22 +107,12 @@
       "activeUsers": 5
     },
     {
-      "path": "/zh/tea/huoshan-huangya.html",
+      "path": "/zh/teaware/gongdao-cup.html",
       "views": 5,
       "activeUsers": 5
     },
     {
-      "path": "/zh/tea/zhengshan-xiaozhong.html",
-      "views": 5,
-      "activeUsers": 5
-    },
-    {
-      "path": "/en/science/tea-polyphenols-protein-binding-absorption.html",
-      "views": 4,
-      "activeUsers": 2
-    },
-    {
-      "path": "/zh/drinks/electrolyte-lemon-tea-drinks-2026.html",
+      "path": "/zh/drinks/bayberry-iced-tea-rise.html",
       "views": 4,
       "activeUsers": 4
     },
@@ -127,24 +122,29 @@
       "activeUsers": 4
     },
     {
-      "path": "/zh/drinks/kale-drinks.html",
-      "views": 4,
-      "activeUsers": 4
-    },
-    {
       "path": "/zh/drinks/orange-tea-drinks-2026.html",
       "views": 4,
       "activeUsers": 4
     },
     {
-      "path": "/zh/drinks/regional-flavors-tea-drinks.html",
+      "path": "/zh/drinks/spicy-food-tea-drinks.html",
       "views": 4,
       "activeUsers": 4
     },
     {
-      "path": "/zh/history/tea-silver-opium-trade-imbalance.html",
+      "path": "/zh/history/tea-horse-bureau.html",
       "views": 4,
       "activeUsers": 3
+    },
+    {
+      "path": "/zh/science/tea-drinks-hydration-electrolytes.html",
+      "views": 4,
+      "activeUsers": 4
+    },
+    {
+      "path": "/zh/science/tea-postprandial-glucose-peak-evidence.html",
+      "views": 4,
+      "activeUsers": 4
     }
   ],
   "topPages30d": [
@@ -164,32 +164,42 @@
       "activeUsers": 20
     },
     {
-      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
-      "views": 24,
-      "activeUsers": 24
+      "path": "/zh/tea/biluochun.html",
+      "views": 21,
+      "activeUsers": 21
     },
     {
-      "path": "/zh/tea/biluochun.html",
-      "views": 22,
-      "activeUsers": 22
+      "path": "/zh/drinks/salty-milk-tea-rise-2026.html",
+      "views": 20,
+      "activeUsers": 20
     },
     {
       "path": "/zh/tea/shucheng-xiaolanhua.html",
-      "views": 19,
-      "activeUsers": 19
+      "views": 20,
+      "activeUsers": 20
     },
     {
       "path": "/zh/drinks/fruit-tea-return.html",
-      "views": 16,
-      "activeUsers": 16
+      "views": 17,
+      "activeUsers": 17
     },
     {
       "path": "/zh/drinks/regional-flavors-tea-drinks.html",
+      "views": 17,
+      "activeUsers": 17
+    },
+    {
+      "path": "/zh/tea/anji-white-tea.html",
+      "views": 17,
+      "activeUsers": 17
+    },
+    {
+      "path": "/zh/drinks/hong-kong-style-lemon-tea-return.html",
       "views": 16,
       "activeUsers": 16
     },
     {
-      "path": "/zh/tea/anji-white-tea.html",
+      "path": "/zh/drinks/product-identity-card-tea-menus.html",
       "views": 16,
       "activeUsers": 16
     },
@@ -199,17 +209,17 @@
       "activeUsers": 16
     },
     {
-      "path": "/zh/tea/fenghuang-dancong.html",
+      "path": "/zh/teaware/gongdao-cup.html",
       "views": 16,
       "activeUsers": 16
     },
     {
-      "path": "/zh/drinks/hong-kong-style-lemon-tea-return.html",
+      "path": "/zh/drinks/hot-tea-drinks-return.html",
       "views": 15,
       "activeUsers": 15
     },
     {
-      "path": "/zh/drinks/hot-tea-drinks-return.html",
+      "path": "/zh/science/tea-warfarin-vitamin-k-consistency.html",
       "views": 15,
       "activeUsers": 15
     },
@@ -224,22 +234,12 @@
       "activeUsers": 15
     },
     {
-      "path": "/zh/teaware/gongdao-cup.html",
-      "views": 15,
-      "activeUsers": 15
-    },
-    {
-      "path": "/zh/drinks/product-identity-card-tea-menus.html",
-      "views": 14,
-      "activeUsers": 14
-    },
-    {
       "path": "/zh/science/tea-cognition-focus-evidence.html",
       "views": 14,
       "activeUsers": 14
     },
     {
-      "path": "/zh/science/tea-warfarin-vitamin-k-consistency.html",
+      "path": "/zh/tea/fenghuang-dancong.html",
       "views": 14,
       "activeUsers": 14
     },
@@ -278,14 +278,14 @@
     {
       "section": "drinks",
       "label": "现制茶饮",
-      "views": 165,
-      "activeUsers": 165
+      "views": 166,
+      "activeUsers": 166
     },
     {
       "section": "tea",
       "label": "茶叶",
-      "views": 146,
-      "activeUsers": 145
+      "views": 145,
+      "activeUsers": 144
     },
     {
       "section": "home",
@@ -296,14 +296,14 @@
     {
       "section": "teaware",
       "label": "茶具",
-      "views": 29,
-      "activeUsers": 29
+      "views": 30,
+      "activeUsers": 30
     },
     {
       "section": "science",
       "label": "科学/健康",
-      "views": 28,
-      "activeUsers": 28
+      "views": 29,
+      "activeUsers": 29
     },
     {
       "section": "en-home",
@@ -313,7 +313,7 @@
     }
   ],
   "insights": [
-    "近 7 天热门页面：/（14 次浏览）。",
+    "近 7 天热门页面：/（12 次浏览）。",
     "近 30 天最强栏目：现制茶饮。",
     "这些数据可直接用于首页热门模块、栏目推荐与选题优先级判断。"
   ]
