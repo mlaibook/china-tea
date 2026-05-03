@@ -47,7 +47,7 @@ Chinese:
 - _zh_tea/longjing.html
 - _zh_tea/biluochun.html
 - _zh_tea/huangshan-maofeng.html
-- _zh_tea/luan-guapian.html
+- _zh_tea/liuan-guapian.html
 - _zh_tea/xinyang-maojian.html
 - _zh_tea/anji-baicha.html
 - _zh_tea/white-tea.html
@@ -62,7 +62,7 @@ English:
 - _en_tea/longjing.html
 - _en_tea/biluochun.html
 - _en_tea/huangshan-maofeng.html
-- _en_tea/luan-guapian.html
+- _en_tea/liuan-guapian.html
 - _en_tea/xinyang-maojian.html
 - _en_tea/anji-baicha.html
 - _en_tea/white-tea.html
