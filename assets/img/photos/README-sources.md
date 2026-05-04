@@ -1,5 +1,11 @@
 # Image sources
 
+## 2026-05-04 — Guzhu Zisun tribute-tea history feature
+- `assets/img/photos/longjing-plantation-v2.jpg` — Source: existing local repository asset; reused as the lead image for the Chinese and English Guzhu Zisun tribute-tea history feature to support discussion of Guzhu Mountain, Changxing mountain ecology, and early named-tea origin context; verified locally as tracked repository asset.
+- `assets/img/photos/green-tea-leaves-v1.jpg` — Source: existing local repository asset; reused in the Guzhu Zisun tribute-tea history feature to support discussion of bud color, shoot shape, and the sensory naming logic behind “purple shoots like bamboo shoots”; verified locally as tracked repository asset.
+- `assets/img/photos/longjing-frying-v2.jpg` — Source: existing local repository asset; reused in the Guzhu Zisun tribute-tea history feature as a generic craft-processing scene, with captions explicitly limiting its role to illustrating historical processing context rather than claiming to depict Tang manufacture; verified locally as tracked repository asset.
+- `assets/img/photos/green-tea-glass-v1.jpg` — Source: existing local repository asset; reused in the Guzhu Zisun tribute-tea history feature to illustrate the contrast between modern loose-leaf green-tea viewing habits and the older tea world discussed in the article; verified locally as tracked repository asset.
+
 ## 2026-03-19 — Shuifang / water-square teaware feature
 - `assets/img/photos/tea-service-closeup-v2.jpg` — Source: existing local repository asset; reused as lead image for the Chinese and English shuifang feature to show a compact tea-table working zone with clear boundaries near the main brewing area; verified locally with `file` as JPEG and confirmed tracked by git.
 - `assets/img/photos/tea-service-tray-v2.jpg` — Source: existing local repository asset; reused in the shuifang feature to illustrate local boundary management on a tea table that no longer relies on full-surface drainage; verified locally with `file` as JPEG and confirmed tracked by git.
